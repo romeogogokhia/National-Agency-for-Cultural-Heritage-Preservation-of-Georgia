@@ -265,7 +265,7 @@ header{
   margin-top: 6px;
   display: block;
 }
-.text_vertical > .decor_sircle{
+.decor_sircle{
   background-color: #fff;
   border-radius: 9px;
   display: inline-block;
@@ -736,6 +736,10 @@ header{
 
 
 /* aboutUs.html ჩვენს შესახებ > სააგენტოს შესახებ */
+.s_content p{
+  color:#292d33;
+  font:15px 'dejavu-sans';
+}
 .nav_repeat{
   padding: 12px;
   background-color: #f0f0f1;
@@ -768,6 +772,7 @@ header{
 .gallery_block{
   max-width: 360px;
   font:18px 'Panton-bold';
+  margin-bottom: 47px;
 }
 .gallery_block h4{
   width: 100%;
@@ -785,10 +790,11 @@ header{
 .pagin a {
   color: #5d636b;
   float: left;
+  font-weight: bold;
   padding: 7px;
   text-decoration: none;
   transition: color .3s;
-  margin: 0 4px;f0f0f1
+  margin: 0 4px;
 }
 .pagin a.active {
   color:#292d33;
@@ -807,4 +813,29 @@ header{
 }
 .pagin span:hover{
   background-color: #f0f0f1;
+}
+
+/* projects.html გალერეა > ფოტო გალერეა */
+
+.g_img_bl h4{
+  position: absolute;
+  bottom: 58px;
+  text-align: left;
+  font: 18px 'Panton-bold';
+  color: #ffffff;
+  max-width: 360px;
+  padding-left: 20px;
+}
+.g_img_bl .decor_sircle{
+  position: absolute;
+  bottom: 102px;
+  left: 34px;
+  background-color: #e4002b;
+  line-height: 8px;
+}
+.g_img_bl .decor_sircle span{
+  font:12px 'dejavu-sans';
+  color:#fff;
+  line-height: 12px;
+  padding-left: 16px;
 }
