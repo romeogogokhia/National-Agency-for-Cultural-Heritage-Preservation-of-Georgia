@@ -735,18 +735,76 @@ header{
 }
 
 
-/* aboutUs.html ჩვენს შესახებ > სააგენტოს შესახებ*/
-.s_content .About_Agency{
+/* aboutUs.html ჩვენს შესახებ > სააგენტოს შესახებ */
+.nav_repeat{
   padding: 12px;
   background-color: #f0f0f1;
   float: right;
+  width: 100%;
 }
-.s_content .About_Agency li a{
+.nav_repeat li a{
   padding: 17px 20px;
   display: block;
 }
-.s_content .About_Agency li:hover a{
-  background-color: #292d33;
+.nav_repeat li.active a{
+}
+.nav_repeat li a:hover:not(.active){
+ background-color: #292d33;
   text-decoration: none;
 }
 
+/* gallery.html გალერეა > ფოტო გალერეა */
+
+.g_img_bl{
+  max-width: 360px;
+  max-height: 300px;
+}
+.g_img_bl img{
+ 
+}
+.g_img_bl:nth-child(odd){
+
+}
+.gallery_block{
+  max-width: 360px;
+  font:18px 'Panton-bold';
+}
+.gallery_block h4{
+  width: 100%;
+  height: 18px;
+  overflow: hidden;
+  padding: 23px 0px 46px;
+}
+
+/* pagination */
+.pagin {
+  display: inline-block;
+  margin: 80px 0px 110px;
+}
+
+.pagin a {
+  color: #5d636b;
+  float: left;
+  padding: 7px;
+  text-decoration: none;
+  transition: color .3s;
+  margin: 0 4px;f0f0f1
+}
+.pagin a.active {
+  color:#292d33;
+}
+.pagin a:hover:not(.active) {
+  color: #292d33;
+}
+.pagin a span{
+  padding: 7px 20px;
+}
+.pagin a:first-child span{
+  background: url(../img/pagin_left_arrow.png) no-repeat center center;
+}
+.pagin a:last-child span{
+  background: url(../img/pagin_right_arrow.png) no-repeat center center;
+}
+.pagin span:hover{
+  background-color: #f0f0f1;
+}
