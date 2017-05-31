@@ -733,3 +733,20 @@ header{
 .footer_soc .pull-right > nav > a:hover{
   color:#fff;
 }
+
+
+/* aboutUs.html ჩვენს შესახებ > სააგენტოს შესახებ*/
+.s_content .About_Agency{
+  padding: 12px;
+  background-color: #f0f0f1;
+  float: right;
+}
+.s_content .About_Agency li a{
+  padding: 17px 20px;
+  display: block;
+}
+.s_content .About_Agency li:hover a{
+  background-color: #292d33;
+  text-decoration: none;
+}
+
