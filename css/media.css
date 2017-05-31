@@ -1,0 +1,245 @@
+@media screen and (max-width: 1458px) {
+	.logo.pull-left{
+	    padding: 30px 0px 0px 10px;
+	}
+/*	.row .float_right {
+		width: 67%;
+	}
+*/	.float_right .form_block {
+		padding: 0px 15px 0px 20px;
+		width: 71%;
+	}
+	.float_right .red_block{
+		width: 29%;
+		padding-left: 10px;
+	}
+	.red_block .btn:last-child{
+		margin-left: 10px;
+	}
+}
+@media screen and (max-width: 1380px) {
+	.float_right .form_block {
+		padding: 0px 15px 0px 20px;
+		width: 70%;
+	}
+	.float_right .red_block{
+		width: 30%;
+		padding-left: 10px;
+	}
+	.form_block .navbar-nav>li>a {
+    	font-size:13px;
+    	line-height: 49px;
+	}
+	.nav>li>a {
+		padding: 10px 12px;
+	}
+	.navbar-header .logo a{
+		font-size:14px;
+		line-height: 21px;
+	}
+	.float_right .red_block .btn:last-child {
+		margin-left: 10px;
+	}
+}
+@media screen and (max-width: 1205px) {
+	.row .float_right {
+		width: 67%;
+	}
+	.float_right .form_block{
+		width: 77%;
+	}
+	.float_right .red_block{
+		width: 23%;
+		padding: 0px 10px;
+	}
+	.red_block .btn:last-child{
+		width: auto !important;
+	}
+/*	.container .slider_wrapper2{
+		width: 374px;
+		margin: 0px auto;
+	}
+*/
+}
+@media screen and (max-width: 1115px) {
+	.row .float_right {
+		width: 88%;
+	}
+	.logo a:last-child{
+		display: none !important;
+	}
+	.form_block.pull-right {
+    	width: 72%;
+	}
+	.float_right .red_block .btn{
+		display: block;
+	    width: 100%;
+	    margin: 14px 0px;    
+	}
+	.red_block .btn .sign_in{
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.red_block .btn:last-child{
+		width: 100% !important;
+		margin: 0px !important;
+	}
+	.form_block .nav>li>a{
+		padding-left:8px;
+		padding-right: 8px;
+	}
+}
+@media screen and (max-width: 1205px){
+	.container{
+		width: 100%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+	.slider_wrapper2 > .sl_arrow_down{
+		display: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	.row .float_right{
+		float: none;
+		width: 100%;
+		background-color:orange; 
+	}
+	.text .text_vertical > h1{
+	  font-size:33px;
+	}
+	.text .text_vertical > h1 > span{
+	  font-size:45.5px;
+	}
+	.text .text_vertical > .decor_sircle{
+	  margin:20px 0px;
+	}
+	.nav.navbar-nav {
+	    margin-top: 0px;
+	}
+	.nav.navbar-nav li a{
+		text-align: center;
+	}
+	.nav.navbar-nav.navbar-right{
+		border-bottom:1px solid #000;
+	}
+	.colap::before{
+		display: none;
+	}
+	.float_right .form_block{
+		width: 100%;
+		float:none;
+		margin:auto;
+		padding: 0px;
+		overflow: hidden;
+	}
+	.float_right .red_block{
+    	height: 77px;
+    	width: 234px;
+		line-height: 77px;
+		float: none;
+		margin:auto;
+	}
+	.float_right .red_block .btn{
+		height: 50px;
+		width: 50px !important;
+		border:2px solid #fff;
+		display: inline-block;
+		margin:0px;
+	}
+	.float_right .red_block .btn:last-child{
+		height: 48px;
+		width: 160px !important;
+		background-color: transparent;
+		margin-left: 18px;
+	}
+	.form_block .lang{
+		float:none;
+		padding-left: 1%;
+		width: 6%;
+	}
+	.form_block .form-group.pull-right{
+		padding-right: 1%;
+		width: 92%
+	}
+	.nav_button{
+		display: block !important;
+	    position: absolute;
+	    top: 20px;
+	    right: 20px;
+	    height: 50px;
+	    width: 50px;
+	    font-size: 33px;
+	    border: navajowhite;
+	    color: #fff;
+	    background: rebeccapurple;
+	}
+	.row .colap{
+		display: none;
+		position: absolute;
+		padding: 0px 0px 10px 0px;
+		z-index: 999;
+	}
+	.right_bg{
+		display: none;
+	}
+	.slider_wrapper{
+		width: 100% !important;
+	}
+	.projects_block .nav_projects a{
+		padding: 0px;
+		font-size: 13px;
+	}
+	.footer .footer_bottom_bg{
+		height: 100%;
+	}
+	.footer_soc .button-group{
+		float: left !important;
+	}
+	.mews .row > h1{
+		margin: 70px 0px 0px 0px;
+	}
+	.mews .news_block{
+		max-width: 100%;
+		text-align: center;
+	}
+	.mews .news_block .par{
+		margin:auto;
+	}
+	.vote .container h1{
+		margin: 45px 0px 0px 0px;
+	}
+	.vote .container form .btn-danger{
+		margin: 40px 0px 45px 0px;
+	}
+}
+@media screen and (max-width: 415px) { 
+	.text .text_vertical > h1{
+		font-size:20px;
+	}
+	.text .text_vertical > h1 > span{
+		font-size:25.5px;
+	}
+	.text .text_vertical > .decor_sircle{
+		margin:15px 0px;
+	}
+	.text .text_vertical h2, 
+	.text .text_vertical h3 {
+    	font-size:16px;
+	}
+	.text .text_vertical h3 {
+		margin-top:7px;
+	}
+	.vote .col-xs-6{
+		padding: 0px;
+	}
+	.footer_top_bg .footer_form h1 {
+	    color: #FFFFFF;
+	    font: 24px 'Panton-Regular';
+	}
+	.footer_bottom_bg .footer_soc .pull-right > nav > a{
+		margin-left: 12px;
+	}
+}﻿
+

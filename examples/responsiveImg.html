@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>responsive img</title>
+	<style>
+/*	.imgWrapper{
+  		 margin:0 auto;
+	}
+		.imgBox{
+			max-width: 375px;
+			max-height: 300px;
+			float: left;
+			margin-right: 10px;
+		}
+		.imgBox img{
+			width: 375px;
+			height: 300px;
+		}*/
+
+
+
+.wrapper_box{
+	max-width: 1200px;
+}
+
+div.column {
+  /* The background image must be 800px wide */
+  max-width: 375px;
+  max-height: 300px
+}
+
+figure.fluidratio {
+  padding-top: 0%;  /* slope */
+  height: 300px;  /* start height */
+
+  background-image: url(img/sl2Img1.png);
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;  /* Internet Explorer 7/8 */
+}
+figure.fluidratio2 {
+  padding-top: 0%;  /* slope */
+  height: 300px;  /* start height */
+
+  background-image: url(img/sl2Img2.png);
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;  /* Internet Explorer 7/8 */
+}
+figure.fluidratio3 {
+  padding-top: 0%;  /* slope */
+  height: 300px;  /* start height */
+
+  background-image: url(img/sl2Img3.png);
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;  /* Internet Explorer 7/8 */
+}
+
+
+	</style>
+</head>
+<body>
+<!-- <div class="imgWrapper">
+	<div class="imgBox">
+		<a href="#">
+			<img src="img/sl2Img1.png" alt="respon ing" width="375" height="300">
+		</a>
+	</div>
+	<div class="imgBox">
+		<a href="#">
+			<img src="img/sl2Img2.png" alt="respon ing" width="375" height="300">
+		</a>
+	</div>
+	<div class="imgBox">
+		<a href="#">
+			<img src="img/sl2Img3.png" alt="respon ing" width="375" height="300">
+		</a>
+	</div>
+</div> -->
+<div class="wrapper_box">
+	<div class="column">
+	<figcaption>სურათი ერთი</figcaption>
+		<figure class="fluidratio"></figure>
+	</div>
+	<div class="column">
+	<figcaption>სურათი ორი</figcaption>
+		<figure class="fluidratio2"></figure>
+	</div>
+	<div class="column">
+	<figcaption>სურათი სამი</figcaption>
+		<figure class="fluidratio3"></figure>
+	</div>
+</div>
+
+</body>
+</html>

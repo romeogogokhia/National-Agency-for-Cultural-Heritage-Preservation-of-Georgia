@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>progress sircle</title>
+
+    <!-- Bootstrap -->
+<!--     
+    
+
+ -->
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/font-awesome.min.css" rel="stylesheet">
+ 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/fonts.css">
+<link href="css/circle.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/main.css">
+
+    <style>
+.prog-circle .fill, .prog-circle .bar{
+	width: 142px !important;
+	height: 142px !important;
+}
+.prog-circle .percenttext{
+	font:30px 'Panton-bold', serif;
+	top: -20px;
+	color: #e4002b;
+}
+.circleVote {
+	font:10.41px 'dejavu-sans', serif;
+    position: absolute;
+    width: 100%;
+    height: 1em;
+    z-index: 1;
+    margin: auto;
+    left: -110px;
+    bottom: 53px;
+    color: #4a4f57;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 100%;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+</style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div id="circle"></div>
+				<span class="circleVote">
+					123345 ხმა
+				</span>
+			</div>
+			<div class="col-sm-4">
+				<div id="circle2"></div>
+				<span class="circleVote">
+					123345 ხმა
+				</span>
+			</div>
+			<div class="col-sm-4">
+				<div id="circle3"></div>
+				<span class="circleVote">
+					123345 ხმა
+				</span>
+			</div>
+		</div>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script> 
+    
+	<script src="js/progress-circle.js"></script>
+
+<script>
+
+$('#circle').progressCircle({
+	nPercent        : 13,
+	showPercentText : true,
+	circleSize      : 142,
+	thickness       : 3
+});
+
+$('#circle2').progressCircle({
+	nPercent        : 50,
+	showPercentText : true,
+	circleSize      : 142,
+	thickness       : 3
+});
+
+$('#circle3').progressCircle({
+	nPercent        : 27,
+	showPercentText : true,
+	circleSize      : 142,
+	thickness       : 3
+});
+
+</script>
+  
+  </body>
+</html>
