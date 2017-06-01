@@ -77,12 +77,14 @@
             <a href="#"><span class="sl_image"></span></a>
             <span class="over_block"></span>
             <div class="text">
-              <div class="text_vertical">
-                <h1>სააგენტოს შესახებ</h1>
-                <nav>
-                  <a href="#">მთავარი ></a>
-                  <a href="#">ჩვენს შესახენ ></a>
-                  <a href="#">სააგენტოს შესახებ</a>
+              <div class="text_vertical h1">
+                <h1>პროექტები</h1>
+                <nav class="sl_nav">
+                  <a href="#">მთავარი</a>
+                  <span class="nav_arr_right"></span>
+                  <a href="#">პროექტები</a>
+                  <span class="nav_arr_right"></span>
+                  <a href="#">ყველა</a>
                 </nav>
               </div>
             </div>  
@@ -95,11 +97,11 @@
   </section>
 
 <!-- section content -->
-<section class="s_content">
+<section class="gallery">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-        <div class="s_content_img_bl">
+        <div class="gallery_img_bl">
           <img src="img/sl2Img3.png" alt="" class="img-responsive"> 
           <span></span>
         </div>   
@@ -189,8 +191,8 @@
     <script src="js/progress-circle.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script>
-      $('.s_content_img_bl span').click(function() {
-        $('.s_content_img_bl img').animate({
+      $('.gallery_img_bl span').click(function() {
+        $('.gallery_img_bl img').animate({
                                     'max-width': '816px', 
                                     'max-height': '616px',
                                   }, "slow");

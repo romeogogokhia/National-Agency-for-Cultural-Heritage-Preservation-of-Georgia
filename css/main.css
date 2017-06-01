@@ -736,15 +736,34 @@ header{
 
 
 /* aboutUs.html ჩვენს შესახებ > სააგენტოს შესახებ */
-.s_content p{
+.text_vertical.h1 > h1{
+  color:#fff;
+  font:29.79px 'Panton-bold';
+}
+.sl_nav{
+  margin-top: -11px;
+}
+.sl_nav a{
+  color: #bfbfbf;
+  font:14px 'dejavu-sans';
+}
+.gallery p{
   color:#292d33;
   font:15px 'dejavu-sans';
+}
+.nav_arr_right{
+  background-image: url(../img/nav_arr_right.png);
+  display: inline-block;
+  margin: 0px 5px;
+  height: 8px;
+  width: 5px;
 }
 .nav_repeat{
   padding: 12px;
   background-color: #f0f0f1;
   float: right;
   width: 100%;
+  margin-top: 56px;
 }
 .nav_repeat li a{
   padding: 17px 20px;
@@ -770,6 +789,9 @@ header{
 }
 .g_img_bl:nth-child(odd){
 
+}
+.gallery{
+  margin-top: 56px;
 }
 .gallery_block{
   max-width: 360px;
@@ -821,21 +843,21 @@ header{
 
 .g_img_bl h4{
   position: absolute;
-  bottom: 58px;
+  bottom: 30px;
+  left: 27px;
   text-align: left;
   font: 18px 'Panton-bold';
   color: #ffffff;
   max-width: 360px;
-  padding-left: 20px;
 }
-.s_content .decor_sircle{
+.gallery .decor_sircle{
   position: absolute;
-  bottom: 102px;
-  left: 34px;
+  bottom: 75px;
+  left: 30px;
   background-color: #e4002b;
   line-height: 8px;
 }
-.s_content .decor_sircle span{
+.gallery .decor_sircle span{
   font:12px 'dejavu-sans';
   color:#fff;
   line-height: 12px;
@@ -858,12 +880,12 @@ header{
 }
 
 /* projects_inner.html გალერეა > ფოტო გალერეა */
-.s_content_img_bl{
+.gallery_img_bl{
   max-height: 460px;
   max-width: 555px;
   position: relative;
 }
-.s_content_img_bl span{
+.gallery_img_bl span{
   background-image: url(../img/video_fullScreen.png);
   background-repeat: no-repeat;
   height: 46px;
@@ -978,22 +1000,25 @@ header{
   font-family: 'DejaVu_Sans_Bold';
 }
 
-
-
-      .slider_block{
-        position: relative;
-        max-width: 1826px;
-        max-height: 210px;
-      }
-      .sl_image{
-        background-image: url(../img/slBigCharch.png);
-        background-repeat: no-repeat;
-        background-position: 0px -168px;
-        background-size:cover;
-        width: 100%;
-        height: 210px;
-        display: block;
-      }
-      .right_bg.height{
-        height: 102px;
-      }
+/*slider block repeat*/
+.slider_block{
+  position: relative;
+  max-width: 1826px;
+  max-height: 210px;
+}
+.sl_image{
+  background-image: url(../img/slBigCharch.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 0px -168px;
+  height: 210px;
+  width: 100%;
+  display: block;
+}
+.right_bg.height{
+  height: 102px;
+}
+.over_block.height{
+  height: 83%;
+  top: 9%;
+}
