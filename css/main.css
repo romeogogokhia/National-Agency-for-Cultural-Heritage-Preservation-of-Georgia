@@ -751,9 +751,10 @@ header{
   display: block;
 }
 .nav_repeat li.active a{
+  background-color: #292d33;
 }
 .nav_repeat li a:hover:not(.active){
- background-color: #292d33;
+  background-color: #292d33;
   text-decoration: none;
 }
 
