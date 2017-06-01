@@ -8,330 +8,92 @@
     <title>example</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link href="css/circle.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+    	.slider_block{
+    		max-width: 1826px;
+    		max-height: 210px;
+    	}
+    	.img_img{
+    		
+   			background-position: 0px -168px;
+    		width: 100%;
+    		height: 210px;
+    		background-size:cover;
+    		display: block;
+    	}
+		
+		.img_wrap{
+			margin-top: 150px;
+		}
+		.img_box{
+			max-width: 1826px;
+    		max-height: 210px;
+		}
+		.img123{
+			background-image: url(../img/slBigCharch.png);
+			background-position: 0px 10px;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 210px;
+			background-size: cover;
+		}
+
+    </style>
   </head>
   <body>
-   <header class="navigacia">
-	  <div class="container-fluid">
-		 <div class="row">
-			<div class="navbar-header">
-				<nav class="logo pull-left">
-					<a href="#"><img src="img/logo.png" alt=""></a>
-					<a href="#"><span>საქართველოს</span> კულტურული მემკვიდრეობის დაცვის ეროვნული სააგენტო</a>
-				</nav>
-			</div><!-- navbar-header -->	
-				<div class="float_right colap">
-					<div class="form_block">
-						<nav class="lang">
-							<a href="#">ქარ</a>
-							<a href="#">ENG</a>
-						</nav>
-						<div class="form-group pull-right">
-							<form action="#" class="pull-right">
-								<input type="text">
-								<button type="submit" class="fa fa-search"></button>
-							</form>
-						</div>
-					    <ul class="nav navbar-nav navbar-right">
-			                  <li><a href="#">ჩვენ შესახებ</a></li>
-			                  <li><a href="#">პროექტები</a></li>
-			                  <li><a href="#">სიახლეები</a></li>
-			                  <li><a href="#">გალერეა</a></li>
-			                  <li><a href="#">კონტაქტი</a></li>
-			            </ul>
-			            <div class="clearfix"></div>
-					</div>
-				<div class="red_block">
-					<button type="button" class="btn">
-						<span class="sign_in"></span>
-					</button>
-			       <button type="button" class="btn">კლუბი</button>
-			    </div>
-				</div>
-				<button type="submit" class="fa fa-bars nav_button"></button>
-				</div>
-	</div>
-  </header>
-  <div class="clearfix"></div>
-
 <!--  SLIDER SECTION -->
   <section class="slider_section">
-  	<div class="container-fluid">
-  		<div class="row">
-			<div class="slider_wrapper">
-				<div class="mySlider">
-					<div class="slider_block">
-						<a href="#">
-							<img src="img/slBigCharch.png" class="img-responsive">
-						</a>
-						<span class="over_block"></span>
-						<div class="text">
-							<div class="text_vertical">
-								<h1>იცოდე შენი
-									<span>მემკვიდრეობა</span>
-								</h1>
-								<div class="decor_sircle"></div>
-								<h2>გელათის მონასტერი</h2>
-								<h3>XXII-XXIII სს</h3>
-							</div>
-						</div>	
-					</div>				
-					<div class="slider_block">
-						<a href="#">
-							<img src="img/slBigCharch.png" class="img-responsive">
-						</a>	
-						<span class="over_block"></span>
-						<div class="text">
-							<div class="text_vertical">
-								<h1>იცოდე შენი
-									<span>მემკვიდრეობა</span>
-								</h1>
-								<div class="decor_sircle"></div>
-								<h2>გელათის მონასტერი</h2>
-								<h3>XXII-XXIII სს</h3>
-							</div>
-						</div>
-					</div>				
-					<div class="slider_block">
-						<a href="#">
-							<img src="img/slBigCharch.png" class="img-responsive">
-						</a>	
-						<span class="over_block"></span>
-						<div class="text">
-							<div class="text_vertical">
-								<h1>იცოდე შენი
-									<span>მემკვიდრეობა</span>
-								</h1>
-								<div class="decor_sircle"></div>
-								<h2>გელათის მონასტერი</h2>
-								<h3>XXII-XXIII სს</h3>
-							</div>
-						</div>
-					</div>	 
-				</div>
-			</div>
-			<div class="right_bg"></div>
-		</div>
-	</div> <!-- container-fluid end-->
-
-	<!-- PROJECTS -->
-	<div class="container">
-		<div class="row">
-			<div class="projects_block">
-				<div class="projects text-center">
-					<h1>პროექტები</h1>
-				</div>
-				<nav class="nav_projects text-center">
-					<a href="#" class="active">მიმდინარე</a>
-					<a href="#">დასრულებული</a>
-					<a href="#">დაგეგმილი</a>
-				</nav>
-				<div class="slider_wrapper2">
-				<span class="sl_arrow_down"></span>
-					<div class="mySlider2">
-						<div class="slider_block2">
-							<a href="#">
-								<img src="img/sl2Img1.png" class="">
-							</a>
-							<span class="romanBl">V-VI სს</span>
-							<div class="text2">
-								<p>უჯარმის არქიტექტორული ანსამბლი</p>
-							</div>
-						</div>
-						<div class="slider_block2">
-							<a href="#">
-								<img src="img/sl2Img2.png" class="">
-							</a>
-							<span class="romanBl">VII სს</span>
-							<div class="text2">
-								<p>უფლისციხის არქიტექტორული მუზეუმ-ნაკრძალი</p>
-							</div>
-						</div>
-						<div class="slider_block2">
-							<a href="#">
-								<img src="img/sl2Img3.png" class="">
-							</a>
-							<span class="romanBl">XII სს</span>
-							<div class="text2">
-								<p>ვარძიის არქიტექტორული მუზეუმ-ნაკრძალი</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- PROJECTS END-->
+    <div class="container-fluid">
+      <div class="row">
+      <div class="slider_wrapper">
+        <div class="mySlider">
+          <div class="slider_block">
+            <a href="#">
+           <!--  <span class="img_img"></span> -->
+              <img src="../img/slBigCharch.png" class="img_img img-responsive">
+            </a>
+            <span class="over_block"></span>
+            <div class="text">
+              <div class="text_vertical">
+                <h1>სააგენტოს შესახებ</h1>
+                <nav>
+                	<a href="#">მთავარი ></a>
+                	<a href="#">ჩვენს შესახენ ></a>
+                	<a href="#">სააგენტოს შესახებ</a>
+                </nav>
+              </div>
+            </div>  
+          </div>               
+        </div>
+      </div>
+    </div>
+  </div> <!-- container-fluid end-->
   </section>
 
-  <!-- section club -->
-  <section class="club">
-  		<div class="club_bg text-center">
-	  		<div class="container">
-				<div class="row">
-		  			<h1>კლუბი</h1>
-		  			<blockquote class="quote">
-		  				<p>
-		  				<span class="quoteImg"></span>
-		  				საგანმანათლებლო პროგრამების მიზანია კულტურული მემკვიდრეობის დაცვის სფეროში ახალგაზრდა თაობების ჩართვა, მათი ცნობიერების ამაღლება და სფეროს პოპულარიზაცია. კულტურული მემკვიდრეობის დაცვის ეროვნული სააგენტო საგანმანათლებლო, საბავშვო პროგრამებს ახორციელებს თბილისში, მცხეთაში და ნაქალაქევში. პროგრამები მოწონებული და აღიარებულია კულტურული მემკვიდრეობის დაცვის ეროვნული სააგენტოს პარტნიორი საერთაშორისო ორგანიზაციების მხრიდან.
-		  				<span class="quoteImg2"></span>
-		  				</p>
-		  				<button type="button" class="btn btn-danger">გაწევრიანება</button>
-		  			</blockquote>
-				</div>
-  			</div>
-  		</div>
-  </section>
-
-  <!-- section news -->
-  <section class="mews">
-  	<div class="container">
-  		<div class="row">
-  			<h1>სიახლეები</h1>
-	  		<div class="col-sm-4">
-	  			<div class="news_block">
-	  				<h2>საგანმანათლებლო პროგრამა ნიქოზში</h2>
-	  				<p class="par">საქართველოს კულტურული მემკვიდრეობის დაცვის ეროვნული სააგენტოს  საგანმანათლებლო პროგრამის -„კულტურული მემკვიდრეობა ბავშვებს“ ფარგლებში, სოფელ ნიქოზში ადგილობრივი</p>
-	  				<ul class="newsDate">
-	  					<li>25</li>
-	  					<li>მარტი <span>2017</span></li>
-	  				</ul>
-	  				<a href="#"><span class="arrRight"></span></a>
-	  			</div>
-  			</div>	  		
-  			<div class="col-sm-4">
-	  			<div class="news_block">
-	  				<h2>ვაჟა-ფშაველას სახლის რეაბილიტაცია</h2>
-	  				<p class="par">ჩარგალში, საქართველოს პრემიერ-მინისტრი გიორგი კვირიკაშვილი სახალხო დღესასწაულ „ვაჟაობას“ დაესწრო და ვაჟა-ფშაველას სახლ-მუზეუმი მოინახულა.</p>
-	  				<ul class="newsDate">
-	  					<li>23</li>
-	  					<li>მარტი <span>2017</span></li>
-	  				</ul>
-	  				<a href="#"><span class="arrRight"></span></a>
-	  			</div>
-  			</div>	  		
-  			<div class="col-sm-4">
-	  			<div class="news_block">
-	  				<h2>არქეოლოგიური სამუშაოები მსხალგორში</h2>
-	  				<p class="par">არქეოლოგიური სამუშაოები მსხალგორში რამდენიმე დღეა, რაც განახლდა მსხალგორის წმ. გიორგის სახელობის შუა საუკუნეებით დათარიღებული კომპლექსის არქეოლოგიური გათხრები. </p>
-	  				<ul class="newsDate">
-	  					<li>19</li>
-	  					<li>მარტი <span>2017</span></li>
-	  				</ul>
-	  				<a href="#"><span class="arrRight"></span></a>
-	  			</div>
-  			</div>
-  		</div>
+  <div class="img_wrap">
+  	<div class="img_box">
+  		<img class="img123 img-responsive" src="../img/slBigCharch.png" alt="">
   	</div>
-  </section>
+  </div>
 
-  <!-- section vote -->
-  <section class="vote">
-  	<div class="container">
-  		 <h1>გამოკითხვა</h1>
-  		 <div class="hr"></div>
-  		 <form action="#" method="get">
-  		 	<h2 class="text-center">რამდენად კარგად იცნობთ სააგენტოს საქმიანობას?</h2>
-  			<div class="col-sm-4 col-xs-6">
-  				<div class="sircleIn">			
-		  		<div id="circle"></div>
-				<span class="circleVote">
-					123345 ხმა
-				</span>
-				</div>
-		  		<div class="radio">
-				  <label>
-				  	<input type="radio" name="optradio" name="vote" value="good">კარგად
-				  </label>
-				</div>
-			</div>
-  			<div class="col-sm-4 col-xs-6">
-  				<div class="sircleIn">
-		  		<div id="circle2"></div>
-				<span class="circleVote">
-					123345 ხმა
-				</span>
-				</div>
-				<div class="radio">
-				  <label>
-				  	<input type="radio" name="optradio" name="vote" value="Superficially">ზედაპირულად
-				  </label>
-				</div>	
-			</div>
-  			<div class="col-sm-4 col-xs-12">
-  				<div class="sircleIn">
-			 	<div id="circle3"></div>
-				<span class="circleVote">
-					123345 ხმა
-				</span>
-				</div>
-				<div class="radio">
-				  <label>
-				  	<input type="radio" name="optradio" name="vote" value="not">არ ვიცნობ
-				  </label>
-				</div>
-			</div>
-  				<div class="col-xs-12">	
-	  				<div class="text-center">
-	   					<button class="btn btn-danger " name="submit" type="submit" id="voteSub">ხმის მიცემა</button>
-					</div>
-				</div>
-			</form>
-  		</div>
-  </section>
-
-<!-- footer -->
-<footer>
-	<div class="footer">
-		<div class="footer_top_bg">
-			<div class="container">
-				<div class="footer_form text-center">
-					<h1>სიახლეების გამოწერა</h1>
-					<h2>მიიღეთ ინფორმაცია სიახლეებისა და ღონისძიებების შესახებ</h2>
-					<form action="#" class="form">
-						<input type="email" class="form-control" placeholder="თქვენი ელ. ფოსატა">
-						<input type="submit" value="გადმოწერა">
-					</form>
-				</div>
-			</div>
-		</div>
-		<div class="footer_bottom_bg">
-			<div class="container">
-				<div class="footer_soc">
-					<small>&copy; ყველა უფლება დაცულია</small>							
-					<div class="pull-right">
-						<nav>
-							<a href="#" class="fa fa-play"></a>
-							<a href="#" class="fa fa-twitter"></a>
-							<a href="#" class="fa fa-facebook"></a>
-						</nav>
-					</div>				
-				</div>
-			</div>
-		</div>	
-	</div>
-</footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="js/progress-circle.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-	
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>	
   </body>
 </html>
