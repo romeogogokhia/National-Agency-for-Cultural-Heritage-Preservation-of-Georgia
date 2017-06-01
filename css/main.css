@@ -761,6 +761,7 @@ header{
 /* gallery.html გალერეა > ფოტო გალერეა */
 
 .g_img_bl{
+  position: relative;
   max-width: 360px;
   max-height: 300px;
 }
@@ -839,4 +840,19 @@ header{
   color:#fff;
   line-height: 12px;
   padding-left: 16px;
+}
+
+
+/* video_gallery.html გალერეა > ფოტო გალერეა */
+
+.g_img_bl a > .video_play{
+  border-style: solid;
+  border-width: 22.5px 0 22.5px 39px;
+  border-color: transparent transparent transparent #d1cfc6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.g_img_bl a > .video_play:hover{
+  border-color: transparent transparent transparent #E4002B;
 }
