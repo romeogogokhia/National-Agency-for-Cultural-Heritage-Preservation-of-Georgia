@@ -213,6 +213,17 @@
 	.vote .container form .btn-danger{
 		margin: 40px 0px 45px 0px;
 	}
+
+	/* aboutUs.html ჩვენს შესახებ > სააგენტოს შესახებ */
+	.sl_image{
+		background-position: 0px 0px !important;
+	}
+	.nav_arr_right{
+		margin: 0px !important
+	}
+	.gallery{
+		padding:40px 0px !important;
+	}
 }
 @media screen and (max-width: 415px) { 
 	.text .text_vertical > h1{
