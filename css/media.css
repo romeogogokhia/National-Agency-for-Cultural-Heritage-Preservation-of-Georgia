@@ -234,6 +234,7 @@
 	.pagin_wrap .pagin{
 		margin: 0px;
 	}
+	
 }
 @media screen and (max-width: 415px) { 
 	.text .text_vertical > h1{
