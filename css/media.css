@@ -224,6 +224,16 @@
 	.gallery{
 		padding:40px 0px !important;
 	}
+
+	/* gallery.html გალერეა > ფოტო გალერეა */
+
+	/*pagination*/
+	.pagin_wrap{
+		text-align: center;
+	}
+	.pagin_wrap .pagin{
+		margin: 0px;
+	}
 }
 @media screen and (max-width: 415px) { 
 	.text .text_vertical > h1{
