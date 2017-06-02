@@ -747,7 +747,7 @@ header{
   color: #bfbfbf;
   font:14px 'dejavu-sans';
 }
-.gallery p{
+.g_content{
   color:#292d33;
   font:15px 'dejavu-sans';
 }
@@ -763,22 +763,26 @@ header{
   background-color: #f0f0f1;
   float: right;
   width: 100%;
-  margin-top: 56px;
+  margin-bottom: 40px;
 }
 .nav_repeat li a{
+  color:#41454b;
+  font:16px 'Panton-Regular';
   padding: 17px 20px;
   display: block;
 }
 .nav_repeat li.active a{
   background-color: #292d33;
+  color:#fff;
 }
 .nav_repeat li a:hover:not(.active){
+  color:#fff;
   background-color: #292d33;
   text-decoration: none;
 }
 
-/* gallery.html გალერეა > ფოტო გალერეა */
 
+/* gallery.html გალერეა > ფოტო გალერეა */
 .g_img_bl{
   position: relative;
   max-width: 360px;
@@ -791,7 +795,8 @@ header{
 
 }
 .gallery{
-  margin-top: 56px;
+  padding-top: 56px;
+  padding-bottom: 120px;
 }
 .gallery_block{
   max-width: 360px;
@@ -808,7 +813,7 @@ header{
 /* pagination */
 .pagin {
   display: inline-block;
-  margin: 80px 0px 110px;
+  margin: 80px 0px 0px 0px;
 }
 
 .pagin a {
@@ -874,6 +879,8 @@ header{
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-left: -20px;
+  margin-top: -22.5px;
 }
 .g_img_bl a > .video_play:hover{
   border-color: transparent transparent transparent #E4002B;
@@ -987,7 +994,7 @@ header{
   padding: 16px 18px 0px 0px;
 }
 .proj_desc{
-  padding-bottom: 140px;
+  padding-top: 60px;
 }
 .proj_desc h1,
 .proj_desc p{
@@ -1022,3 +1029,4 @@ header{
   height: 83%;
   top: 9%;
 }
+
