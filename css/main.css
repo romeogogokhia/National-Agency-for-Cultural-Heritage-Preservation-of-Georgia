@@ -805,7 +805,7 @@ header{
   margin: 0px auto 47px;
 }
 .gallery_block h4{
-  width: 100%;
+  width: 92%;
   height: 18px;
   overflow: hidden;
   padding: 23px 0px 46px;
@@ -850,7 +850,7 @@ header{
 .g_img_bl h4{
   position: absolute;
   bottom: 30px;
-  left: 27px;
+  left: 8%;
   text-align: left;
   font: 18px 'Panton-bold';
   color: #ffffff;
@@ -1016,7 +1016,7 @@ header{
   max-height: 210px;
 }
 .sl_image{
-  background-image: url(../img/slBigCharch.png);
+  background-image: url(../img/gallery/slBigCharch.png);
   background-repeat: no-repeat;
   background-size:cover;
   background-position: 0px -168px;
