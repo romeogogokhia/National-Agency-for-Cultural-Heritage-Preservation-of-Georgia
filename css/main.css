@@ -1132,7 +1132,8 @@ header{
   padding-bottom: 50px;
 }
 .news_block.cl{
-  max-width: 100%;
+  float: left;
+  max-width: 40%;
   background-color: transparent;
   padding: 0px;
   margin: 0px;
@@ -1163,9 +1164,14 @@ header{
   margin-left: 12px;
   margin-bottom: -5px;
 }
+.club_news .slider_block2 img{
+  max-width: 570px;
+  width: 60%;
+  float: right;
+}
 .mySlider3 .slick-dots{
   bottom: 0%;
-  left: -97%;
+  left: 4%;
 }
 .mySlider3 .slick-dots li.slick-active button:before{
   background-color: #3373b4;

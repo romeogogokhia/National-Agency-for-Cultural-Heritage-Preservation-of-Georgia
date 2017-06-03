@@ -55,26 +55,16 @@ $('.mySlider3').slick({
   arrows : false,
   dots : true,
   autoplay : true,
-  autoplaySpeed : 20000,
+  autoplaySpeed : 200000,
   cssEase : 'ease',
   infinite: true,
   slidesToShow : 1,
   
     responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 480,
       settings: {
-        // centerMode: true,
-        // centerPadding: '25px',
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        centerMode: true,
-        centerPadding: '25px',
-        slidesToShow: 1
+        dots : false,
       }
     }
   ]
