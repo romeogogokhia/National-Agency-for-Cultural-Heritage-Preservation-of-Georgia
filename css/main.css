@@ -376,16 +376,16 @@ header{
   margin-left: -24px;
   z-index: 100;
 }
-.mySlider2 .slider_block2{
+.slider_wrapper2 .slider_block2{
   position: relative;
   max-height: 300px;
   width: 375px;
   margin-right: 10px;
 }
-.mySlider2 .slider_block2 :last-child {
+.slider_wrapper2 .slider_block2 :last-child {
   margin-right: 0px;
 }
-.mySlider2 .slider_block2 img{
+.slider_wrapper2 .slider_block2 img{
   height: auto;
   width: 100%;
 }
@@ -421,35 +421,35 @@ header{
   font:18px 'Panton-bold', serif;
 }
 
-.mySlider2 .slick-dots{
+.slider_wrapper2 .slick-dots{
   position: absolute;
   bottom:-55px;
   left:50%;
   margin-left: -57.5px;
   width: 115px; 
 }
-.mySlider2 .slick-dots li{
-  height: 10px;
-  width: 10px;
-  margin-right: 10px;
+.slider_wrapper2 .slick-dots li{
+  height: 15px;
+  width: 15px;
+  margin-right: 15px;
   display: inline-block;
 }
-.mySlider2 .slick-dots li button{
-  height: 10px;
-  width: 10px;
-  border-radius: 10px;
+.slider_wrapper2 .slick-dots li button{
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
   padding: 4px;
   border:1px solid #a3a6a9;
 }
-.mySlider2 .slick-dots li.slick-active button:before{
+.slider_wrapper2 .slick-dots li.slick-active button:before{
   opacity:1;
   background-color: #e4002b;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
 
 }
-.mySlider2 .slick-dots li button:before{
+.slider_wrapper2 .slick-dots li button:before{
   content:'';
   width: 100%;
   height: 100%;
@@ -551,7 +551,7 @@ header{
   font:34px 'Panton-bold', serif;
 }
 .newsDate li + li{
-  margin-left: 10px;
+  line-height: 14px;
 }
 .newsDate li{
   color:#292d33;
@@ -569,7 +569,7 @@ header{
   width: 23px;
   height: 23px;
   border-radius: 23px;
-  display: block;
+  display: inline-block;
 }
 .arrRight:hover{
   background-color: rgb(230,133,135); 
@@ -739,18 +739,18 @@ header{
 /* aboutUs.html ჩვენს შესახებ > სააგენტოს შესახებ */
 .text_vertical.h1 > h1{
   color:#fff;
-  font:29.79px 'Panton-bold';
+  font:29.79px 'Panton-bold', serif;
 }
 .sl_nav{
   margin-top: -11px;
 }
 .sl_nav a{
   color: #bfbfbf;
-  font:14px 'dejavu-sans';
+  font:14px 'dejavu-sans', serif;
 }
 .g_content{
   color:#292d33;
-  font:15px 'dejavu-sans';
+  font:15px 'dejavu-sans', serif;
 }
 .nav_arr_right{
   background-image: url(../img/icons/nav_arr_right.png);
@@ -768,7 +768,7 @@ header{
 }
 .nav_repeat li a{
   color:#41454b;
-  font:16px 'Panton-Regular';
+  font:16px 'Panton-Regular', serif;
   padding: 17px 20px;
   display: block;
 }
@@ -801,7 +801,7 @@ header{
 }
 .gallery_block{
   max-width: 360px;
-  font:18px 'Panton-bold';
+  font:18px 'Panton-bold', serif;
   margin: 0px auto 47px;
 }
 .gallery_block h4{
@@ -852,7 +852,7 @@ header{
   bottom: 30px;
   left: 8%;
   text-align: left;
-  font: 18px 'Panton-bold';
+  font: 18px 'Panton-bold', serif;
   color: #ffffff;
   max-width: 360px;
 }
@@ -864,7 +864,7 @@ header{
   line-height: 8px;
 }
 .gallery .decor_sircle span{
-  font:12px 'dejavu-sans';
+  font:12px 'dejavu-sans', serif;
   color:#fff;
   line-height: 12px;
   padding-left: 16px;
@@ -934,7 +934,7 @@ header{
    margin-left: 8px;
 }
 .proj_bl p{
-  font: 24px 'Panton-bold';
+  font: 24px 'Panton-bold', serif;
 }
 .proj_bl .par{
   padding: 23px 0px 7px 0px;
@@ -953,7 +953,7 @@ header{
   display: inline-block;
 }
 .proj_bl_In p > span{
-  font-family:'dejavu-sans';
+  font-family:'dejavu-sans', serif;
 }
 .proj_bl_In .par1{
   font-size: 18px;
@@ -986,13 +986,13 @@ header{
 }
 .proj_bl_cost span:first-child {
   color: #52555a;
-  font:14px 'DejaVu_Sans_Bold';
+  font:14px 'DejaVu_Sans_Bold', serif;
   padding-left: 18px;
 }
 .proj_bl_cost span:last-child {
   color: #e4002b;
   float: right;
-  font: 20px 'Panton-bold';
+  font: 20px 'Panton-bold', serif;
   padding: 16px 18px 0px 0px;
 }
 .proj_desc{
@@ -1001,12 +1001,12 @@ header{
 .proj_desc h1,
 .proj_desc p{
   color:#393939;
-  font-family: 'dejavu-sans';
+  font-family: 'dejavu-sans', serif;
   font-size: 14px;
 }
 .proj_desc h1 > b,
 .proj_desc p > b{
-  font-family: 'DejaVu_Sans_Bold';
+  font-family: 'DejaVu_Sans_Bold', serif;
 }
 
 /*slider block repeat*/
@@ -1036,7 +1036,7 @@ header{
 .club_nav{
   height: 125px;
   outline:1px solid #000;
-  font-family:'Panton-bold';
+  font-family:'Panton-bold', serif;
 }
 .club_logo li{
   float: left;
@@ -1092,19 +1092,20 @@ header{
 }
 .text_vertical h1{
   color:#ffffff;
-  font:55.14px 'Panton-bold';
+  font:55.14px 'Panton-bold', serif;
 }
 .text_vertical h2{
   color:#ffffff;
-  font:42.24px 'Panton-Regular';
+  font:42.24px 'Panton-Regular', serif;
 }
 .Choose_package{
   color:#ffffff;
-  font:18px 'Panton-bold';
+  font:18px 'Panton-bold', serif;
   background-color: #3373b4;
   border:none;
   color:#fff;
   padding: 21px 24px;
+  margin: 40px 0px 16px 0px;
 }
 .btn_arrow_down{
   background-image: url(../img/icons/btn_arrow_down.png);
@@ -1117,5 +1118,55 @@ header{
 }
 .text_vertical h3{
   color:#ffffff;
-  font:16px 'BPG-Arial', sans-serif;
+  font:16px 'BPG-Arial', serif;
+}
+
+/*CLUB news*/
+.club_news{
+  padding: 85px 0px 75px 0px;
+}
+.cl_news_h1 h1{
+  color:#292d33;
+  font:36.58px 'Panton-Regular', serif;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.news_block.cl{
+  max-width: 100%;
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+}
+.news_block.cl h1{
+  color:#292d33;
+  font:24px 'Panton-bold', serif;
+}
+.news_block.cl .newsDate{
+  float: none;
+  margin-top: 10px;
+}
+.news_block.cl li:first-child {
+  color: #3373b4;
+}
+.news_block.cl .par{
+  color:#5a5a5b;
+  font:16px 'BPG-Arial', serif;
+  height: 140px;
+  max-width: 100%;
+}
+.news_block.cl a{
+  color:#292d33;
+  font:15px 'Panton-bold', serif;
+  float: left;
+}
+.news_block.cl .arrRight{
+  margin-left: 12px;
+  margin-bottom: -5px;
+}
+.mySlider3 .slick-dots{
+  bottom: 0%;
+  left: -97%;
+}
+.mySlider3 .slick-dots li.slick-active button:before{
+  background-color: #3373b4;
 }

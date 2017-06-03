@@ -21,6 +21,7 @@ $('.mySlider').slick({
     }
   ]
 });
+
 $('.mySlider2').slick({
 	arrows : false,
 	dots : true,
@@ -31,6 +32,35 @@ $('.mySlider2').slick({
   slidesToShow : 3,
   
 	  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        // centerMode: true,
+        // centerPadding: '25px',
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        centerMode: true,
+        centerPadding: '25px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+$('.mySlider3').slick({
+  arrows : false,
+  dots : true,
+  autoplay : true,
+  autoplaySpeed : 20000,
+  cssEase : 'ease',
+  infinite: true,
+  slidesToShow : 1,
+  
+    responsive: [
     {
       breakpoint: 1200,
       settings: {
