@@ -1090,7 +1090,17 @@ header{
 .club_nav .lang li:first-child a{
   color: #3373b4;
 }
+.text_vertical h1{
+  color:#ffffff;
+  font:55.14px 'Panton-bold';
+}
+.text_vertical h2{
+  color:#ffffff;
+  font:42.24px 'Panton-Regular';
+}
 .Choose_package{
+  color:#ffffff;
+  font:18px 'Panton-bold';
   background-color: #3373b4;
   border:none;
   color:#fff;
@@ -1104,4 +1114,8 @@ header{
   height: 9px;
   width: 15px;
   margin-left: 21px;
+}
+.text_vertical h3{
+  color:#ffffff;
+  font:16px 'BPG-Arial', sans-serif;
 }
