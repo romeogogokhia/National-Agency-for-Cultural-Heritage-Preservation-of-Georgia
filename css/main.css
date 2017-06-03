@@ -1033,9 +1033,12 @@ header{
 }
 
 /*start --- club.html | კლუბი*/
+.slider_block.cl{
+  max-width: 100%;
+  height: auto;
+}
 .club_nav{
   height: 125px;
-  outline:1px solid #000;
   font-family:'Panton-bold', serif;
 }
 .club_logo li{
@@ -1220,4 +1223,16 @@ header{
 }
 .club_partn_nav li > img{
   margin: auto;
+}
+
+/*start --- club.html | კლუბი*/
+
+
+/*club_part_conten*/
+.partners_bl{
+  border:1px solid #000;
+  padding:20px 33px 33px;
+}
+.partners_bl span{
+  margin:0px 0px 30px 60px;
 }
