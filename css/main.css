@@ -1176,3 +1176,48 @@ header{
 .mySlider3 .slick-dots li.slick-active button:before{
   background-color: #3373b4;
 }
+
+/*section club_project*/
+.club_project{
+  background-color:#f3f3f4;
+  padding: 50px 0px 75px 0px;
+}
+.club_h1{
+  color:#292d33;
+  font:34px 'Panton-Regular', serif
+}
+.club_project h2{
+  color:#4a4f57;
+  font:16px 'dejavu-sans', serif
+}
+.club_project_block{
+  text-align: center;
+}
+.club_project_block h3{
+  color:#4a4f57;
+  font:18px 'Panton-bold', serif;
+}
+.club_project_block h4{
+  color:#9c9d9f;
+  font:14px 'dejavu-sans', serif;
+}
+.club_project_block img{
+  margin:25px auto;
+}
+
+/*section - club_partners*/
+.club_partners{
+  padding: 80px 0px 65px 0px;
+}
+.club_partners h1.club_h1{
+  margin-bottom: 70px
+}
+.club_partn_nav li{
+  display: inline-block;
+}
+.club_partn_nav li+li{
+  margin-left:40px;
+}
+.club_partn_nav li > img{
+  margin: auto;
+}
