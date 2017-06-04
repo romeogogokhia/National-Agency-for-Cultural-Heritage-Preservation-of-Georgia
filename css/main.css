@@ -101,7 +101,6 @@ header{
   font-size: 11px;
   color: #292d33;
   text-decoration: none;
-  font-size: 11px;
 }
 .lang li:first-child a{
   color:#e4002b;
@@ -113,24 +112,17 @@ header{
   border-bottom:1px solid #d4d5d6;
   margin:0px;
   padding:20px 0px;
-  width: 916px;
   width: 95%;
   position: relative;
 } 
 .form-group form{
-  width: 100%;
- /* position: absolute;
-  right: 0;
-  top: 0;*/
-
+ /* width: 300px;*/
 }
 .form-group input[type=text]{
   visibility: visible;
   width: 30px;
   height: 30px;
-  border-radius:30px;
   transition: all .7s ease-in-out;
-  padding:0px 33px 0px 15px;
   border: none;
   float: right;
  }
@@ -139,17 +131,19 @@ header{
   width: 100%;
   height: 30px;
   outline: none;
-  border: 1px solid #949699;
+  border: 1px solid #d4d5d6;
 }
 .form-group .fa.fa-search{
   color: #a2a4a6;
   outline: none;
   border:none;
   background: none;
+  width: 32.44px;
+  height: 24px;
   font-size: 22px;
   position: absolute;
   top: 22px;
-  right: 4px;
+  right: 8px;
 }
 .nav{
   margin:0px;
@@ -650,6 +644,7 @@ header{
 .prog-circle {
     margin: auto !important;
     float: none;
+    cursor: pointer;
 }
 /*progress sircle*/
 
@@ -1032,7 +1027,18 @@ header{
   top: 9%;
 }
 
-/*start --- club.html | კლუბი*/
+/* start --- club.html | კლუბი */
+/* club_nav */
+.ordering{
+  float: right;
+}
+.club_nav .float_right.colap{
+  width: 76%;
+}
+.club_header .navbar-header{
+  width: 24%;
+}
+
 .slider_block.cl{
   max-width: 100%;
   height: auto;
@@ -1180,7 +1186,7 @@ header{
   background-color: #3373b4;
 }
 
-/*section club_project*/
+/*section - club_project*/
 .club_project{
   background-color:#f3f3f4;
   padding: 50px 0px 75px 0px;
@@ -1208,31 +1214,73 @@ header{
   margin:25px auto;
 }
 
-/*section - club_partners*/
-.club_partners{
+/* section - partner */
+
+.partners{
   padding: 80px 0px 65px 0px;
 }
-.club_partners h1.club_h1{
+.partners h1.club_h1{
   margin-bottom: 70px
 }
-.club_partn_nav li{
+.partn_img_wrap{
   display: inline-block;
+  width: 230px;
+  white-space: nowrap;   
+  text-align: center;
+  /*margin-bottom: 30px;*/
 }
-.club_partn_nav li+li{
-  margin-left:40px;
+.helper {
+  display: inline-block;
+  height: 30%;
+  vertical-align: middle;
 }
-.club_partn_nav li > img{
+.partn_img_wrap img{
+  vertical-align: middle;
   margin: auto;
 }
 
-/*start --- club.html | კლუბი*/
+/*start --- club_partners.html | კლუბი*/
 
 
-/*club_part_conten*/
+
+
+/*club_partn_conten*/
+.club_partn_content{
+  padding:55px 0px 188px 0px; 
+}
 .partners_bl{
-  border:1px solid #000;
+  border:1px solid #7f7f7f;
   padding:20px 33px 33px;
+  position: relative;
+  margin-bottom: 40px;
 }
-.partners_bl span{
-  margin:0px 0px 30px 60px;
+.partners_bl h1{
+  color:#4a4f57;
+  font:18px 'Panton-bold', serif;
+  display: inline-block;
+  position: absolute;
+  top: 48px;
+  left: 168px;
 }
+.partners_bl p{
+  color:#5a5a5b;
+  font:16px 'BPG-Arial', serif;
+}
+/*.partn_img_wrap{
+  border:1px solid #bfbfbf;
+  display: inline-block;
+  width: 260px;
+  height: 200px;
+  white-space: nowrap;   
+  text-align: center;
+  margin-bottom: 30px;
+}
+.helper {
+  display: inline-block;
+  height: 30%;
+  vertical-align: middle;
+}
+.partn_img_wrap img{
+  vertical-align: middle;
+  margin: auto;
+}*/

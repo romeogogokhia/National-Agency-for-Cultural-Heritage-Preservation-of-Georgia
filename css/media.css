@@ -55,11 +55,20 @@
 	.red_block .btn:last-child{
 		width: auto !important;
 	}
-/*	.container .slider_wrapper2{
-		width: 374px;
-		margin: 0px auto;
+
+	/* start --- club.html | კლუბი */
+	/* club_nav */
+	.club_nav .club_logo li:last-child a h1 {
+	   font-size: 24px;
+	   margin:0px 0px 0px 10px;
 	}
-*/
+	.float_right.colap{
+	   width: 77% !important;
+	}
+	.club_header .navbar-header{
+	   width: 23% !important;
+	}
+
 }
 @media screen and (max-width: 1115px) {
 	.row .float_right {
@@ -89,6 +98,34 @@
 		padding-left:8px;
 		padding-right: 8px;
 	}
+
+	/* start --- club.html | კლუბი */
+	/* club_nav */
+	.club_nav .club_logo li:last-child a h1 {
+	    font-size: 24px;
+	    margin-left: 10px;
+	}
+	.float_right.colap{
+	  width: 75% !important;
+	}
+	.club_header .navbar-header{
+	  width: 25% !important;
+	}
+	.ordering .club_menu li a{
+		font-size: 14px;
+	}
+	.club_menu.pull-left{
+		margin-right: -12px;
+	}
+	.cab_button span:last-child{
+		display: none;
+	}
+	.cab_button .club_user_icon{
+		margin: 0px;
+	}
+	.cab_button.pull-right{
+		padding: 15px;
+	}
 }
 @media screen and (max-width: 1205px){
 	.container{
@@ -104,16 +141,16 @@
 	.row .float_right{
 		float: none;
 		width: 100%;
-		background-color:orange; 
+		background-color: steelblue; 
 	}
 	.text .text_vertical > h1{
-	  font-size:33px;
+	  	font-size:33px;
 	}
 	.text .text_vertical > h1 > span{
-	  font-size:45.5px;
+	  	font-size:45.5px;
 	}
 	.text .text_vertical > .decor_sircle{
-	  margin:20px 0px;
+	  	margin:20px 0px;
 	}
 	.nav.navbar-nav {
 	    margin-top: 0px;
@@ -122,7 +159,7 @@
 		text-align: center;
 	}
 	.nav.navbar-nav.navbar-right{
-		border-bottom:1px solid #000;
+		border-bottom:1px solid #333;
 	}
 	.colap::before{
 		display: none;
@@ -233,6 +270,54 @@
 	}
 	.pagin_wrap .pagin{
 		margin: 0px;
+	}
+
+	/*club.html > club_header*/
+	.club_header .col-md-12{
+	   padding: 0px;
+	}
+	.club_header .lang{
+	   display: block;
+	   float: none;
+	   text-align: center;
+	}
+	.club_nav{
+	   position: relative;
+	}  	
+	.club_menu{
+	   width: 100%;
+	}
+	.club_menu li {
+	   display: block !important;
+	   text-align: center;
+	   padding: 0px !important;
+	}
+	.ordering .club_menu li a{
+	   line-height: 75px;
+	}
+	.cab_button.pull-right{
+	   margin: auto;
+	   display: block;
+	   float: none !important;
+	}
+
+	/* start --- club.html | კლუბი */
+	/* club_nav */
+
+	.float_right.colap{
+	   width: 100% !important;
+	}
+	.club_header .navbar-header{
+	   width: 100% !important;
+	}
+	.ordering{
+	   float: none !important;
+	}
+	.club_menu.pull-left{
+	   margin-right: -12px;
+	   border-bottom: 1px solid #333;
+       border-top: 1px solid #333;
+       margin: 15px 0px;
 	}
 	
 }

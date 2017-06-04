@@ -115,3 +115,7 @@ $('#circle3').progressCircle({
   thickness       : 3
 });
 
+$('.vote form').on('click','.prog-circle', function(){
+  $(this).parents('.sircleIn').next('.radio').find('input[name="optradio"]').click()
+})
+
