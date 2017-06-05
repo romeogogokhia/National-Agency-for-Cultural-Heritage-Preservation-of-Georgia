@@ -62,7 +62,7 @@
 	   font-size: 24px;
 	   margin:0px 0px 0px 10px;
 	}
-	.float_right.colap{
+	.club_nav .float_right.colap{
 	   width: 77% !important;
 	}
 	.club_header .navbar-header{
@@ -105,7 +105,7 @@
 	    font-size: 24px;
 	    margin-left: 10px;
 	}
-	.float_right.colap{
+	.club_nav .float_right.colap{
 	  width: 75% !important;
 	}
 	.club_header .navbar-header{
@@ -141,7 +141,7 @@
 	.row .float_right{
 		float: none;
 		width: 100%;
-		background-color: steelblue; 
+		background-color: yellowgreen; 
 	}
 	.text .text_vertical > h1{
 	  	font-size:33px;
@@ -304,7 +304,7 @@
 	/* start --- club.html | კლუბი */
 	/* club_nav */
 
-	.float_right.colap{
+	.club_nav .float_right.colap{
 	   width: 100% !important;
 	}
 	.club_header .navbar-header{
