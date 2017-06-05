@@ -985,11 +985,9 @@ header{
    margin-bottom: -4px;
    margin-left: 8px;
 }
-.proj_bl p{
-  font: 24px 'Panton-bold', serif;
-}
-.proj_bl .par{
+.proj_bl h1{
   padding: 23px 0px 7px 0px;
+  font: 24px 'Panton-bold', serif;
 }
 .proj_bl .daim_txt_wrap span{
   color: #52555a;
@@ -1055,6 +1053,7 @@ header{
   color:#393939;
   font-family: 'dejavu-sans', serif;
   font-size: 14px;
+  line-height: 23px;
 }
 .proj_desc h1 > b,
 .proj_desc p > b{
@@ -1156,17 +1155,22 @@ header{
 .club_nav .lang li:first-child a{
   color: #3373b4;
 }
-.text_vertical h1{
+
+/*section - club_big_img_sec*/
+.club_big_img_sec .text_vertical h1{
   color:#ffffff;
-  font:55.14px 'Panton-bold', serif;
+  font-family: 'Panton-bold', serif;
+  font-size: 55.14px; 
 }
-.text_vertical h2{
+.club_big_img_sec .text_vertical h2{
   color:#ffffff;
-  font:42.24px 'Panton-Regular', serif;
+  font-family: 'Panton-Regular', serif;
+  font-size: 42.24px;
 }
 .Choose_package{
   color:#ffffff;
-  font:18px 'Panton-bold', serif;
+  font-family: 'Panton-bold', serif;
+  font-size: 18px;
   background-color: #3373b4;
   border:none;
   color:#fff;

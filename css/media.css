@@ -126,6 +126,19 @@
 	.cab_button.pull-right{
 		padding: 15px;
 	}
+
+	/* section - club_big_img_sec */
+	.club_big_img_sec .text .text_vertical h1 {
+    	font-size: 27px;
+	}
+	.club_big_img_sec .text .text_vertical h2 {
+	    font-size: 18px;
+	}
+	.text_vertical .Choose_package {
+	    font-size: 14px;
+	    padding: 10px 7px;
+	    margin: 14px 0px 0px;
+	}
 }
 /*@media screen and (max-width: 1205px){
 	.container{
@@ -324,6 +337,12 @@
 	.club_header .nav_button{
 		top: 30%;
 	}
+
+	/*club_news*/
+	.club_news{
+		padding: 45px 0px 0px 0px !important;
+	}
+
 }
 @media screen and (max-width: 415px) { 
 	.logo a:last-child {
@@ -356,7 +375,18 @@
 		margin-left: 12px;
 	}
 
-
-
+	/* club.html */
+	/* section - club_big_img_sec */
+	.club_big_img_sec .text_vertical h1 {
+    	display: none;
+	}
+	.club_big_img_sec .text_vertical h2 {
+	    display: none;
+	}
+	.text_vertical .Choose_package {
+	    font-size: 14px;
+	    padding: 12px 7px;
+	    margin: 15px 0px 0px 0px;
+	}
 }﻿
 
