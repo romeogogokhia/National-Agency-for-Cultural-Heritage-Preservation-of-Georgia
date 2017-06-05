@@ -203,15 +203,47 @@ header{
 .nav{
   margin:0px;
 }
-.navbar-nav>li>a{
+.navbar-nav li a{
   line-height: 40px;
   color: #292d33;
   font-size: 16px;
 }
-.navbar-nav>li>a:focus,
-.navbar-nav>li>a:hover{
+.navbar-nav li a:focus,
+.navbar-nav li a:hover{
   background-color: #3AB795;
   color: #e4002b;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.secind_menu{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.navbar-nav li:hover .secind_menu{
+  display: block;
+  
+}
+.secind_menu li a{
+  line-height: 40px;
+  color: #292d33;
+  font-size: 16px;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.secind_menu li a:focus,
+.secind_menu li a:hover{
+  background-color: #3AB795;
+  color: #e4002b;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .red_block{
   height: 142px;
