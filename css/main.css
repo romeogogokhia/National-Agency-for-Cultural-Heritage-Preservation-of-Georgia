@@ -1240,8 +1240,8 @@ header{
   float: right;
 }
 .mySlider3 .slick-dots{
-  bottom: 0%;
-  left: 4%;
+  bottom: 0px;
+  left: 47px;
 }
 .mySlider3 .slick-dots li.slick-active button:before{
   background-color: #3373b4;

@@ -116,6 +116,6 @@ $('#circle3').progressCircle({
 });
 
 $('.vote form').on('click','.prog-circle', function(){
-  $(this).parents('.sircleIn').next('.radio').find('input[name="optradio"]').click()
+  $(this).parents('.sircleIn').next('.radio').find('input[name="vote"]').click()
 })
 
