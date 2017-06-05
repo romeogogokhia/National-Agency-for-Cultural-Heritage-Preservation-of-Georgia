@@ -119,3 +119,5 @@ $('.vote form').on('click','.prog-circle', function(){
   $(this).parents('.sircleIn').next('.radio').find('input[name="vote"]').click()
 })
 
+// dropdown mobile touch
+$( '.dropdown:has(ul)' ).doubleTapToGo();

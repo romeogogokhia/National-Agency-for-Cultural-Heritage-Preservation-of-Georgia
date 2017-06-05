@@ -49,9 +49,17 @@
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="aboutUs.html">ჩვენ შესახებ</a></li>
-                <li><a href="#">პროექტები</a></li>
+                <li><a href="projects.html">პროექტები</a></li>
                 <li><a href="#">სიახლეები</a></li>
-                <li><a href="#">გალერეა</a></li>
+                <li class="dropdown">
+                    <a href="gallery.html" aria-haspopup="true">გალერეა</a>
+                    <ul class="secind_menu">
+                      <li><a href="#">სხვადასხვა</a></li>
+                      <li><a href="#">პროექტები</a></li>
+                      <li><a href="#">სიახლეები</a></li>
+                      <li><a href="#">კონტაქტი</a></li>
+                   </ul>
+                </li>
                 <li><a href="#">კონტაქტი</a></li>
             </ul>
             <div class="clearfix"></div>
@@ -210,6 +218,7 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jqueryPlugins/DoubleTapToGo.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>

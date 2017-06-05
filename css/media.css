@@ -200,6 +200,7 @@
 		line-height: 77px;
 		float: none;
 		margin:auto;
+		text-align: center;
 	}
 	.float_right .red_block .btn{
 		height: 50px;
