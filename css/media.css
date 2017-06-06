@@ -150,6 +150,39 @@
 		display: none;
 	}
 }
+@media screen and (max-width: 1199px) {
+	/*club.html*/
+	/* section - club_project */
+	.club_project_block .my_container{
+		top: 16%;
+	}
+	.club_project .club_project_block .sircleIn {
+	    position: absolute;
+	    top: 17%;
+	    left: 15%;
+	}
+}
+@media screen and (max-width: 991px) {
+	.club_news .mySlider3 .slick-dots {
+	    bottom: -10px;
+	    left: 47px;
+	}
+	/*projects.html > pagination*/
+	.pagin_wrap.ml{
+		margin-left: 42px;
+	}
+
+	/*club.html*/
+	/* section - club_project */
+	.club_project_block .my_container{
+		top: 6%;
+	}
+	.club_project .club_project_block .sircleIn {
+	    position: absolute;
+	    top: 4%;
+	    left: 6%;
+	}
+}
 @media screen and (max-width: 767px) {
 	li.drop_down .secind_menu{
 		position: relative;
@@ -351,8 +384,58 @@
 	.club_news{
 		padding: 45px 0px 0px 0px !important;
 	}
+	.club_news .slider_wrapper2{
+		max-height: 100%;
+	}
+	.club_news .slider_wrapper2 .slider_block2{
+		max-height: 100%;
+	}
+	.club_news .news_block.cl {
+	    /* float: left; */
+	    max-width: 100%;
+	    text-align: center;
+	    background-color: transparent;
+	    /* padding: 0px; */
+	    /* margin: 0px; */
+	}
+	.club_news .news_block.cl a{
+		float: none;
+		display: block;
+	}
+	.club_news .slider_block2 img{
+		float: none !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+	.club_news .mySlider3 .slick-dots {
+	    bottom: -30px;
+	    left: 50%;
+	}
+	.club_news .slider_wrapper2 .slider_block2{
+		margin: 0px;
+	}
+	.club_news .col-md-12{
+		padding: 0px;
+	}
+	.partners h1.club_h1{
+		margin: 0px !important;
+	}
+
+	/* section - club_project */
+	.club_project_block .my_container{
+		top: 22%;
+	}
+	.club_project .club_project_block .sircleIn {
+	    position: absolute;
+	    top: 20%;
+    	left: 22%;
+	}
+	.club_project_block{
+		margin: 70px auto;
+	}
 
 }
+
 @media screen and (max-width: 415px) { 
 	.logo a:last-child {
     	display: none;
@@ -379,6 +462,7 @@
 	.footer_top_bg .footer_form h1 {
 	    color: #FFFFFF;
 	    font: 24px 'Panton-Regular';
+	    padding-bottom: 10px;
 	}
 	.footer_bottom_bg .footer_soc .pull-right > nav > a{
 		margin-left: 12px;

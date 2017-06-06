@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link href="css/circle.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -126,7 +125,7 @@
                 <a href="#"><img src="img/gallery/photo_gallery1.jpg" alt="photo gallery" class="img-responsive"></a>
                 <span class="romanBl">22 ფოტო</span>
               </div>
-              <h4>ნაქალაქევი - გოგა ჩანადირის რეპორტაჟი</h4>
+              <a href="#"><h4>ნაქალაქევი - გოგა ჩანადირის რეპორტაჟი</h4></a>
             </div>
           </div>
           <div class="col-sm-6">
@@ -135,7 +134,7 @@
               <a href="#"><img src="img/gallery/photo_gallery2.jpg" alt="photo gallery" class="img-responsive"></a>
               <span class="romanBl">25 ფოტო</span>
               </div>
-              <h4>ფიროსმანი წინანდალში</h4>
+              <a href="#"><h4>ფიროსმანი წინანდალში</h4></a>
             </div>  
           </div>
 
@@ -145,7 +144,7 @@
               <a href="#"><img src="img/gallery/photo_gallery3.jpg" alt="photo gallery" class="img-responsive"></a>
               <span class="romanBl">12 ფოტო</span>
             </div>
-            <h4>ნაქალაქევი - გოგა ჩანადირის რეპორტაჟი</h4>
+            <a href="#"><h4>ნაქალაქევი - გოგა ჩანადირის რეპორტაჟი</h4></a>
             </div>           
           </div>
           <div class="col-sm-6">
@@ -154,7 +153,7 @@
                 <a href="#"><img src="img/gallery/photo_gallery4.jpg" alt="photo gallery" class="img-responsive"></a>
                 <span class="romanBl">15 ფოტო</span>
               </div>
-              <h4>მირზა გელოვანის სახლ-მუზეუმის გახსნა</h4>
+              <a href="#"><h4>მირზა გელოვანის სახლ-მუზეუმის გახსნა</h4></a>
               </div>             
           </div> 
       </div>
@@ -162,14 +161,24 @@
     <div class="row">
       <div class="col-md-12">
         <div class="pagin_wrap">
-          <div class="pagin">
-            <a href="#"><span></span></a>
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#"><span></span></a>
-          </div>
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true"><span class="pag_left_arrow"></span></span>
+                </a>
+              </li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true"><span class="pag_right_arrow"></span></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
@@ -216,7 +225,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="js/progress-circle.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   
   </body>

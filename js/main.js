@@ -92,29 +92,7 @@ $(window).resize(function(){
   }
 })
 
-
 //progressCircle
-  $('#circle').progressCircle({
-  nPercent        : 30,
-  showPercentText : true,
-  circleSize      : 142,
-  thickness       : 3
-});
-
-$('#circle2').progressCircle({
-  nPercent        : 50,
-  showPercentText : true,
-  circleSize      : 142,
-  thickness       : 3
-});
-
-$('#circle3').progressCircle({
-  nPercent        : 27,
-  showPercentText : true,
-  circleSize      : 142,
-  thickness       : 3
-});
-
 $('.vote form').on('click','.prog-circle', function(){
   $(this).parents('.sircleIn').next('.radio').find('input[name="vote"]').click()
 })
