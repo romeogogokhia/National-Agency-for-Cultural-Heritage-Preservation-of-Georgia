@@ -120,4 +120,4 @@ $('.vote form').on('click','.prog-circle', function(){
 })
 
 // dropdown mobile touch
-$( '.dropdown:has(ul)' ).doubleTapToGo();
+$( 'li.drop_down:has(ul)' ).doubleTapToGo();

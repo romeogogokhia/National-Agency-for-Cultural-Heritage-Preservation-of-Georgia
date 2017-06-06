@@ -151,10 +151,11 @@
 	}
 }
 @media screen and (max-width: 767px) {
-	.dropdown .secind_menu{
+	li.drop_down .secind_menu{
 		position: relative;
+		width: 100%;
 	}
-	.dropdown .secind_menu li a{
+	li.drop_down .secind_menu li a{
 		font-size:13px;
     	line-height: 49px;
 	}
