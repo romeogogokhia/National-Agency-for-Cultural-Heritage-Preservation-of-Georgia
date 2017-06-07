@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>კლუბი</title>
+    <title>რეგისტრაცია</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -77,21 +77,20 @@
   <section class="club_big_img_sec">
     <div class="container-fluid">
       <div class="row">
-        <div class="mySlider">           
+        <div class="forTxt">           
           <div class="slider_block cl">
-            <a href="#">
-              <img src="img/gallery/club_main_img.jpg" class="img-responsive">
-            </a>  
+            <div class="club_img_wrap">
+              <div class="club_img" style="background-image: url(img/gallery/club_main_img.jpg);"></div>
+            </div>
             <span class="over_block"></span>
             <div class="text">
               <div class="text_vertical">
-                <h1>გახდი კლუბის წევრი</h1>
-                <h2>გაიღე შემოწირულობა</h2>
-                <button type="button" class="Choose_package">
-                  აირჩიე პაკეტი
-                  <span class="btn_arrow_down"></span>
-                </button>
-                <h3>მეტის გაგება</h3>
+                <h1>რეგისტრაცია</h1>
+                <nav class="sl_nav">
+                  <a href="#">მთავარი</a>
+                  <span class="nav_arr_right"></span>
+                  <a href="#">რეგისტრაცია</a>
+                </nav>
               </div>
             </div>
           </div>   
@@ -103,65 +102,70 @@
   <!-- section - s_register -->
   <section class="s_register">
     <div class="container">
-      <div class="row">
-        <form action="#" name="register" method="get">
-          <div class="col-dm-12">
-            <h1 class="form_reg_header">1. პაკეტის არჩევა</h1>
-          </div>
-          <div class="col-md-6">
-            <div class="choose_package_bl">
-              <div class="choose_package_bl_top"></div>
-              <div class="choose_package_bl_cont">
-                <div class="radio radio-success">
-                    <input type="radio" name="radio1" id="radio1" value="option1">
-                    <label for="radio1">
-                        სტანდარტი
-                    </label>
-                </div>    
-                <p class="pull-right">50<span>₾</span></p>
-              </div>
-              <div class="choose_package_bl_cont2">
-                <p class="par">საქართველოს კულტურული მემკვიდრეობის დაცვის ეროვნული სააგენტოს  საგანმანათლებლო პროგრამის -„კულტურული მემკვიდრეობა ბავშვებს“ ფარგლებში, სოფელ ნიქოზში ადგილობრივი. </p>
-                <nav>
-                  <li>შემავალი საჩუქარი</li>
-                  <li>შემავალი საჩუქარი</li>
-                  <li>შემავალი საჩუქარი</li>
-                </nav>
+      <form action="#" name="register" method="get"> 
+          <div class="row">
+            <div class="col-md-12">                
+                <div class="form_reg_header">
+                  <h1>1. პაკეტის არჩევა</h1>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="choose_package_bl">
+                <div class="choose_package_bl_top"></div>
+                <div class="choose_package_bl_cont">
+                  <div class="radio radio-success">
+                      <input type="radio" name="radio1" id="radio1" value="option1">
+                      <label for="radio1">
+                          სტანდარტი
+                      </label>
+                  </div>    
+                  <p class="pull-right">50<span>₾</span></p>
+                </div>
+                <div class="choose_package_bl_cont2">
+                  <p class="par">საქართველოს კულტურული მემკვიდრეობის დაცვის ეროვნული სააგენტოს  საგანმანათლებლო პროგრამის -„კულტურული მემკვიდრეობა ბავშვებს“ ფარგლებში, სოფელ ნიქოზში ადგილობრივი. </p>
+                  <nav>
+                    <li>შემავალი საჩუქარი</li>
+                    <li>შემავალი საჩუქარი</li>
+                    <li>შემავალი საჩუქარი</li>
+                  </nav>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="choose_package_bl two">
-              <div class="choose_package_bl_top two"></div>
-              <div class="choose_package_bl_cont">
-                <div class="radio radio-success">
-                    <input type="radio" name="radio2" id="radio2" value="option2">
-                    <label for="radio2">
-                        VIP
-                    </label>
-                </div>    
-                <p class="pull-right">100<span>₾</span></p>
-              </div>
-              <div class="choose_package_bl_cont2">
-                <p class="par">საქართველოს კულტურული მემკვიდრეობის დაცვის ეროვნული სააგენტოს  საგანმანათლებლო პროგრამის -„კულტურული მემკვიდრეობა ბავშვებს“ ფარგლებში, სოფელ ნიქოზში ადგილობრივი. </p>
-                <nav>
-                  <li>შემავალი საჩუქარი</li>
-                  <li>შემავალი საჩუქარი</li>
-                  <li>შემავალი საჩუქარი</li>
-                </nav>
+            <div class="col-md-6">
+              <div class="choose_package_bl two">
+                <div class="choose_package_bl_top two"></div>
+                <div class="choose_package_bl_cont">
+                  <div class="radio radio-success">
+                      <input type="radio" name="radio1" id="radio2" value="option2">
+                      <label for="radio2">
+                          VIP
+                      </label>
+                  </div>    
+                  <p class="pull-right">100<span>₾</span></p>
+                </div>
+                <div class="choose_package_bl_cont2">
+                  <p class="par">საქართველოს კულტურული მემკვიდრეობის დაცვის ეროვნული სააგენტოს  საგანმანათლებლო პროგრამის -„კულტურული მემკვიდრეობა ბავშვებს“ ფარგლებში, სოფელ ნიქოზში ადგილობრივი. </p>
+                  <nav>
+                    <li>შემავალი საჩუქარი</li>
+                    <li>შემავალი საჩუქარი</li>
+                    <li>შემავალი საჩუქარი</li>
+                  </nav>
+                </div>
               </div>
             </div>
           </div>
           <div class="row">
-              <div class="col-dm-12">
-                  <h1 class="form_reg_header">2. პროექტის არჩევა</h1>
+              <div class="col-md-12">
+                  <div class="form_reg_header">
+                    <h1>2. პროექტის არჩევა</h1>
+                  </div>
               </div>
               <div class="col-md-12">
                 <div class="choose_proj_bl">
                   <div class="col-md-3">
                     <div class="choose_proj_bl_cont">
                       <div class="radio radio-success">
-                          <input type="radio" name="radio3" id="radio3" value="option3">
+                          <input type="radio" name="radio2" id="radio3" value="option3">
 
                           <label for="radio3"></label>
                       </div>   
@@ -183,12 +187,90 @@
                       </p>
                     </div> 
                   </div>
+              </div>
+            </div>              
+            <div class="col-md-12">
+                <div class="choose_proj_bl">
+                  <div class="col-md-3">
+                    <div class="choose_proj_bl_cont">
+                      <div class="radio radio-success">
+                          <input type="radio" name="radio2" id="radio4" value="option4">
 
+                          <label for="radio4"></label>
+                      </div>   
+                      <div class="reg_proj_bl">
+                        <div class="round_img" style="background-image: url(img/gallery/round_img1.jpg);"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="reg_proj_head">
+                      <h1>შულავერის გორა</h1>
+                      <h2>ძვ.წ. V-IV ათასწლეული</h2>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="reg_proj_desc">
+                      <p class="par">
+                        საქართველოს კულტურული მემკვიდრეობის დაცვის ეროვნული სააგენტოს  საგანმანათლებლო პროგრამის -„კულტურული მემკვიდრეობა ბავშვებს“ ფარგლებში, სოფელ ნიქოზში ადგილობრივი. 
+                      </p>
+                    </div> 
+                  </div>
+              </div>
+            </div>              
+            <div class="col-md-12">
+                <div class="choose_proj_bl">
+                  <div class="col-md-3">
+                    <div class="choose_proj_bl_cont">
+                      <div class="radio radio-success">
+                          <input type="radio" name="radio2" id="radio5" value="option5">
+
+                          <label for="radio5"></label>
+                      </div>   
+                      <div class="reg_proj_bl">
+                        <div class="round_img" style="background-image: url(img/gallery/round_img1.jpg);"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="reg_proj_head">
+                      <h1>შულავერის გორა</h1>
+                      <h2>ძვ.წ. V-IV ათასწლეული</h2>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="reg_proj_desc">
+                      <p class="par">
+                        საქართველოს კულტურული მემკვიდრეობის დაცვის ეროვნული სააგენტოს  საგანმანათლებლო პროგრამის -„კულტურული მემკვიდრეობა ბავშვებს“ ფარგლებში, სოფელ ნიქოზში ადგილობრივი. 
+                      </p>
+                    </div> 
+                  </div>
               </div>
             </div>
           </div>
-        </form>
-      </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="step_prog_bar_wrap">
+                <ul class="progressBar">
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              
+                <button type="button" class="Choose_package">
+                    დაბრუნება
+                    <span class="btn_arrow_down"></span>
+                </button>
+                <button type="button" class="Choose_package" disabled>
+                    გაგრძელება
+                    <span class="btn_arrow_down"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+      </form>
     </div> <!-- container -->
   </section>
 

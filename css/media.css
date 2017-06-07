@@ -26,7 +26,8 @@
 		width: 30%;
 		padding-left: 10px;
 	}
-	.form_block .navbar-nav>li>a {
+	.form_block .navbar-nav>li>a,
+	.navigacia .secind_menu li a{
     	font-size:13px;
     	line-height: 49px;
 	}
@@ -94,7 +95,8 @@
 		width: 100% !important;
 		margin: 0px !important;
 	}
-	.form_block .nav>li>a{
+	.form_block .nav>li>a,
+	.navigacia .secind_menu li a{
 		padding-left:8px;
 		padding-right: 8px;
 	}
