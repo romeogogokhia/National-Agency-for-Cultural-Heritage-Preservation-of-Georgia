@@ -224,7 +224,6 @@
                     <div class="choose_proj_bl_cont">
                       <div class="radio radio-success">
                           <input type="radio" name="radio2" id="radio5" value="option5">
-
                           <label for="radio5"></label>
                       </div>   
                       <div class="reg_proj_bl">
@@ -250,6 +249,96 @@
           </div>
           <div class="row">
             <div class="col-md-12">
+                <div class="form_reg_header">
+                  <h1>3. პირადი ინფორმაცია</h1>
+                </div>
+            </div>
+            <div class="col-md-12">
+              <div class="personal_info">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <fieldset>
+                      <label for="userName">სახელი</label>
+                      <input type="text" name="username" id="userName" required>
+                    </fieldset> 
+                  </div>
+                  <div class="col-sm-6">
+                    <fieldset>
+                      <label for="lastName">გვარი</label>
+                      <input type="text" name="lastname" id="lastName" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-sm-6">
+                    <fieldset>
+                      <label for="myDate">დაბადების თარიღი</label>
+                      <input type="date" name="date" id="myDate" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-sm-6">
+                    <fieldset>
+                      <label for="myCity">ქალაქი</label>
+                      <select name="city" id="myCity" required>
+                        <option>Africa</option>
+                        <option>America</option>
+                        <option>Australia</option>
+                        <option>China</option>
+                        <option>England</option>
+                        <option>Japan</option>
+                        <option selected>India</option>
+                        <option>Indonesia</option>
+                      </select>
+                    </fieldset>
+                  </div>
+                  <div class="col-sm-6">
+                    <fieldset>
+                      <label for="personalInfo">პირადი ნომერი</label>
+                      <input type="text" name="personal" id="personalInfo" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-sm-6">
+                    <fieldset>
+                      <label for="myAddress">მისამართი</label>
+                      <input type="address" name="address" id="myAddress" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-sm-6">
+                    <fieldset>
+                      <label for="myEmail">ელ.ფოსტა</label>
+                      <input type="email" name="email" id="myEmail" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-sm-6">
+                    <fieldset>
+                      <label for="myPhone">ტელეფონი</label>
+                      <input type="tel" name="phone" id="myPhone" required>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+                <div class="form_reg_header">
+                  <h1>4. წესები და პირობები</h1>
+                </div>
+            </div>
+            <div class="col-md-12">
+              <div class="terms_And_Conditions">
+                <span class="warning_icon"></span>
+                <h2>გთხოვთ, გადახდამდე გაეცნოთ და დაადასტუროთ პირობები</h2>
+                <p>საქართველოს კულტურული მემკვიდრეობის  დაცვა  და განვითარება უძველეს ისტორიაში იღებს სათავეს.  ძეგლთა დაცვის სფერომ კი როგორც დარგმა  ჩამოყალიბება   XIX  საუკუნეში  დაიწყო. ამ პერიოდში უკვე  ცალკეული მეცნიერები და საზოგადო მოღვაწეები  მნიშვნელოვან როლს ასრულებენ კულტურული მემკვიდრეობის ძეგლების შესწავლისა და დაცვის საქმეში – აყალიბებენ სხვადასხვა გაერთიანებებს, საზოგადოებებსა და ორგანიზაციებს.  მიზანად ისახავენ შემორჩენილ სიძველეთა თავმოყრას,  შენარჩუნებას,  კვლევასა და დაცვას. 1921 წელს სახალხო კომისარიატთან შეიქმნა სამუზეუმო სიძველეებისა და ხელოვნების ძეგლთა დაცვის სექცია. ამ დროიდან საქართველოს კულტურის ძეგლებს სახელმწიფო იცავდა და   1923-1924 წლებში განსაკუთრებული იყო მისი როლი ქვეყანაში ანტირელიგიური კამპანიის დროს. 1934 წელს საქართველოს მთავრობის დადგენილებით შეიქმნა კულტურისა და ძეგლთა დაცვის კომიტეტი.</p>
+                <fieldset>
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox">ვეთანხმები</label>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-12">
               <div class="step_prog_bar_wrap">
                 <ul class="progressBar">
                   <li class="active"></li>
@@ -259,11 +348,11 @@
                   <li></li>
                 </ul>
               
-                <button type="button" class="Choose_package">
+                <button type="submit" class="Choose_package">
                     დაბრუნება
                     <span class="btn_arrow_down"></span>
                 </button>
-                <button type="button" class="Choose_package" disabled>
+                <button type="submit" class="Choose_package" disabled>
                     გაგრძელება
                     <span class="btn_arrow_down"></span>
                 </button>
