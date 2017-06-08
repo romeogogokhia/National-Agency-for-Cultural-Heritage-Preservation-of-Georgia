@@ -288,12 +288,12 @@ li.drop_down{
   left: 1.1%;
   width: 97.8%;
   height: 95%;
-  -webkit-background: rgba(0,0,0,.6);
-    -moz-background: rgba(0,0,0,.6);
-      -ms-background: rgba(0,0,0,.6);
-        -o-background: rgba(0,0,0,.6);
-          background: rgba(0,0,0,.6);
-            z-index: 1;
+  -webkit-background: rgba(49, 45,43,.65);
+    -moz-background: rgba(49, 45,43,.65);
+      -ms-background: rgba(49, 45,43,.65);
+        -o-background: rgba(49, 45,43,.65);
+          background: rgba(49, 45,43,.65);
+  z-index: 1;
 }
 .text{
   position: absolute;
@@ -1134,6 +1134,19 @@ li.drop_down{
   max-width: 100%;
   max-height: 758px;
 }
+.slider_block.cl .over_block {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 96%;
+    height: 90%;
+    -webkit-background: rgba(44,39,37,0.65);
+      -moz-background: rgba(44,39,37,0.65);
+        -ms-background: rgba(44,39,37,0.65);
+          -o-background: rgba(44,39,37,0.65);
+            background: rgba(44,39,37,0.65);
+    z-index: 1;
+}
 
 
 .club_img_wrap{
@@ -1443,6 +1456,10 @@ p.autorize_sircle_in span{
 }
 
 /*start --- club_partners.html | კლუბი*/
+.forTxt .slider_block.cl .over_block{
+  top:18%;
+  height: 64%;
+}
 .forTxt .text_vertical h1{
   display: block;
   font-size: 29.79px;
