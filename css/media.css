@@ -163,6 +163,11 @@
 	    top: 17%;
 	    left: 15%;
 	}
+
+	/*registr1step.html*/
+	.s_register .choose_proj_bl{
+		padding: 15px 0px 18%;
+	}
 }
 @media screen and (max-width: 991px) {
 	.club_news .mySlider3 .slick-dots {
@@ -183,6 +188,13 @@
 	    position: absolute;
 	    top: 4%;
 	    left: 6%;
+	}
+	/* registr1step.html */
+	.s_register .choose_proj_bl{
+		padding: 15px 0px 0%;
+	}
+	.choose_proj_bl .reg_proj_desc p.par{
+		padding-top: 20px;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -283,7 +295,7 @@
 	.slider_wrapper{
 		width: 100% !important;
 	}
-	.projects_block .nav_projects a{
+	.projects_block .nav_projects p{
 		padding: 0px;
 		font-size: 13px;
 	}
@@ -427,17 +439,26 @@
 
 	/* section - club_project */
 	.club_project_block .my_container{
-		top: 22%;
+		top: 27%;
 	}
 	.club_project .club_project_block .sircleIn {
 	    position: absolute;
-	    top: 20%;
-    	left: 22%;
+	    top: 23%;
+	    left: 23%;
 	}
 	.club_project_block{
 		margin: 70px auto;
 	}
+}
 
+/* registr1step.html */
+@media screen and (max-width: 468px) {
+	.choose_proj_bl .choose_proj_bl_cont{
+		width: 100%;
+	}
+	.choose_proj_bl .reg_proj_head {
+    	float: left;
+	}
 }
 
 @media screen and (max-width: 415px) { 

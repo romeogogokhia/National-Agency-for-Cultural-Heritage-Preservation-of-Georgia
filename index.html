@@ -43,7 +43,9 @@
             <div class="form-group pull-right">
               <div class="search_wrap">
                 <form action="#" method="get" name="form">
-                    <button type="submit" class="icon"><span><i class="fa fa-search"></i></span></button>
+                    <button type="submit" class="icon"><span>
+                      <i class="fa fa-search"></i></span>
+                    </button>
                     <input type="search" name="search" id="search"/>
                 </form>
               </div>
@@ -146,12 +148,78 @@
           <h1>პროექტები</h1>
         </div>
         <nav class="nav_projects text-center">
-          <a href="#" class="active">მიმდინარე</a>
-          <a href="#">დასრულებული</a>
-          <a href="#">დაგეგმილი</a>
+          <p data_id="0" class="active">მიმდინარე</p>
+          <p data_id="1">დასრულებული</p>
+          <p data_id="2">დაგეგმილი</p>
         </nav>
-        <div class="slider_wrapper2">
-        <span class="sl_arrow_down"></span>
+        <div data_id="0" class="slider_wrapper2">
+          <span class="sl_arrow_down"></span>
+          <div class="mySlider2">
+            <div class="slider_block2">
+              <a href="#">
+                <img src="img/gallery/sl2Img1.png" class="">
+              </a>
+              <span class="romanBl">V-VI სს</span>
+              <div class="text2">
+                <a href="#"><p>aუჯარმის არქიტექტორული ანსამბლი</p></a>
+              </div>
+            </div>
+            <div class="slider_block2">
+              <a href="#">
+                <img src="img/gallery/sl2Img2.png" class="">
+              </a>
+              <span class="romanBl">VII სს</span>
+              <div class="text2">
+                <a href="#"><p>უფლისციხის არქიტექტორული მუზეუმ-ნაკრძალი</p></a>
+              </div>
+            </div>
+            <div class="slider_block2">
+              <a href="#">
+                <img src="img/gallery/sl2Img3.png" class="">
+              </a>
+              <span class="romanBl">XII სს</span>
+              <div class="text2">
+                <a href="#"><p>ვარძიის არქიტექტორული მუზეუმ-ნაკრძალი</p></a>
+              </div>
+            </div>
+          </div>
+        </div>        
+
+        <div data_id="1" class="slider_wrapper2 active">
+          <span class="sl_arrow_down"></span>
+          <div class="mySlider2">
+            <div class="slider_block2">
+              <a href="#">
+                <img src="img/gallery/sl2Img1.png" class="">
+              </a>
+              <span class="romanBl">V-VI სს</span>
+              <div class="text2">
+                <a href="#"><p>უჯარმის არქიტექტორული ანსამბლი</p></a>
+              </div>
+            </div>
+            <div class="slider_block2">
+              <a href="#">
+                <img src="img/gallery/sl2Img2.png" class="">
+              </a>
+              <span class="romanBl">VII სს</span>
+              <div class="text2">
+                <a href="#"><p>უფლისციხის არქიტექტორული მუზეუმ-ნაკრძალი</p></a>
+              </div>
+            </div>
+            <div class="slider_block2">
+              <a href="#">
+                <img src="img/gallery/sl2Img3.png" class="">
+              </a>
+              <span class="romanBl">XII სს</span>
+              <div class="text2">
+                <a href="#"><p>ვარძიის არქიტექტორული მუზეუმ-ნაკრძალი</p></a>
+              </div>
+            </div>
+          </div>
+        </div>        
+
+        <div data_id="2" class="slider_wrapper2">
+          <span class="sl_arrow_down"></span>
           <div class="mySlider2">
             <div class="slider_block2">
               <a href="#">
@@ -368,8 +436,41 @@
         circleSize      : 142,
         thickness       : 3
       });
+
+
+      $(".nav_projects").on('click','p',function(){
+        var id = $(this).attr('data_id')
+        $(".nav_projects p").removeClass('active')
+        $(this).addClass('active')
+        $(".slider_wrapper2").removeClass('active')
+        $(".slider_wrapper2[data_id='"+id+"']").addClass('active')
+        $('.mySlider2').slick('setPosition'); 
+      });
+
+      // $('.fa.fa-search').click(function(){
+      //   $('#search').animate({
+      //                     'border' : '1px solid #d4d5d6',
+      //                     'width'  : '300px',
+      //                   },800)
+      // });
+
+        $('.icon').on('click','.fa.fa-search', function(event){
+          //alert(1)
+            $('#search').animate({
+              'border':'1px solid #d4d5d6',
+              'width':'300px'
+            },
+            {
+            duration: 100,
+            complete: function() {
+              $( this ).focus();
+            }
+          });
+            
+          });
       
     });
+    
     </script>
   
   </body>

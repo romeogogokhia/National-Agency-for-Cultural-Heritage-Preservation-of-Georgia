@@ -155,13 +155,12 @@ header{
 .search_wrap input#search:focus, 
 .search_wrap input#search:active{
   outline:none;
-  width: 100%;
+  width: 300px;
   border: 1px solid #d4d5d6;
 }
  
-.search_wrap:hover input#search{
-  width: 100%;
-  border: 1px solid #d4d5d6;
+.search_wrap input#search{
+  
 }
 .search_wrap:hover .icon{
   color: #93a2ad;
@@ -399,27 +398,32 @@ li.drop_down{
 .nav_projects{
   margin: 40px 0px 37px 0px;
 }
-.nav_projects a{
+.nav_projects p{
   display: inline-block;
   color:#6d737c;
   font:16px 'dejavu-sans', serif;
+  cursor: pointer;
 }
-.nav_projects a+a{
+.nav_projects p+p{
   margin-left: 33px;
 }
-.nav_projects a.active{
+.nav_projects p.active{
   color:#4a4f57;
 }
-.nav_projects a:hover{
+.nav_projects p:hover{
   color:#4a4f57
 }
 
 /*slider_wrapper2*/
+.slider_wrapper2.active{
+  display: block;
+}
 .slider_wrapper2{
   max-width: 1140px;
   max-height: 300px;
   margin:0 auto;
   position: relative;
+  display: none;
 }
 .sl_arrow_down{
   position: absolute;
@@ -856,6 +860,12 @@ li.drop_down{
   max-width: 360px;
   max-height: 300px;
 }
+
+.g_img_bl a:not(:first-child) {
+  display: none;
+}
+
+
 .gallery{
   padding-top: 56px;
   padding-bottom: 120px;
@@ -1383,6 +1393,7 @@ li.drop_down{
 }
 
 .club_project_block .sircleIn{
+    display: block;
     position: absolute;
     top: 20%;
     left: 22%;
@@ -1393,8 +1404,9 @@ li.drop_down{
   top: 22%;
   text-align: center;
   width: 100%;
+  display: none;
 }
-.my_container > div {
+.my_container > .autorize_sircle{
   display: inline-block;
 }
 
@@ -1418,9 +1430,7 @@ p.autorize_sircle_in span{
   height: 28px;
   display: table-cell;
 }
-.club_project_block .sircleIn{
-  display: block;
-}
+
 .club_project_block .prog-circle .percenttext{
   font:30px 'Panton-bold', serif;
 }
@@ -1659,12 +1669,11 @@ p.autorize_sircle_in span{
 
 /* .choose_proj_bl_cont */
 .choose_proj_bl{
-  width: 100%;
-  height: 208px;
-  padding:25px 35px;
   border: 1px solid #3373b4;
   cursor: pointer;
+  padding: 25px 0px 16%; 
   margin-bottom: 18px;
+  width: 100%;
 }
 .reg_proj_bl{
   text-align: center;
@@ -1688,6 +1697,8 @@ p.autorize_sircle_in span{
 }
 .choose_proj_bl_cont{
   margin-top: -2px;
+  float: left;
+  width: 58%;
 }
 .s_register .choose_proj_bl_cont .radio label{
   margin-top: 62px;
@@ -1695,6 +1706,7 @@ p.autorize_sircle_in span{
 .reg_proj_head{
   margin-top: 45px;
   line-height: 25px;
+  float: right;
 }
 .terms_And_Conditions h2,
 .terms_And_Conditions label,
@@ -1716,9 +1728,9 @@ p.autorize_sircle_in span{
    overflow: hidden;
 }
 .reg_proj_desc p.par{
-   color: #5a5a5b;
-   font-family: 'BPG-Arial';
-   font-size: 14px;
+    color: #5a5a5b;
+    font-family: 'BPG-Arial';
+    font-size: 14px;
 }
 
 /*personal info*/
@@ -1750,7 +1762,7 @@ p.autorize_sircle_in span{
 /* terms_And_Conditions */
 .terms_And_Conditions{
   margin-bottom: 58px;
-  padding: 64px 194px;
+  padding: 64px 0px;
   -webkit-box-shadow: 0px 0px 1px #7f7f7f;
     -moz-box-shadow: 0px 0px 1px #7f7f7f;
       -ms-box-shadow: 0px 0px 1px #7f7f7f;
@@ -1775,6 +1787,8 @@ p.autorize_sircle_in span{
   font-size: 15px;
   line-height: 21px;
   padding: 25px 0px;
+  max-width: 752px;
+  margin: auto;
 }
 .terms_And_Conditions fieldset{
   text-align: center;

@@ -192,7 +192,7 @@
           </div>
 
           <div class="sircleIn">
-            <div id="sircleIn"></div>
+            <div id="circle1"></div>
             <span class="circleVote">
               123345 ხმა
             </span>
@@ -240,7 +240,7 @@
           </div>
 
           <div class="sircleIn">
-            <div id="circle2"></div>
+            <div id="circle3"></div>
             <span class="circleVote">
               123345 ხმა
             </span>
@@ -264,7 +264,7 @@
           </div>
 
           <div class="sircleIn">
-            <div id="circle2"></div>
+            <div id="circle4"></div>
             <span class="circleVote">
               123345 ხმა
             </span>
@@ -361,7 +361,7 @@
     $( document ).ready(function() {
 
       //progressCircle
-        $('#circle').progressCircle({
+        $('#circle1').progressCircle({
         nPercent        : 30,
         showPercentText : true,
         circleSize      : 142,
@@ -382,6 +382,12 @@
         thickness       : 3
       });
       
+      $('#circle4').progressCircle({
+        nPercent        : 27,
+        showPercentText : true,
+        circleSize      : 142,
+        thickness       : 3
+      });
     });
     </script>
   </body>
