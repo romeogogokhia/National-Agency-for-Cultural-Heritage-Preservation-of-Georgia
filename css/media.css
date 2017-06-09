@@ -125,7 +125,7 @@
 	.cab_button .club_user_icon{
 		margin: 0px;
 	}
-	.cab_button.pull-right{
+	.ordering .cab_button{
 		padding: 15px;
 	}
 
@@ -354,10 +354,9 @@
 	.ordering .club_menu li a{
 	   line-height: 75px;
 	}
-	.cab_button.pull-right{
+	.ordering .cab_button{
 	   margin: auto;
 	   display: block;
-	   float: none !important;
 	}
 	.club_nav .float_right.colap{
 	   width: 100% !important;
@@ -367,6 +366,9 @@
 	}
 	.ordering{
 	   float: none !important;
+	}
+	.club_menu .cabLi {
+	  border-top: 1px solid #000;
 	}
 	.club_menu.pull-left{
 	   margin-right: -12px;

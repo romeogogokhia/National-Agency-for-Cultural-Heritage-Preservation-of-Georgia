@@ -188,7 +188,7 @@ li.drop_down{
   position: absolute;
   background-color: #fff;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 15;
 }
 .navbar-nav li:hover .secind_menu{
   display: block;
@@ -222,6 +222,7 @@ li.drop_down{
   display: block;
 }
 .red_block .btn{
+  padding:12px;
   height: 50px;
   width: 50px;
   border:2px solid #fff;
@@ -1129,41 +1130,13 @@ li.drop_down{
 .club_menu li:hover .secind_menu{
   display: block;
 }
-
-.slider_block.cl{
-  max-width: 100%;
-  max-height: 758px;
-}
-.slider_block.cl .over_block {
-    position: absolute;
-    top: 5%;
-    left: 2%;
-    width: 96%;
-    height: 90%;
-    -webkit-background: rgba(44,39,37,0.65);
-      -moz-background: rgba(44,39,37,0.65);
-        -ms-background: rgba(44,39,37,0.65);
-          -o-background: rgba(44,39,37,0.65);
-            background: rgba(44,39,37,0.65);
-    z-index: 1;
-}
-
-
-.club_img_wrap{
-  text-align: center;
-  position: relative;
-  max-width: 100%;
-  max-height: 210px;
-}
-.club_img{
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; 
-      /* make it responsive */
-    max-width: 100%;
-    width:100%;
-    height:210px;
-    display:block;
+.club_menu .cab_button {
+  line-height: 10px !important;
+  float: none !important;
+  display: block;
+  margin: 20px auto;
+  padding: 20px 22px; 
+  max-width: 155px; 
 }
 
 .club_nav{
@@ -1214,8 +1187,12 @@ li.drop_down{
         -o-transition: color .3s ease;
           transition: color .3s ease;
 }
-.cab_button span:hover:nth-child(2){
+.cab_button span:nth-child(2){
   color:#3373B4;
+}
+.cab_button span:hover:nth-child(2){
+  color:#333;
+  text-decoration: underline;
 }
 .club_user_icon{
   background-image: url(../img/icons/club_user_icon.png);
@@ -1223,7 +1200,7 @@ li.drop_down{
   width: 18px;
   height: 18px;
   display: inline-block;
-  margin-right: 14px;
+  margin-right: 12px;
 }
 .club_nav .lang{
   margin-top: 47px;
@@ -1233,7 +1210,41 @@ li.drop_down{
   color: #3373b4;
 }
 
+
 /*section - club_big_img_sec*/
+.slider_block.cl{
+  max-width: 100%;
+  max-height: 758px;
+}
+.slider_block.cl .over_block {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 96%;
+    height: 90%;
+    -webkit-background: rgba(44,39,37,0.65);
+      -moz-background: rgba(44,39,37,0.65);
+        -ms-background: rgba(44,39,37,0.65);
+          -o-background: rgba(44,39,37,0.65);
+            background: rgba(44,39,37,0.65);
+    z-index: 1;
+}
+.club_img_wrap{
+  text-align: center;
+  position: relative;
+  max-width: 100%;
+  max-height: 210px;
+}
+.club_img{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  max-width: 100%;
+  width:100%;
+  height:210px;
+  display:block;
+}
+
 .club_big_img_sec .text_vertical h1{
   color:#ffffff;
   font-family: 'Panton-bold', serif;
