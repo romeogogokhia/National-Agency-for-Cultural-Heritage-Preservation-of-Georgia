@@ -2012,9 +2012,18 @@ span.psw {
 
 
 .personal_info select{
-  appearance:none;
-    -moz-appearance:none; /* Firefox */
-    -webkit-appearance:none; /* Safari and Chrome */
+    padding: 6px 18px;
+    font-size: 16px;
+    border: 0;
+    height: 50px;
+    background: url(../img/icons/select_arrow.png) no-repeat right #eee;
+    -webkit-appearance: none;
+    background-position-x: 95%;
+    -webkit-appearance:none; 
+      -moz-appearance:none; 
+        -ms-appearance:none;
+          -o-appearance:none;
+             appearance:none;
 }
 
 
