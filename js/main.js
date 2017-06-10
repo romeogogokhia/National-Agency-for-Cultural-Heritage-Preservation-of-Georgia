@@ -99,3 +99,16 @@ $('.vote form').on('click','.prog-circle', function(){
 
 // dropdown mobile touch
 $( 'li.drop_down:has(ul)' ).doubleTapToGo();
+
+$('.icon').on('click','.fa.fa-search', function(event){
+  $('#search').animate({
+    'border':'1px solid #d4d5d6',
+    'width':'300px'
+  },
+  {
+  duration: 100,
+  complete: function() {
+     $( this ).focus();
+  }
+  });
+});

@@ -415,15 +415,17 @@ li.drop_down{
 }
 
 /*slider_wrapper2*/
-.slider_wrapper2.active{
+.projects_block.index .slider_wrapper2.active{
   display: block;
+}
+.projects_block.index .slider_wrapper2{
+  display: none;
 }
 .slider_wrapper2{
   max-width: 1140px;
   max-height: 300px;
   margin:0 auto;
   position: relative;
-  display: none;
 }
 .sl_arrow_down{
   position: absolute;
@@ -789,12 +791,11 @@ li.drop_down{
   color:#FFFFFF;
   font:12px 'dejavu-sans', serif;
 }
-.footer_soc .pull-right > nav > a{
+.social_net a{
   border-radius:30px;
   height:30px;
   width:30px;
-  padding:6px 8px;
-  margin-left: 14px;
+  padding:6px 8px; 
   color:#333;
   background: #949699;
   display: inline-block;
@@ -802,7 +803,10 @@ li.drop_down{
   text-align: center;
   text-decoration: none;
 }
-.footer_soc .pull-right > nav > a:hover{
+.social_net a+a{
+  margin-left: 6px;
+}
+.social_net a:hover{
   color:#fff;
 }
 
@@ -861,10 +865,9 @@ li.drop_down{
   max-height: 300px;
 }
 
-.g_img_bl a:not(:first-child) {
+.gallery.photo .g_img_bl a:not(:first-child) {
   display: none;
 }
-
 
 .gallery{
   padding-top: 56px;
@@ -1949,10 +1952,69 @@ span.psw {
 }
 
 /* news.html */
-/*section - s_news */
+/*section - .news.marg */
 .news.marg{
   margin-top: 15px;
 }
 .news.marg .pagin_wrap{
   margin: 50px 0px  46px 0px;
 }
+
+/* news_inner.html */
+.gallery.news_in{
+  padding-bottom: 70px;
+}
+.gallery.news_in .proj_bl_In h1{
+  color: #292d33;
+  font-family: 'Panton-Regular';
+  font-size: 18px;
+  padding: 0px;
+}
+.gallery.news_in .proj_bl{
+  margin-bottom: 20px;
+}
+.gallery.news_in .newsDate{
+  margin-top:18px;
+  float: none;
+}
+.gallery.news_in .newsDate li:first-child {
+  /*margin:18px 10px 13px 0px; */
+}
+.gallery.news_in p.par{
+  color: #292d33;
+  font-family: 'dejavu-sans';
+  font-size: 14px;
+  line-height: 15px;
+}
+.gallery.news_in  .social_net  a {
+  background: #9c9ea1;
+  color:#fff;
+}
+.gallery.news_in  .social_net{
+  margin: 30px 0px;
+}
+.gallery.news_in .social_net  a:hover {
+  color: #333;
+}
+.hr.news_in{
+  width: 100%;
+  margin: 0px;
+}
+.news.news_in{
+  padding: 45px 0px 128px;
+}
+.news.news_in h1{
+  color: #3a3d43;
+  font-family: 'Panton-bold';
+  font-size: 25.05px;
+  margin: 0px;
+}
+
+
+.personal_info select{
+  appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+}
+
+

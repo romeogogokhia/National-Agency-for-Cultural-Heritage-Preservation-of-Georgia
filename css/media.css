@@ -174,10 +174,22 @@
 	    bottom: -10px;
 	    left: 47px;
 	}
+
 	/*projects.html > pagination*/
 	.pagin_wrap.ml{
 		margin-left: 42px;
 	}
+
+	/* projects_inner.html */
+	.gallery .proj_bl_cost{
+		max-width: 100%;
+	}
+	.gallery .gallery_img_bl {
+	    max-height: 100%; 
+	    max-width: 100%; 
+	    position: relative;
+	}
+
 
 	/*club.html*/
 	/* section - club_project */

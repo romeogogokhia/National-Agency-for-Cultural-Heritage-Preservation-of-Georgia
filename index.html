@@ -143,7 +143,7 @@
   <!-- PROJECTS -->
   <div class="container">
     <div class="row">
-      <div class="projects_block">
+      <div class="projects_block index">
         <div class="projects text-center">
           <h1>პროექტები</h1>
         </div>
@@ -392,7 +392,7 @@
         <div class="footer_soc">
           <small>&copy; ყველა უფლება დაცულია</small>              
           <div class="pull-right">
-            <nav>
+            <nav class="social_net">
               <a href="#" class="fa fa-play"></a>
               <a href="#" class="fa fa-twitter"></a>
               <a href="#" class="fa fa-facebook"></a>
@@ -405,7 +405,7 @@
 </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="jqueryPlugins/DoubleTapToGo.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
@@ -438,36 +438,18 @@
       });
 
 
-      $(".nav_projects").on('click','p',function(){
+      $(".projects_block.index .nav_projects").on('click','p',function(){
         var id = $(this).attr('data_id')
-        $(".nav_projects p").removeClass('active')
+        $(".projects_block.index .nav_projects p").removeClass('active')
         $(this).addClass('active')
-        $(".slider_wrapper2").removeClass('active')
-        $(".slider_wrapper2[data_id='"+id+"']").addClass('active')
-        $('.mySlider2').slick('setPosition'); 
+        $(".projects_block.index .slider_wrapper2").removeClass('active')
+        $(".projects_block.index .slider_wrapper2[data_id='"+id+"']").addClass('active')
+        $('.projects_block.index .slider_wrapper2 .mySlider2').slick('setPosition'); 
       });
 
-      // $('.fa.fa-search').click(function(){
-      //   $('#search').animate({
-      //                     'border' : '1px solid #d4d5d6',
-      //                     'width'  : '300px',
-      //                   },800)
-      // });
 
-        $('.icon').on('click','.fa.fa-search', function(event){
-          //alert(1)
-            $('#search').animate({
-              'border':'1px solid #d4d5d6',
-              'width':'300px'
-            },
-            {
-            duration: 100,
-            complete: function() {
-              $( this ).focus();
-            }
-          });
-            
-          });
+
+
       
     });
     
