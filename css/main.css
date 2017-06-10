@@ -577,7 +577,7 @@ li.drop_down{
   bottom:0px;
   right:0px;
 }
-.mews h1{
+.news h1{
   text-align: center;
   margin: 112px 0px 0px 0px;
   color:#292d33;
@@ -625,7 +625,7 @@ li.drop_down{
 .news_block a{
   
 }
-.mews .arrRight{
+.news .arrRight{
   margin-top: 10px;
   float: right;
 }
@@ -1946,4 +1946,13 @@ span.psw {
   color: #3373b4;
   font-size: 12px;
   float: right;
+}
+
+/* news.html */
+/*section - s_news */
+.news.marg{
+  margin-top: 15px;
+}
+.news.marg .pagin_wrap{
+  margin: 50px 0px  46px 0px;
 }
