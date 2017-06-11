@@ -105,7 +105,7 @@
   <!-- section - s_register -->
   <section class="s_register">
     <div class="container">
-      <form action="#" name="register" method="get"> 
+      <form action="#" name="register" method="post" id="myForm"> 
           <div class="row">
             <div class="col-md-12">                
                 <div class="form_reg_header">
@@ -252,34 +252,35 @@
               <div class="personal_info">
                 <div class="row">
                   <div class="col-sm-6">
+                    <div class="text-center js_form_masssage"></div>
                     <fieldset>
                       <label for="userName">სახელი</label>
-                      <input type="text" name="username" id="userName" required>
+                      <input type="text" name="username" id="userName">
                     </fieldset> 
                   </div>
                   <div class="col-sm-6">
                     <fieldset>
                       <label for="lastName">გვარი</label>
-                      <input type="text" name="lastname" id="lastName" required>
+                      <input type="text" name="lastname" id="lastName">
                     </fieldset>
                   </div>
                   <div class="col-sm-6">
                     <fieldset>
                       <label for="datepicker">დაბადების თარიღი</label>
-                      <input type="text" name="date" id="datepicker" >
+                      <input type="text" name="date" id="datepicker">
                     </fieldset>
                   </div>
                   <div class="col-sm-6">
                     <fieldset>
                       <label for="myCity">ქალაქი</label>
-                      <select name="city" id="myCity" required>
+                      <select name="city" id="myCity">
                         <option>Africa</option>
                         <option>America</option>
                         <option>Australia</option>
                         <option>China</option>
                         <option>England</option>
                         <option>Japan</option>
-                        <option selected>India</option>
+                        <option>India</option>
                         <option>Indonesia</option>
                       </select>
                     </fieldset>
@@ -287,25 +288,25 @@
                   <div class="col-sm-6">
                     <fieldset>
                       <label for="personalInfo">პირადი ნომერი</label>
-                      <input type="text" name="personal" id="personalInfo" required>
+                      <input type="number" pattern= "[0-9]{13}" name="personal" id="personalInfo" >
                     </fieldset>
                   </div>
                   <div class="col-sm-6">
                     <fieldset>
                       <label for="myAddress">მისამართი</label>
-                      <input type="address" name="address" id="myAddress" required>
+                      <input type="text" name="address" id="myAddress">
                     </fieldset>
                   </div>
                   <div class="col-sm-6">
                     <fieldset>
                       <label for="myEmail">ელ.ფოსტა</label>
-                      <input type="email" name="email" id="myEmail" required>
+                      <input type="email" name="email" id="myEmail">
                     </fieldset>
                   </div>
                   <div class="col-sm-6">
                     <fieldset>
                       <label for="myPhone">ტელეფონი</label>
-                      <input type="tel" name="phone" id="myPhone" required>
+                      <input type="tel" pattern="[0-9]{9}" name="phone" id="myPhone">
                     </fieldset>
                   </div>
                 </div>
@@ -401,12 +402,88 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="jqueryPlugins/jquery-ui.js"></script>  
+    <script src="jqueryPlugins/jquery.validate.min.js"></script>  
+
       <script>
 
       $( function() {
         $( "#datepicker" ).datepicker({
           dateFormat: 'dd/mm/yy',
         });
+      });
+
+
+
+
+      $("#myForm").validate({
+
+          rules:{
+            username: {
+              required: true
+            },
+            lastname: {
+              required: true
+            },            
+            date: {
+              required: true
+            },
+            city: {
+              required: true
+            },            
+            personal: {
+              required: true
+            },
+            address: {
+              required: true
+            },            
+            email: {
+              required: true,
+              email: true
+            },
+            phone: {
+              required: true
+            }
+  
+          },          
+          messages: {
+            username: {
+              required: "სახელი სავალდებულოა შესავსებად"
+            },            
+            lastname: {
+              required: "გვარი სავალდებულოა შესავსებად"
+            },            
+            date: {
+              required: "დაბადების დღე სავალდებულოა შესავსებად"
+            },            
+            city: {
+              required: "ქალაქი სავალდებულოა შესავსებად"
+            },            
+            personal: {
+              required: "პირადი იდენტიფიკატორი სავალდებულოა შესავსებად"
+            },            
+            address: {
+              required: "მისამართი სავალდებულოა შესავსებად"
+            },            
+            email: {
+              required: "იმეილი სავალდებულოა შესავსებად",
+              email: "გთხოვთ კორეკტული იმეილი შეიტანე"
+            },            
+            phone: {
+              required: "ტელეფონი სავალდებულოა შესავსებად"
+            },
+          },
+          focusCleanup: true,
+          focusInvalid: false,
+          invalidHandler:function(event, validator){
+            $('.js_form_masssage').text('გთხოვთ შეასწორეთ შეცდომები.');
+          },
+          onkeyup: function(element) {
+            $('.js_form_masssage').text('');
+          },
+          errorPlacement: function(error, element){
+            return true;
+          }
+
       });
 
     </script>

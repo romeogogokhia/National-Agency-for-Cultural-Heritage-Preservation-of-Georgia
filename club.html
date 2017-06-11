@@ -279,41 +279,52 @@
 
 <!-- section - partners -->
 <section class="partners">
-  <div class="container">
-    <div class="row">
-        <div class="col-md-12 text-center">
-          <h1 class="club_h1">პარტნიორები</h1>
-        </div>
-
-  <div class="col-sm-4 col-md-2">
+  <div class="">
+    <div class="">
+      <div class=" text-center">
+        <h1 class="club_h1">პარტნიორები</h1>
+      </div>
+      <div class="">
+        <div class="slider_wrapper4">
+          <div class="mySlider4">
+            <div class="">
+              <div class="partn_img_wrap">
+                <a href="#"><img src="img/icons/unisef.jpg" alt="irao" class="img-responsive"></a>
+              </div>
+            </div>
+            <div class="">
+              <div class="partn_img_wrap">
+                <a href="#"><img src="img/icons/bank_of_gergia.jpg" alt="bank of gergia" class="img-responsive"></a>
+              </div> 
+            </div>
+            <div class="">
           <div class="partn_img_wrap">
-            <span class="helper"></span><a href="#"><img src="img/icons/unisef.jpg" alt="irao" class="img-responsive"></a>
-          </div>
-   </div>      
-<div class="col-sm-4 col-md-2">
-          <div class="partn_img_wrap">
-            <span class="helper"></span><a href="#"><img src="img/icons/bank_of_gergia.jpg" alt="bank of gergia" class="img-responsive"></a>
+            <a href="#"><img src="img/icons/tbc_bank.jpg" alt="tbc bank" class="img-responsive"></a>
           </div> 
-          </div>
-<div class="col-sm-4 col-md-2">
+          </div>           
+          <div class="">
           <div class="partn_img_wrap">
-            <span class="helper"></span><a href="#"><img src="img/icons/tbc_bank.jpg" alt="tbc bank" class="img-responsive"></a>
+            <a href="#"><img src="img/icons/tbc_bank.jpg" alt="tbc bank" class="img-responsive"></a>
           </div>  
-          </div>
-<div class="col-sm-6 col-md-2">
+          </div>           
+          <div class="">
           <div class="partn_img_wrap">
-            <span class="helper"></span><a href="#"><img src="img/icons/irao.jpg" alt="irao" class="img-responsive"></a>
-          </div>  
+            <a href="#"><img src="img/icons/wissol.png" alt="wissol" class="img-responsive"></a>
           </div>
-<div class="col-sm-6 col-md-2">
+          </div>
+          <div class="">
           <div class="partn_img_wrap">
-            <span class="helper"></span><a href="#"><img src="img/icons/wissol.png" alt="wissol" class="img-responsive"></a>
+            <a href="#"><img src="img/icons/wissol.png" alt="wissol" class="img-responsive"></a>
           </div>
-</div>
-
-
+          </div>
+        </div>        
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
+
 
 <!-- footer -->
 <footer>
@@ -359,6 +370,11 @@
     <script type="text/javascript" src="js/main.js"></script>
       <script>
     $( document ).ready(function() {
+      
+      $(window).resize(function() {
+    var current = $('.my-slider').slickCurrentSlide();
+    $('.my-slider').slickGoTo(current);
+});
 
       //progressCircle
         $('#circle1').progressCircle({

@@ -70,6 +70,32 @@ $('.mySlider3').slick({
   ]
 });
 
+$('.mySlider4').slick({
+  arrows : true,
+  dots : true,
+  autoplay : true,
+  autoplaySpeed : 20000,
+  cssEase : 'ease',
+  infinite: true,
+  slidesToShow : 5,
+  
+    responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 468,
+      settings: {
+        slidesToShow: 1,
+        dots: false,
+      }
+    }
+  ]
+});
+
 //main css
 var colap = $('.colap');
 var navbutton = $('.nav_button');
