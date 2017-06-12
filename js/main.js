@@ -70,31 +70,64 @@ $('.mySlider3').slick({
   ]
 });
 
-$('.mySlider4').slick({
-  arrows : true,
-  dots : true,
-  autoplay : true,
-  autoplaySpeed : 20000,
-  cssEase : 'ease',
-  infinite: true,
-  slidesToShow : 5,
+// $('.mySlider4').slick({
+//   arrows : true,
+//   dots : true,
+//   autoplay : true,
+//   autoplaySpeed : 20000,
+//   cssEase : 'ease',
+//   infinite: true,
+//   slidesToShow : 5,
   
-    responsive: [
+//     responsive: [
+//     {
+//       breakpoint: 1200,
+//       settings: {
+//         slidesToShow: 3,
+//       }
+//     },
+//     {
+//       breakpoint: 468,
+//       settings: {
+//         slidesToShow: 1,
+//         dots: false,
+//       }
+//     }
+//   ]
+// });
+
+
+$('.mySlider4').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 5,
+  responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 3,
+        infinite: true,
       }
     },
     {
-      breakpoint: 468,
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        dots: false,
       }
     }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ]
 });
+
 
 //main css
 var colap = $('.colap');

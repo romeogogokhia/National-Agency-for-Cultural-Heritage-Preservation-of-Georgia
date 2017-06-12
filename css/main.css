@@ -1464,45 +1464,46 @@ h1.club_h1{
   margin-bottom: 70px
 }
 .partn_img_wrap{
-/*  display: inline-block;
-  max-width: 230px;
+  display: inline-block;
+  width: 230px;
   white-space: nowrap;   
   text-align: center;
-  width: 100%;*/
+  width: 100%;
 }
-/*.helper {
+.helper {
   display: inline-block;
   height: 30%;
   vertical-align: middle;
-}*/
-/*.partn_img_wrap img{
-  vertical-align: middle;
-  margin: auto;
-}*/
-.partners {
-  background: #eee;
 }
-.slider_wrapper4{
-  max-width: 1140px;
-  height: auto;
+.partn_img_wrap img{
+  vertical-align: middle;
   margin: auto;
 }
 
-/*.partners .slick-prev{
- left: 0px;
+.slider_wrapper4{
+  max-width: 66%;
+  margin: auto;
+}
+
+.partners .slick-prev{
+  left: -54px;
 }
 .partners .slick-next{
- right: 0px;
+  right: -40px;
 }
 .partners .slick-prev:before {
     content: '\f0a8';
     font-family: "FontAwesome";
+    font-size: 40px;
+    color: #000
 }
 .partners .slick-next:before {
     content: '\f0a9';
     font-family: "FontAwesome";
+    font-size: 40px;
+    color: #000
 }
-*/
+
 
 
 /*start --- club_partners.html | კლუბი*/
@@ -2057,7 +2058,7 @@ span.psw {
 }
 #myForm input.error, 
 #myForm select.error{
-  border-color: red;
+  border: 1px dotted red;
   box-shadow: 0 0 3px red;
 }
 #myForm label.error{

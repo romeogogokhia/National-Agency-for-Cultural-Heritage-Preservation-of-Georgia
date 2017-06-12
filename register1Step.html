@@ -288,7 +288,7 @@
                   <div class="col-sm-6">
                     <fieldset>
                       <label for="personalInfo">პირადი ნომერი</label>
-                      <input type="number" pattern= "[0-9]{13}" name="personal" id="personalInfo" >
+                      <input type="text" name="personal" id="personalInfo" >
                     </fieldset>
                   </div>
                   <div class="col-sm-6">
@@ -413,7 +413,7 @@
       });
 
 
-
+$(function() {
 
       $("#myForm").validate({
 
@@ -431,17 +431,19 @@
               required: true
             },            
             personal: {
-              required: true
+              required: true,
+              regex: /^[0-9]{11}$/
             },
             address: {
               required: true
             },            
             email: {
               required: true,
-              email: true
+              email: true,
             },
             phone: {
-              required: true
+              required: true,
+              regex: /^[0-9]{9}$/
             }
   
           },          
@@ -459,10 +461,10 @@
               required: "ქალაქი სავალდებულოა შესავსებად"
             },            
             personal: {
-              required: "პირადი იდენტიფიკატორი სავალდებულოა შესავსებად"
+              required: "პირადი იდენტიფიკატორი სავალდებულოა შესავსებად",
             },            
             address: {
-              required: "მისამართი სავალდებულოა შესავსებად"
+              required: "მისამართი სავალდებულოა შესავსებად",
             },            
             email: {
               required: "იმეილი სავალდებულოა შესავსებად",
@@ -485,6 +487,13 @@
           }
 
       });
+
+   $.validator.addMethod("regex", function(value, element, regexpr) {          
+     return regexpr.test(value);
+   }, "Please enter a valid pasword.");    
+
+
+
 
     </script>
 
