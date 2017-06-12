@@ -241,6 +241,10 @@
 	.nav.navbar-nav li a{
 		text-align: center;
 	}
+	.form_block .nav>li>a, 
+	.navigacia .secind_menu li a {
+	    padding-right: 8px !important;
+	}
 	.nav.navbar-nav.navbar-right{
 		border-bottom:1px solid #333;
 	}
