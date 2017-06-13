@@ -2268,7 +2268,7 @@ span.psw {
   font-size: 22px;
   margin-top: 40px;
   height: 50px;
-  width: 308px;
+  width: 100%;
   text-align: center;
 }
 .btn_map span{
@@ -2282,16 +2282,29 @@ span.psw {
   display: inline-block;
 }
 li.big_nav_li.first{
-  margin-left: 26%;
-  width: 23%;
-  text-align: right;
+    /* margin-left: 32%; */
+    /* width: 23%; */
+    text-align: right;
+    display: inline-block;
+    padding-right: 5%;
 }
 li.big_nav_li.second{
-  width: 26%;
-  text-align: center;
+    /* width: 30%; */
+    text-align: left;
+    /* margin-right: 277px; */
+    display: inline-block;
 }
 li.big_nav_li.third{
-  width: 23%;
-  text-align: right;
+  width: 248px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  text-align: left;
 }
 
+.big_nav_li_wrap{
+    margin-right: 26%;
+    float: right;
+    width: 690px;
+}
