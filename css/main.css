@@ -115,10 +115,11 @@ header{
   width: 95%;
   position: relative;
 }
-.search_wrap{
+.search_wrap {
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
+  margin-right: 45px;
 }
 
 .search_wrap input#search{
@@ -2059,30 +2060,6 @@ span.psw {
 #myForm fieldset{
   height: 100px;
 }
-#myForm input.error, 
-#myForm select.error{
-  border: 1px dotted red;
-  box-shadow: 0 0 3px red;
-}
-#myForm label.error{
-  display: block;
-  font-size: 12px;
-  color: red;
-}
-#myForm .personal_info .text-center{
-    width: 300px;
-    height: 100px;
-    border: 1px solid #ccc;
-    position: absolute;
-    top: -99px;
-    left: 113px;
-    background: brown;
-    
-}
-#myForm .text-center:empty {
-  display: none;
-}
-
 /*shshm.html*/
 .glasses_icon{
     background-image: url(../img/icons/glasses_icon.png);
@@ -2094,9 +2071,6 @@ span.psw {
     float: right;
     margin-top: 12px;
 }
-.search_wrap .icon.mr{
-    margin-right: 45px;
-}
 .over_header{
   background-color: #f4f4f4;
   font-family: 'dejavu-sans';
@@ -2106,12 +2080,53 @@ span.psw {
       -ms- box-shadow: #b9b9b9 0px 1px 1px;
         -o- box-shadow: #b9b9b9 0px 1px 1px;
           box-shadow: #b9b9b9 0px 1px 1px;
+          display: none;
+          position: relative;
+}
+/*.over_header:after{
+  content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -24px;
+    right: 20.1%;
+    box-sizing: border-box;    
+    border: 12px solid #b9b9b9;
+    border-color: transparent transparent #f4f4f4 #f4f4f4;    
+    transform-origin: 0 0;
+    transform: rotate(-45deg);    
+    box-shadow: -1px 1px 1px #b9b9b9;
+}*/
+.over_head_trinagle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 46px;
+    right: 7px;
+    box-sizing: border-box;    
+    border: 12px solid #b9b9b9;
+    border-color: transparent transparent #f4f4f4 #f4f4f4;    
+    transform-origin: 0 0;
+    transform: rotate(-45deg);    
+    box-shadow: -1px 1px 1px #b9b9b9;
+    display: none;
 }
 .over_header .over_head_bl{
 /*  width: 420px;
   float: right;*/
   line-height: 65px;
 }
+/*.over_head_trinagle{
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+  width: 0;
+  display: block;
+height: 0;
+border-style: solid;
+border-width: 12px 11px 0 11px;
+border-color: #f4f4f4 transparent transparent transparent;
+}*/
 .over_header h1{
   color: #1e2227;
   font-size: 16px;
@@ -2123,7 +2138,7 @@ span.psw {
 }
 .over_head_nav.one li {
   color: #fff;
-  margin:0px 10px;
+  margin:0px 2px;
 }
 .over_head_nav.one li.zoom_min{
   background-color: #9c9fa3;
@@ -2131,7 +2146,7 @@ span.psw {
 .over_head_nav.one li.zoom_plus{
   background-color: #454b53;
 }
-.over_head_nav.one span{
+.over_head_nav.one li:nth-child(2){
   font-size: 18px;
   color: #1e2227;
 }
@@ -2176,15 +2191,9 @@ span.psw {
   border:1px solid #0072bc;
   color: #fff;
 }
-.over_head_nav_three{
-
-}
 .over_head_nav_three li{
     display: inline-block;
-    padding: 0px 10px 0px;
-}
-.over_head_nav_three li+span+li{
-   margin-left:35px;
+    padding: 0px 5px 0px;
 }
 /*.over_head_nav_three li:first-child:after{
   content: "\f021";
@@ -2200,9 +2209,8 @@ span.psw {
   background: url('../img/icons/refresh_icon.png') no-repeat;
   width: 15px;
   height: 19px; 
-  display: inline-block;
-  margin-top: 22px;
-  position: absolute;
+  margin-right:27px;
+  margin-bottom: -4px;
 }
 .nav_close{
   background: url('../img/icons/close_icon.png') no-repeat;
@@ -2210,7 +2218,7 @@ span.psw {
   height: 15px; 
   display: inline-block;
   margin-top: 22px;
-/*  position: absolute;*/
+  margin-bottom: -2px;
 }
 .s_contacts{
   padding:58px 0px 248px;
@@ -2261,6 +2269,18 @@ span.psw {
   font-size: 16px;
   line-height: 19px;
 }
+#cont_form input.error, 
+#cont_form select.error{
+  border: 1px dotted red;
+  box-shadow: 0 0 3px red;
+}
+#cont_form label.error{
+  display: block;
+  font-size: 12px;
+  color: red;
+}
+
+
 .btn_map{
   background-color: #3a3d43;
   border: none;
@@ -2278,28 +2298,18 @@ span.psw {
 }
 
 
-.big_nav>li{
-  display: inline-block;
-}
 li.big_nav_li.first{
-    /* margin-left: 32%; */
-    /* width: 23%; */
-    text-align: right;
     display: inline-block;
-    padding-right: 5%;
 }
 li.big_nav_li.second{
-    /* width: 30%; */
-    text-align: left;
-    /* margin-right: 277px; */
     display: inline-block;
+    padding-left: 14%;
 }
 li.big_nav_li.third{
   width: 248px;
   position: absolute;
   top: 0px;
   right: 0px;
-
   text-align: left;
 }
 

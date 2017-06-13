@@ -24,64 +24,51 @@
   </head>
   <body>
    <header class="navigacia">
-   <div class="container-fluid">
-       <div class="">
-      <div class="row">
+<div class="container-fluid">
+    <div class="row">
         <div class="over_header">
-<!-- <div class="col-sm-3 col-sm-offset-0 col-md-3 col-md-offset-2"> -->
-<ul class="big_nav">
-<div class="big_nav_li_wrap">
-  <li class="big_nav_li first">
-
-          <div class="over_head_bl">
-            <h1>ტექსტის ზომა</h1>
-            <nav class="over_head_nav one">
-              <li class="zoom_min">&minus;</li>
-              <span>A</span>
-              <li class="zoom_plus">&plus;</li>
-            </nav>
-          </div>
-
-<!-- </div> -->
-<!-- <div class="col-sm-6 col-md-4"> -->
-</li>
-<li class="big_nav_li second">
-
-          <div class="over_head_bl">
-            <h1>ფონის და ტექსტის ფერი</h1>
-            <nav class="over_head_nav two">
-              <li>A</li>
-              <li>A</li>
-              <li>A</li>
-              <li>A</li>
-              <li>A</li>
-            </nav>
-          </div>  
-
-<!-- </div> -->
-<!-- <div class="col-sm-3 col-md-3"> -->
-</li>
-</div>
-<li class="big_nav_li third">
-
-          <div class="over_head_bl">
-            <nav class="over_head_nav_three">
-              <li>ჩამოყრა</li>
-              <span class="nav_refresh"></span>
-              <li>დახურვა</li>
-              <span class="nav_close"></span>
-            </nav>
-          </div>
-          
-<!-- </div> -->
-</li>
-</ul>      
+            <ul class="big_nav">
+                <li>
+                    <ul class="big_nav_li_wrap">
+                        <li class="big_nav_li first">
+                            <div class="over_head_bl">
+                                <h1>ტექსტის ზომა</h1>
+                                <ul class="over_head_nav one">
+                                    <li class="zoom_min">&minus;</li>
+                                    <li>A</li>
+                                    <li class="zoom_plus">&plus;</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="big_nav_li second">
+                            <div class="over_head_bl">
+                                <h1>ფონის და ტექსტის ფერი</h1>
+                                <ul class="over_head_nav two">
+                                    <li>A</li>
+                                    <li>A</li>
+                                    <li>A</li>
+                                    <li>A</li>
+                                    <li>A</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="big_nav_li third">
+                    <div class="over_head_bl">
+                        <ul class="over_head_nav_three">
+                            <li>ჩამოყრა</li>
+                            <li class="nav_refresh"></li>
+                            <li>დახურვა</li>
+                            <li class="nav_close"></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </div>
     </div>
-     <div class="clearfix"></div>
-     
-   </div>
+</div>
+<div class="clearfix"></div>
     <div class="container-fluid">
      <div class="row">
       <div class="navbar-header">
@@ -97,12 +84,12 @@
               <a href="#">ENG</a>
             </nav>
             <div class="form-group pull-right">
+            <div class="over_head_trinagle"></div>
+                          <span class="glasses_icon"></span>
               <div class="search_wrap">
                 <form action="#" method="get" name="form">
-                <span class="glasses_icon"></span>
                     <button type="submit" class="icon mr"><span><i class="fa fa-search"></i></span></button>
-                    <input type="search" name="search" id="search"  />
-                    
+                    <input type="search" name="search" id="search"  />         
                 </form>
               </div>
             </div>
@@ -167,7 +154,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8">
-      <form action="#" method="post" name="cont_form">
+      <form action="#" method="post" id="cont_form">
               <div class="personal_info cont">
                 <div class="row">
                   <div class="col-sm-6">
@@ -191,8 +178,8 @@
                   </div>
                   <div class="col-sm-6">
                     <fieldset>
-                      <label for="myPhone">ტელეფონი</label>
-                      <input type="tel" pattern="[0-9]{9}" name="phone" id="myPhone">
+                      <label for="my_phone">ტელეფონი</label>
+                      <input type="tel"  name="phone" id="my_phone">
                     </fieldset>
                   </div>
                   <div class="col-sm-12">
@@ -285,10 +272,102 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <script src="jqueryPlugins/DoubleTapToGo.min.js"></script>
+    <script src="jqueryPlugins/jquery.validate.min.js"></script>  
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script>
+    $(function() {
+
+      $("#cont_form").validate({
+
+          rules:{
+            username: {
+              required: true
+            },
+            lastname: {
+              required: true
+            },            
+            letter: {
+              required: true
+            },            
+            email: {
+              required: true,
+              email: true,
+            },
+            phone: {
+              required: true,
+              regex: /^[0-9]*$/
+            },            
+            header: {
+              required: true,
+            }
   
+          },          
+          messages: {
+            username: {
+              required: "სახელი სავალდებულოა შესავსებად"
+            },            
+            lastname: {
+              required: "გვარი სავალდებულოა შესავსებად"
+            },            
+            date: {
+              required: "დაბადების დღე სავალდებულოა შესავსებად"
+            },            
+            city: {
+              required: "ქალაქი სავალდებულოა შესავსებად"
+            },            
+            personal: {
+              required: "პირადი იდენტიფიკატორი სავალდებულოა შესავსებად",
+            },            
+            address: {
+              required: "მისამართი სავალდებულოა შესავსებად",
+            },            
+            email: {
+              required: "იმეილი სავალდებულოა შესავსებად",
+              email: "გთხოვთ კორეკტული იმეილი შეიტანე"
+            },            
+            phone: {
+              required: "ტელეფონი სავალდებულოა შესავსებად"
+            },
+          },
+          focusCleanup: true,
+          focusInvalid: false,
+          // invalidHandler:function(event, validator){
+          //   $('.js_form_masssage').text('გთხოვთ შეასწორეთ შეცდომები.');
+          // },
+          // onkeyup: function(element) {
+          //   $('.js_form_masssage').text('');
+          // },
+          errorPlacement: function(error, element){
+            return true;
+          }
+
+      });
+
+         $.validator.addMethod("regex", function(value, element, regexpr) {          
+           return regexpr.test(value);
+         }, "Please enter a valid pasword.");    
+
+      });
+
+   var count = 1;
+   $('.form-group').on('click', '.glasses_icon', function(){
+    $('.over_header, .over_head_trinagle').fadeToggle(700)
+    // if(count === 1){
+    //   $('.over_header').slideToggle(700)
+    //   count = 2;
+    // }else{
+    //   $('.over_header').slideToggle(700)
+    //   count = 1;
+    // }
+    
+  })
+
+
+
+  </script>
   </body>
 </html>

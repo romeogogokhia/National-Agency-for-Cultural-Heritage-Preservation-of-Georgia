@@ -169,6 +169,18 @@
 		padding: 15px 0px 18%;
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.over_header,
+	.over_head_trinagle,
+	.glasses_icon{
+		display: none !important;
+	}
+	.form-group .search_wrap{
+		margin: 0;
+	}
+}
+
 @media screen and (max-width: 991px) {
 	.club_news .mySlider3 .slick-dots {
 	    bottom: -10px;
@@ -208,6 +220,28 @@
 	.choose_proj_bl .reg_proj_desc p.par{
 		padding-top: 20px;
 	}
+}
+@media screen and (max-width: 768px) {
+	/*shshm.html*/
+
+/*	.nav_button{
+		top: 168px;
+	}
+	.over_header{
+		min-height: 130px !important;
+	}
+	.big_nav .big_nav_li_wrap{
+	    float: left;
+	    margin: 0;
+	    width: auto;
+	} 
+	.big_nav_li_wrap li.big_nav_li.first {
+	    display: block;
+	}
+	.big_nav li.big_nav_li.second {
+	    padding-left: 0px;
+	}*/
+
 }
 @media screen and (max-width: 767px) {
 	li.drop_down .secind_menu{
@@ -526,5 +560,21 @@
 	    padding: 12px 7px;
 	    margin: 15px 0px 0px 0px;
 	}
+
+	/*shshm.html*/
+
+/*	.nav_button{
+		top: 242px;
+	}
+	.over_header{
+		min-height: 200px !important;
+	}
+	.big_nav .big_nav_li_wrap{
+	    margin-top: 70px;
+	} 
+	.over_head_nav_three{
+		background: darkcyan;
+	}
+	*/
 }﻿
 

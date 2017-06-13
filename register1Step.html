@@ -105,7 +105,7 @@
   <!-- section - s_register -->
   <section class="s_register">
     <div class="container">
-      <form action="#" name="register" method="post" id="myForm"> 
+      <form action="" name="register" method="post" id="myForm"> 
           <div class="row">
             <div class="col-md-12">                
                 <div class="form_reg_header">
@@ -252,7 +252,6 @@
               <div class="personal_info">
                 <div class="row">
                   <div class="col-sm-6">
-                    <div class="text-center js_form_masssage"></div>
                     <fieldset>
                       <label for="userName">სახელი</label>
                       <input type="text" name="username" id="userName">
@@ -413,86 +412,86 @@
       });
 
 
-$(function() {
+// $(function() {
 
-      $("#myForm").validate({
+//       $("#myForm").validate({
 
-          rules:{
-            username: {
-              required: true
-            },
-            lastname: {
-              required: true
-            },            
-            date: {
-              required: true
-            },
-            city: {
-              required: true
-            },            
-            personal: {
-              required: true,
-              regex: /^[0-9]{11}$/
-            },
-            address: {
-              required: true
-            },            
-            email: {
-              required: true,
-              email: true,
-            },
-            phone: {
-              required: true,
-              regex: /^[0-9]{9}$/
-            }
+//           rules:{
+//             username: {
+//               required: true
+//             },
+//             lastname: {
+//               required: true
+//             },            
+//             date: {
+//               required: true
+//             },
+//             city: {
+//               required: true
+//             },            
+//             personal: {
+//               required: true,
+//               regex: /^[0-9]{11}$/
+//             },
+//             address: {
+//               required: true
+//             },            
+//             email: {
+//               required: true,
+//               email: true,
+//             },
+//             phone: {
+//               required: true,
+//               regex: /^[0-9]*$/
+//             }
   
-          },          
-          messages: {
-            username: {
-              required: "სახელი სავალდებულოა შესავსებად"
-            },            
-            lastname: {
-              required: "გვარი სავალდებულოა შესავსებად"
-            },            
-            date: {
-              required: "დაბადების დღე სავალდებულოა შესავსებად"
-            },            
-            city: {
-              required: "ქალაქი სავალდებულოა შესავსებად"
-            },            
-            personal: {
-              required: "პირადი იდენტიფიკატორი სავალდებულოა შესავსებად",
-            },            
-            address: {
-              required: "მისამართი სავალდებულოა შესავსებად",
-            },            
-            email: {
-              required: "იმეილი სავალდებულოა შესავსებად",
-              email: "გთხოვთ კორეკტული იმეილი შეიტანე"
-            },            
-            phone: {
-              required: "ტელეფონი სავალდებულოა შესავსებად"
-            },
-          },
-          focusCleanup: true,
-          focusInvalid: false,
-          invalidHandler:function(event, validator){
-            $('.js_form_masssage').text('გთხოვთ შეასწორეთ შეცდომები.');
-          },
-          onkeyup: function(element) {
-            $('.js_form_masssage').text('');
-          },
-          errorPlacement: function(error, element){
-            return true;
-          }
+//           },          
+//           messages: {
+//             username: {
+//               required: "სახელი სავალდებულოა შესავსებად"
+//             },            
+//             lastname: {
+//               required: "გვარი სავალდებულოა შესავსებად"
+//             },            
+//             date: {
+//               required: "დაბადების დღე სავალდებულოა შესავსებად"
+//             },            
+//             city: {
+//               required: "ქალაქი სავალდებულოა შესავსებად"
+//             },            
+//             personal: {
+//               required: "პირადი იდენტიფიკატორი სავალდებულოა შესავსებად",
+//             },            
+//             address: {
+//               required: "მისამართი სავალდებულოა შესავსებად",
+//             },            
+//             email: {
+//               required: "იმეილი სავალდებულოა შესავსებად",
+//               email: "გთხოვთ კორეკტული იმეილი შეიტანე"
+//             },            
+//             phone: {
+//               required: "ტელეფონი სავალდებულოა შესავსებად"
+//             },
+//           },
+//           focusCleanup: true,
+//           focusInvalid: false,
+//           invalidHandler:function(event, validator){
+//             $('.js_form_masssage').text('გთხოვთ შეასწორეთ შეცდომები.');
+//           },
+//           // onkeyup: function(element) {
+//           //   $('.js_form_masssage').text('');
+//           // },
+//           errorPlacement: function(error, element){
+//             return true;
+//           }
 
-      });
+//       });
 
-   $.validator.addMethod("regex", function(value, element, regexpr) {          
-     return regexpr.test(value);
-   }, "Please enter a valid pasword.");    
+//    $.validator.addMethod("regex", function(value, element, regexpr) {          
+//      return regexpr.test(value);
+//    }, "Please enter a valid pasword.");    
 
-
+// });
 
 
     </script>
