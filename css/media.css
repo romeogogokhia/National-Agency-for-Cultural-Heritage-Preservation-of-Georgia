@@ -171,14 +171,14 @@
 }
 
 @media screen and (max-width: 1024px) {
-	.over_header,
+/*	.over_header,
 	.over_head_trinagle,
 	.glasses_icon{
 		display: none !important;
 	}
 	.form-group .search_wrap{
 		margin: 0;
-	}
+	}*/
 }
 
 @media screen and (max-width: 991px) {
@@ -220,13 +220,8 @@
 	.choose_proj_bl .reg_proj_desc p.par{
 		padding-top: 20px;
 	}
-}
-@media screen and (max-width: 768px) {
-	/*shshm.html*/
 
-/*	.nav_button{
-		top: 168px;
-	}
+	/*shshm.html*/
 	.over_header{
 		min-height: 130px !important;
 	}
@@ -240,8 +235,13 @@
 	}
 	.big_nav li.big_nav_li.second {
 	    padding-left: 0px;
-	}*/
-
+	}
+	.big_nav .big_nav_li_wrap{
+		margin-left: 20px;
+	}
+	.big_nav li.big_nav_li.third{
+		width: 234px
+	}
 }
 @media screen and (max-width: 767px) {
 	li.drop_down .secind_menu{
@@ -503,6 +503,19 @@
 	.club_project_block{
 		margin: 70px auto;
 	}
+
+	/*shshm.html*/
+	.over_header,
+	.over_head_trinagle,
+	.glasses_icon{
+		display: none !important;
+	}
+	.form-group .search_wrap{
+		margin: 0;
+	}
+	.big_nav .big_nav_li_wrap{
+		margin-left: 30px;
+	}
 }
 
 /* registr1step.html */
@@ -563,7 +576,7 @@
 
 	/*shshm.html*/
 
-/*	.nav_button{
+	.nav_button{
 		top: 242px;
 	}
 	.over_header{
@@ -575,6 +588,6 @@
 	.over_head_nav_three{
 		background: darkcyan;
 	}
-	*/
+	
 }﻿
 
