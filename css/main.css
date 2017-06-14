@@ -2162,6 +2162,10 @@ border-color: #f4f4f4 transparent transparent transparent;
   text-align: center;
   line-height: 27px;
   font-size: 14px;
+  cursor: pointer;
+}
+.over_head_nav.one li:nth-child(2){
+  cursor: default;
 }
 .over_head_nav.two li + li{
   margin-left: 5px;
@@ -2194,6 +2198,7 @@ border-color: #f4f4f4 transparent transparent transparent;
 .over_head_nav_three li{
     display: inline-block;
     padding: 0px 5px 0px;
+    cursor: pointer;
 }
 /*.over_head_nav_three li:first-child:after{
   content: "\f021";

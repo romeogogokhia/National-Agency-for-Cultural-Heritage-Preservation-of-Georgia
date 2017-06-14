@@ -171,3 +171,49 @@ $('.icon').on('click','.fa.fa-search', function(event){
   }
   });
 });
+
+
+
+   $('.form-group').on('click', '.glasses_icon', function(){
+    $('.over_header, .over_head_trinagle').fadeToggle(700)
+    
+  })
+
+
+// font Zoom
+
+  var myDocument = $('body *').not('.navigacia:first-child, .navigacia:first-child *')
+  function fontSize(flag){
+    
+    if(flag != 'reset'){
+
+      for(var i = 0; myDocument.length > i; i++){
+        var fontSize = parseInt($(myDocument[i]).css('font-size'))
+        fontSize = flag == '+' ? fontSize + 1 : fontSize - 1
+        $(myDocument[i]).css('font-size',fontSize)
+     }
+    }else{
+       $('[style^="font-size"]').removeAttr('style')
+      }
+   }
+
+   $('.over_head_nav.one').on('click', '.zoom_min', function(){
+     fontSize('-')
+   })
+   $('.over_head_nav.one').on('click', '.zoom_plus', function(){
+     fontSize('+')
+   })   
+   $('.over_head_nav_three').on('click', '.nav_refresh', function(){
+     fontSize('reset')
+   })
+
+
+   $('.over_head_nav.two').on('click', 'li', function(){
+    $('section').css({
+      'background' : 'green',
+      'color' : 'white'
+    });
+    $('section label, input, p, h1').css({
+      'color' : 'white'
+    })
+   })
