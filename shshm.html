@@ -199,7 +199,7 @@
                       <p><span>შენიშვნა:</span> ყველა ველი აუცილებელია</p>         
                     </div>
                     <div class="col-sm-6">
-                      <button type="submit" class="btn_submit ">გაგზავნა</button>
+                      <button type="submit" class="btn_send ">გაგზავნა</button>
                     </div>
                   </div>
                 </div>
@@ -306,41 +306,8 @@
             }
   
           },          
-          messages: {
-            username: {
-              required: "სახელი სავალდებულოა შესავსებად"
-            },            
-            lastname: {
-              required: "გვარი სავალდებულოა შესავსებად"
-            },            
-            date: {
-              required: "დაბადების დღე სავალდებულოა შესავსებად"
-            },            
-            city: {
-              required: "ქალაქი სავალდებულოა შესავსებად"
-            },            
-            personal: {
-              required: "პირადი იდენტიფიკატორი სავალდებულოა შესავსებად",
-            },            
-            address: {
-              required: "მისამართი სავალდებულოა შესავსებად",
-            },            
-            email: {
-              required: "იმეილი სავალდებულოა შესავსებად",
-              email: "გთხოვთ კორეკტული იმეილი შეიტანე"
-            },            
-            phone: {
-              required: "ტელეფონი სავალდებულოა შესავსებად"
-            },
-          },
           focusCleanup: true,
           focusInvalid: false,
-          // invalidHandler:function(event, validator){
-          //   $('.js_form_masssage').text('გთხოვთ შეასწორეთ შეცდომები.');
-          // },
-          // onkeyup: function(element) {
-          //   $('.js_form_masssage').text('');
-          // },
           errorPlacement: function(error, element){
             return true;
           }
