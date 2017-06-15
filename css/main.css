@@ -1570,7 +1570,13 @@ h1.club_h1{
   border-right: 1px solid #3373b4;
   margin: 0px auto 30px;
 }
-.choose_package_bl_top{
+.choose_package_bl.error{
+  border: 1px solid red !important;
+}
+.choose_package_bl.error .choose_package_bl_top{
+  border-bottom: 1px solid red;
+} 
+.choose_package_bl.active .choose_package_bl_top{
   height: 10px;
   background-color: #3373b4;
   margin-bottom: 47px;
@@ -1695,13 +1701,13 @@ h1.club_h1{
   list-style-image: url(../img/icons/nav_li_icon.png);
   line-height: 47px;
 }
-.choose_package_bl_top.two{
-  background-color: #a5a5a5;
-}
 .choose_package_bl.two{
-  border-left: 1px solid #a5a5a5;
-  border-bottom: 1px solid #a5a5a5;
-  border-right: 1px solid #a5a5a5;
+  border: 1px solid #a5a5a5;
+}
+.choose_package_bl.two .choose_package_bl_top{
+  background-color: #a5a5a5;
+  height: 10px;
+  margin-bottom: 47px;
 }
 
 /* .choose_proj_bl_cont */
@@ -2291,3 +2297,4 @@ li.big_nav_li.third{
     float: right;
     width: 690px;
 }
+
