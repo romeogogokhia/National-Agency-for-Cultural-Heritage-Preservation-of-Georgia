@@ -1,3 +1,79 @@
+// font Zoom
+(function ($) {
+  $.fn.fontResize = function(options){
+    var increaseCount = 0;
+    var self = this;
+
+    var changeFont = function(element, amount){
+      var baseFontSize = parseInt(element.css('font-size'), 10);
+      var baseLineHeight = parseInt(element.css('line-height'), 10);
+      element.css('font-size', (baseFontSize + amount) + 'px');
+      element.css('line-height', (baseLineHeight + amount) + 'px');
+    };
+
+    options.increaseBtn.on('click', function (e) {
+      e.preventDefault();
+      if(increaseCount === 5){ return; }
+      self.each(function(index, element){
+        changeFont($(element), 2);
+      });
+      increaseCount++;
+    });
+
+    options.decreaseBtn.on('click', function (e) {
+      e.preventDefault();
+      if(increaseCount === -5){ return; }
+      self.each(function(index, element){
+        changeFont($(element), -2);
+      });
+      increaseCount--;
+    });
+
+    options.resetBtn.on('click', function(e) {
+      e.preventDefault();
+      $('[style^="font-size"]').removeAttr('style')
+
+    })
+  }
+})(jQuery);
+
+$(function () {
+  $('body,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input').fontResize({
+    increaseBtn: $('.zoom_plus'),
+    decreaseBtn: $('.zoom_min'),
+    resetBtn: $('.nav_refresh')
+  });
+});
+
+// $('.over_head_nav.two').on('click', 'li', function(){
+//    $('body, .red_block, .right_bg').css({
+//      'background-color' : '#fff',
+//    });
+//    $('label,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input').css({
+//      'color' : '#454b53'
+//    })
+// })
+
+/*var obj_color = {
+      'color': '#454b53',
+      'color': '#fff',
+      'color': '#ceb62c',
+      'color': '#454b53',
+      'color': '#fff'
+}
+var obj_bgColor = {
+      'background-color': '#fff',
+      'background-color': '#454b53',
+      'background-color': '#454b53',
+      'background-color': '#ffde10',
+      'background-color': '#0072bc'
+}
+
+
+$.each(obj_bgColor, function(index, value) {
+
+})*/
+
 //slick slider
 $('.mySlider').slick({
 	arrows : false,
@@ -70,33 +146,6 @@ $('.mySlider3').slick({
   ]
 });
 
-// $('.mySlider4').slick({
-//   arrows : true,
-//   dots : true,
-//   autoplay : true,
-//   autoplaySpeed : 20000,
-//   cssEase : 'ease',
-//   infinite: true,
-//   slidesToShow : 5,
-  
-//     responsive: [
-//     {
-//       breakpoint: 1200,
-//       settings: {
-//         slidesToShow: 3,
-//       }
-//     },
-//     {
-//       breakpoint: 468,
-//       settings: {
-//         slidesToShow: 1,
-//         dots: false,
-//       }
-//     }
-//   ]
-// });
-
-
 $('.mySlider4').slick({
   dots: false,
   infinite: true,
@@ -122,9 +171,6 @@ $('.mySlider4').slick({
         slidesToShow: 1,
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 
@@ -186,38 +232,40 @@ $('.search_wrap').on('click','button.icon', function(event){
 
 // font Zoom
 
-  var myDocument = $('body *').not('.navigacia:first-child, .navigacia:first-child *')
-  function fontSize(flag){
+  // var myDocument = $('body *').not('.navigacia:first-child, .navigacia:first-child *')
+  // function fontSize(flag){
     
-    if(flag != 'reset'){
+  //   if(flag != 'reset'){
 
-      for(var i = 0; myDocument.length > i; i++){
-        var fontSize = parseInt($(myDocument[i]).css('font-size'))
-        fontSize = flag == '+' ? fontSize + 1 : fontSize - 1
-        $(myDocument[i]).css('font-size',fontSize)
-     }
-    }else{
-       $('[style^="font-size"]').removeAttr('style')
-      }
-   }
-
-   $('.over_head_nav.one').on('click', '.zoom_min', function(){
-     fontSize('-')
-   })
-   $('.over_head_nav.one').on('click', '.zoom_plus', function(){
-     fontSize('+')
-   })   
-   $('.over_head_nav_three').on('click', '.nav_refresh', function(){
-     fontSize('reset')
-   })
+  //     for(var i = 0; myDocument.length > i; i++){
+  //       var fontSize = parseInt($(myDocument[i]).css('font-size'))
+  //       fontSize = flag == '+' ? fontSize + 1 : fontSize - 1
+  //       $(myDocument[i]).css('font-size',fontSize)
+  //    }
+  //   }else{
+  //      $('[style^="font-size"]').removeAttr('style')
+  //     }
+  //  }
 
 
-   $('.over_head_nav.two').on('click', 'li', function(){
-    $('section').css({
-      'background' : 'green',
-      'color' : 'white'
-    });
-    $('section label, input, p, h1').css({
-      'color' : 'white'
-    })
-   })
+  //  $('.over_head_nav.one').on('click', '.zoom_min', function(){
+  //    fontSize('-');
+  //  })
+
+  //  $('.over_head_nav.one').on('click', '.zoom_plus', function(){
+  //    fontSize('+')
+  //  })   
+  //  $('.over_head_nav_three').on('click', '.nav_refresh', function(){
+  //    fontSize('reset')
+  //  })
+
+// club.html აირჩიე პაკეტი
+$('.text').on('click', '.Choose_package', function(){
+  $('.btn_under').fadeToggle();
+  $('.btn_arrow_down').css({
+    '-webkit-transform' : 'rotate(180deg)',
+      '-moz-transform' : 'rotate(180deg)',
+            'transform' : 'rotate(180deg)'
+  })
+
+})
