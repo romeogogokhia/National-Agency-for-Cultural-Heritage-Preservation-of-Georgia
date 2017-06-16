@@ -159,7 +159,11 @@ $('.vote form').on('click','.prog-circle', function(){
 // dropdown mobile touch
 $( 'li.drop_down:has(ul)' ).doubleTapToGo();
 
-$('.icon').on('click','.fa.fa-search', function(event){
+//search 
+$('.search_wrap').on('click','button.icon', function(event){
+  if(!$('.search_wrap #search').val()){
+    event.preventDefault()
+  }
   $('#search').animate({
     'border':'1px solid #d4d5d6',
     'width':'300px'
