@@ -15,7 +15,7 @@
       e.preventDefault();
       if(increaseCount === 5){ return; }
       self.each(function(index, element){
-        changeFont($(element), 2);
+        changeFont($(element), 1);
       });
       increaseCount++;
     });
@@ -24,56 +24,41 @@
       e.preventDefault();
       if(increaseCount === -5){ return; }
       self.each(function(index, element){
-        changeFont($(element), -2);
+        changeFont($(element), -1);
       });
       increaseCount--;
     });
 
     options.resetBtn.on('click', function(e) {
       e.preventDefault();
-      $('[style^="font-size"]').removeAttr('style')
-
+      $('[style*="font-size"]').removeAttr('style');
+      $('[style*="background-color"]').removeAttr('style');
+      $('[style*="color"]').removeAttr('style');
+      increaseCount = 0;
     })
   }
 })(jQuery);
 
 $(function () {
-  $('body,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input').fontResize({
+  $('body,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input,label').not('body, .over_header, .over_header *').fontResize({
     increaseBtn: $('.zoom_plus'),
     decreaseBtn: $('.zoom_min'),
     resetBtn: $('.nav_refresh')
   });
 });
 
-// $('.over_head_nav.two').on('click', 'li', function(){
-//    $('body, .red_block, .right_bg').css({
-//      'background-color' : '#fff',
-//    });
-//    $('label,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input').css({
-//      'color' : '#454b53'
-//    })
-// })
+$(function(){
+  $('.over_head_nav.two').on('click','li',function(){
+    var bg = $(this).css('background-color');
+    var color = $(this).css('color');
+    $('section, .navigacia, .over_header, .nav_repeat, .secind_menu, .pagination>li>a').not('body, .over_header, .over_header *').css('background-color', bg);
+    $('label,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input, .nav_repeat, .secind_menu, .pagination>li>a').not('body, .over_header, .over_header *').css('color', color);
+  });
+});
 
-// var obj_color = {
-//       'color': '#454b53',
-//       'color': '#fff',
-//       'color': '#ceb62c',
-//       'color': '#454b53',
-//       'color': '#fff'
-// }
-// var obj_bgColor = {
-//       1 : '#fff',
-//       2 : '#454b53',
-//       3 : '#454b53',
-//       4 : '#ffde10',
-//       5 : '#0072bc'
-// }
-
-// for(var obj in obj_bgColor){
-//   console.log(obj_bgColor[obj])
-// }
-
-
+$('.over_head_nav_three').on('click','.nav_close', function(){
+  $('.over_header, .over_head_trinagle').css('display', 'none')
+})
 // $.each(obj_bgColor, function(index, value) {
 // console.log(obj_bgColor[index])
 // })

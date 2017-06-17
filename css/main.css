@@ -2251,7 +2251,7 @@ span.psw {
 }
 .contacts{
   max-width: 360px;
-  max-height: 346px;
+  min-height: 346px;
   border: 1px solid #b9b9b9;
   padding: 35px 25px;
 }
