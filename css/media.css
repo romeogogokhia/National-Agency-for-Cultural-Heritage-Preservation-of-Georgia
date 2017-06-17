@@ -141,6 +141,13 @@
 	    padding: 10px 7px;
 	    margin: 14px 0px 0px;
 	}
+	.Choose_package .btn_under{
+	    padding: 7px;
+	    top: 34px;
+	}
+	.Choose_package .btn_under a{
+		font-size: 14px;
+	}
 }
 /*@media screen and (max-width: 1205px){
 	.container{

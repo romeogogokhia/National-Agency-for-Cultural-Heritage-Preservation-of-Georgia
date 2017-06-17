@@ -59,9 +59,6 @@ $(function(){
 $('.over_head_nav_three').on('click','.nav_close', function(){
   $('.over_header, .over_head_trinagle').css('display', 'none')
 })
-// $.each(obj_bgColor, function(index, value) {
-// console.log(obj_bgColor[index])
-// })
 
 //slick slider
 $('.mySlider').slick({
@@ -172,14 +169,6 @@ var navbutton = $('.nav_button');
    colap.slideToggle(1000);
 });
 
-// $(window).resize(function(){
-//   if($(window).width() > 768){
-//     colap.css('display','block')
-//   }else{
-//     colap.css('display','none')
-//   }
-// })
-
 $(window).resize(function(){
   if($(window).width() > 767){
     $('.colap').removeAttr('style')
@@ -218,35 +207,6 @@ $('.search_wrap').on('click','button.icon', function(event){
     
   })
 
-
-// font Zoom
-
-  // var myDocument = $('body *').not('.navigacia:first-child, .navigacia:first-child *')
-  // function fontSize(flag){
-    
-  //   if(flag != 'reset'){
-
-  //     for(var i = 0; myDocument.length > i; i++){
-  //       var fontSize = parseInt($(myDocument[i]).css('font-size'))
-  //       fontSize = flag == '+' ? fontSize + 1 : fontSize - 1
-  //       $(myDocument[i]).css('font-size',fontSize)
-  //    }
-  //   }else{
-  //      $('[style^="font-size"]').removeAttr('style')
-  //     }
-  //  }
-
-
-  //  $('.over_head_nav.one').on('click', '.zoom_min', function(){
-  //    fontSize('-');
-  //  })
-
-  //  $('.over_head_nav.one').on('click', '.zoom_plus', function(){
-  //    fontSize('+')
-  //  })   
-  //  $('.over_head_nav_three').on('click', '.nav_refresh', function(){
-  //    fontSize('reset')
-  //  })
 
 // club.html აირჩიე პაკეტი
 $('.text').on('click', '.Choose_package', function(){
