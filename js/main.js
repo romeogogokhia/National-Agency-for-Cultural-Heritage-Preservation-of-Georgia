@@ -54,25 +54,29 @@ $(function () {
 //    })
 // })
 
-/*var obj_color = {
-      'color': '#454b53',
-      'color': '#fff',
-      'color': '#ceb62c',
-      'color': '#454b53',
-      'color': '#fff'
-}
-var obj_bgColor = {
-      'background-color': '#fff',
-      'background-color': '#454b53',
-      'background-color': '#454b53',
-      'background-color': '#ffde10',
-      'background-color': '#0072bc'
-}
+// var obj_color = {
+//       'color': '#454b53',
+//       'color': '#fff',
+//       'color': '#ceb62c',
+//       'color': '#454b53',
+//       'color': '#fff'
+// }
+// var obj_bgColor = {
+//       1 : '#fff',
+//       2 : '#454b53',
+//       3 : '#454b53',
+//       4 : '#ffde10',
+//       5 : '#0072bc'
+// }
+
+// for(var obj in obj_bgColor){
+//   console.log(obj_bgColor[obj])
+// }
 
 
-$.each(obj_bgColor, function(index, value) {
-
-})*/
+// $.each(obj_bgColor, function(index, value) {
+// console.log(obj_bgColor[index])
+// })
 
 //slick slider
 $('.mySlider').slick({
