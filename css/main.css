@@ -2348,6 +2348,13 @@ li.big_nav_li.third{
     width: 690px;
 }
 
+/*sevices.html*/
+.news_block.sr{
+  max-width: 100%;
+  height: auto;
+  margin: 25px auto 0px auto;
+  padding: 20px 25px;
+}
 
 
 
