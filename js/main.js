@@ -1,3 +1,50 @@
+    (function ($) {
+      $.fn.fontResize = function(options){
+        if(localStorage.increaseCount > 3 || localStorage.increaseCount < 0){
+          localStorage.increaseCount = 0;
+        }
+        var self = this;
+
+        var changeFont = function(elements, amount){
+          elements.each(function(index, domNode){
+            var element = $(domNode);
+            var baseFontSize = parseInt(element.css('font-size'), 10);
+            var baseLineHeight = parseInt(element.css('line-height'), 10);
+            element.css('font-size', (baseFontSize + amount) + 'px');
+            element.css('line-height', (baseLineHeight + amount) + 'px');
+          });
+        };
+
+        // set font size to whatever was storage in localStorage
+        changeFont(self, localStorage.increaseCount * 2);
+
+        options.increaseBtn.on('click', function (e) {
+          e.preventDefault();
+          if(localStorage.increaseCount >= 3){ return; }
+          changeFont(self, 2);
+          localStorage.increaseCount++;
+        });
+
+        options.decreaseBtn.on('click', function (e) {
+          e.preventDefault();
+          if(localStorage.increaseCount <= 0){ return; }
+          changeFont(self, -2);
+          localStorage.increaseCount--;
+        });
+      }
+    })(jQuery);
+
+    $(function () {
+      $('body,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input').fontResize({
+        increaseBtn: $('#incfont'),
+        decreaseBtn: $('#decfont')
+      });
+    });
+
+
+
+
+
 // font Zoom
 (function ($) {
   $.fn.fontResize = function(options){

@@ -2365,6 +2365,11 @@ li.big_nav_li.second{
   padding: 20px 25px;
 }
 
+/* filse.html */
+.gallery.fl .gallery_block {
+    margin: auto;
+    height: 380px;
+}
 
 
 
