@@ -2368,7 +2368,8 @@ li.big_nav_li.second{
 /* filse.html */
 .gallery.fl .gallery_block {
     margin: auto;
-    height: 380px;
+    min-height: 380px;
+    padding: 0px 0px 20px;
 }
 
 

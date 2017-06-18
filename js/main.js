@@ -1,3 +1,4 @@
+   // font Zoom
     (function ($) {
       $.fn.fontResize = function(options){
         if(localStorage.increaseCount > 3 || localStorage.increaseCount < 0){
@@ -16,96 +17,67 @@
         };
 
         // set font size to whatever was storage in localStorage
-        changeFont(self, localStorage.increaseCount * 2);
+        changeFont(self, localStorage.increaseCount * 1);
 
         options.increaseBtn.on('click', function (e) {
           e.preventDefault();
           if(localStorage.increaseCount >= 3){ return; }
-          changeFont(self, 2);
+          changeFont(self, 1);
           localStorage.increaseCount++;
         });
 
         options.decreaseBtn.on('click', function (e) {
           e.preventDefault();
           if(localStorage.increaseCount <= 0){ return; }
-          changeFont(self, -2);
+          changeFont(self, -1);
           localStorage.increaseCount--;
         });
+
+        options.resetBtn.on('click', function(e) {
+          e.preventDefault();
+          $('[style*="font-size"]').removeAttr('style');
+          $('[style*="background-color"]').removeAttr('style');
+          $('[style*="color"]').removeAttr('style');
+          localStorage.increaseCount = 0;
+          localStorage.background = undefined;
+          localStorage.color = undefined;
+        })
+
       }
     })(jQuery);
 
-    $(function () {
-      $('body,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input').fontResize({
-        increaseBtn: $('#incfont'),
-        decreaseBtn: $('#decfont')
-      });
+  $(function () {
+    $('body,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input,label').not('body, .over_header, .over_header *').fontResize({
+      increaseBtn: $('.zoom_plus'),
+      decreaseBtn: $('.zoom_min'),
+      resetBtn: $('.nav_refresh')
     });
+  });
 
-
-
-
-
-// font Zoom
-(function ($) {
-  $.fn.fontResize = function(options){
-    var increaseCount = 0;
-    var self = this;
-
-    var changeFont = function(element, amount){
-      var baseFontSize = parseInt(element.css('font-size'), 10);
-      var baseLineHeight = parseInt(element.css('line-height'), 10);
-      element.css('font-size', (baseFontSize + amount) + 'px');
-      element.css('line-height', (baseLineHeight + amount) + 'px');
-    };
-
-    options.increaseBtn.on('click', function (e) {
-      e.preventDefault();
-      if(increaseCount === 5){ return; }
-      self.each(function(index, element){
-        changeFont($(element), 1);
-      });
-      increaseCount++;
+  $(function(){
+    $('.over_head_nav.two').on('click','li',function(){
+      var bg = $(this).css('background-color');
+      var color = $(this).css('color');
+      $('section, .navigacia, .over_header, .nav_repeat, .secind_menu, .pagination>li>a').not('body, .over_header, .over_header *').css('background-color', bg);
+      $('label,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input, .nav_repeat, .secind_menu, .pagination>li>a').not('body, .over_header, .over_header *, .footer_form *').css('color', color);
+      localStorage.background = bg;
+      localStorage.color = color;
     });
+  });
 
-    options.decreaseBtn.on('click', function (e) {
-      e.preventDefault();
-      if(increaseCount === -5){ return; }
-      self.each(function(index, element){
-        changeFont($(element), -1);
-      });
-      increaseCount--;
-    });
-
-    options.resetBtn.on('click', function(e) {
-      e.preventDefault();
-      $('[style*="font-size"]').removeAttr('style');
-      $('[style*="background-color"]').removeAttr('style');
-      $('[style*="color"]').removeAttr('style');
-      increaseCount = 0;
-    })
+  if(localStorage.background !== undefined){
+    $('section, .navigacia, .over_header, .nav_repeat, .secind_menu, .pagination>li>a').not('body, .over_header, .over_header *').css('background-color', localStorage.background);
   }
-})(jQuery);
 
-$(function () {
-  $('body,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input,label').not('body, .over_header, .over_header *').fontResize({
-    increaseBtn: $('.zoom_plus'),
-    decreaseBtn: $('.zoom_min'),
-    resetBtn: $('.nav_refresh')
-  });
-});
+  if(localStorage.color !== undefined){
+    $('label,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input, .nav_repeat, .secind_menu, .pagination>li>a').not('body, .over_header, .over_header *').css('color', localStorage.color);
+  }
 
-$(function(){
-  $('.over_head_nav.two').on('click','li',function(){
-    var bg = $(this).css('background-color');
-    var color = $(this).css('color');
-    $('section, .navigacia, .over_header, .nav_repeat, .secind_menu, .pagination>li>a').not('body, .over_header, .over_header *').css('background-color', bg);
-    $('label,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input, .nav_repeat, .secind_menu, .pagination>li>a').not('body, .over_header, .over_header *').css('color', color);
-  });
-});
+  $('.over_head_nav_three').on('click','.nav_close', function(){
+    $('.over_header, .over_head_trinagle').css('display', 'none')
+  })
 
-$('.over_head_nav_three').on('click','.nav_close', function(){
-  $('.over_header, .over_head_trinagle').css('display', 'none')
-})
+
 
 //slick slider
 $('.mySlider').slick({
