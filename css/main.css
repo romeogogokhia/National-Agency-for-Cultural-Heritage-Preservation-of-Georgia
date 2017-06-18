@@ -896,7 +896,10 @@ li.drop_down{
 }
 
 /* pagination */
-
+.pagin_wrap {
+  position: relative;
+  max-width: 150px;
+}
 .pagin_wrap .pagination li a {
   color: #5d636b;
   font:18px 'Panton-bold', serif;
@@ -918,14 +921,20 @@ li.drop_down{
   height: 12px;
   width: 8px;
   display: block;
-  padding:11px 0px;
+  /* padding: 11px 0px; */
+  position: absolute;
+  left: -12px;
+  bottom: 34px;
 }
 .pagination .pag_right_arrow{
   background: url(../img/icons/pagin_right_arrow.png) no-repeat center center;
   height: 12px;
   width: 8px;
   display: block;
-  padding:11px 0px;
+  /* padding: 11px 0px; */
+  position: absolute;
+  right: 5px;
+  top: 31px;
 }
 .pagin_wrap .pagination>li>a, 
 .pagin_wrap .pagination>li>span{
@@ -2375,6 +2384,7 @@ li.big_nav_li.second{
     min-height: 380px;
     padding: 0px 0px 20px;
 }
+
 
 
 
