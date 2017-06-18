@@ -50,7 +50,7 @@
     $('body,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input,label').not('body, .over_header, .over_header *').fontResize({
       increaseBtn: $('.zoom_plus'),
       decreaseBtn: $('.zoom_min'),
-      resetBtn: $('.nav_refresh')
+      resetBtn: $('.nav_refresh, .over_head_nav_three:first-child li')
     });
   });
 
@@ -73,7 +73,7 @@
     $('label,h1,h2,h3,h4,h5,h6,p,ul,ol,a,input, .nav_repeat, .secind_menu, .pagination>li>a').not('body, .over_header, .over_header *').css('color', localStorage.color);
   }
 
-  $('.over_head_nav_three').on('click','.nav_close', function(){
+  $('.over_head_nav_three').on('click','.nav_close, .nav_refresh + li', function(){
     $('.over_header, .over_head_trinagle').css('display', 'none')
   })
 

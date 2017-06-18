@@ -588,6 +588,62 @@ li.drop_down{
   bottom:0px;
   right:0px;
 }
+.asideBl{
+  position: relative;
+  font:14px 'dejavu-sans', serif;
+  height: 200px;
+  position: fixed;
+  right: 64px;
+  top: 60%;
+  z-index: 1001;
+}
+.asideNav{
+  display: none;
+}
+.asideBl ul{
+  position: fixed;
+  right: 125px;
+  top: 60%;
+  background-color: #3a3d43;
+  border-radius: 10px;
+  padding: 20px 16px;
+  height: 200px;
+}
+.asideBl ul li a{
+  color:#fff;
+  display: block;
+  width: 100%;
+  padding: 17px 18px;
+  border-radius: 10px;
+  -webkit-transition: background-color .5s ease;
+    transition: background-color .5s ease;
+}
+.asideBl ul li:hover a{
+  background-color: #2a2e33;
+  text-decoration: none;
+}
+.fixedButton{
+    border: none;
+    border-radius: 10px;
+    background-color: #e4002b;
+    color: #fff;
+    padding: 15px 25px;
+    position: fixed;
+    right: 0px;
+    top: 73.1%;
+    transition: background-color .5s ease;
+    -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+           transform: rotate(90deg);
+    width: 200px;
+}
+.asideBl:hover .fixedButton,
+.asideBl:hover .asideNav{
+  background-color: #2a2e33;
+  display: block;
+}
 .news h1{
   text-align: center;
   margin: 112px 0px 0px 0px;
