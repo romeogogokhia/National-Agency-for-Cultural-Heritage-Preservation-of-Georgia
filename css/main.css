@@ -1469,7 +1469,6 @@ li.drop_down{
   text-align: center;
   position: relative;
   max-width: 265px;
-  max-height: 265px;
 }
 .club_project_block .round_img{
   background-repeat: no-repeat;
@@ -2500,5 +2499,48 @@ li.big_nav_li.second{
   background-color: #3373b4;
 }
 
+.s_projects{
+  padding-bottom: 110px;
+}
+.s_projects ul{
+  padding: 66px 0px 75px;
+}
+.s_projects ul li{
+  color: #292d33;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Panton-bold';
+  font-size: 18px;
+}
+.s_projects ul li:hover,
+.s_projects ul li.active{
+  color: #3373b4;
+}
+.s_projects ul li+li{
+  margin-left: 24px;
+}
+.club_proj_desc{
+  padding: 60px 0px;
+}
+.club_proj_desc h3{
+  font-family: 'Panton-bold';
+  font-size: 18px;
+}
+.club_proj_desc h4,
+.club_proj_desc p.par{
+  font-family: 'dejavu-sans';
+  font-size: 14px;
+}
+.club_proj_desc h4{
+  color:#9c9d9f; 
+  padding: 5px 0px 15px;
+}
+.club_proj_desc p.par{
+  color: #393939;
+  line-height: 20px;
+}
+.s_projects .club_project_block{
+  margin-bottom: 30px;
+}
 
 

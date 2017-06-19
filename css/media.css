@@ -175,6 +175,13 @@
 	.s_register .choose_proj_bl{
 		padding: 15px 0px 18%;
 	}
+
+	/* user_profile.html */
+	.s_projects .club_project_block .sircleIn {
+	    position: absolute;
+	    top: 17%;
+	    left: 17%;
+	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -263,6 +270,16 @@
 	/* register_confirm.html */
 	.s_register_confirm .terms_And_Conditions {
 	    padding: 50px 30px !important;
+	}
+
+	/* user_profile.html */
+	.s_projects .club_project_block .sircleIn {
+	    position: absolute;
+	    top: 23%;
+	    left: 23%;
+	}
+	.s_projects .my_container{
+		top: 27%;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -522,8 +539,9 @@
 	    top: 23%;
 	    left: 23%;
 	}
+	.s_projects .club_project_block,
 	.club_project_block{
-		margin: 70px auto;
+		margin: 70px auto !important;
 	}
 
 	/*shshm.html*/
@@ -537,6 +555,18 @@
 	}
 	.big_nav .big_nav_li_wrap{
 		margin-left: 30px;
+	}
+
+	/* user_profile.html */
+	.s_projects{
+		padding-bottom: 0px !important;
+	}
+	.s_projects .club_proj_desc h3,
+	.s_projects .club_proj_desc h4{
+		text-align: center;
+	}
+	.s_projects .club_proj_desc{
+		padding: 0px;
 	}
 }
 
