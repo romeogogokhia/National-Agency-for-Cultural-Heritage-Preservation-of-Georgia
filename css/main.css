@@ -2522,6 +2522,20 @@ li.big_nav_li.second{
 .club_proj_desc{
   padding: 60px 0px;
 }
+.numb_in_sircle{
+  color: #fff;
+  font-family: 'Panton-bold';
+  font-size: 24px;
+  float: left;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: #3373b4;
+  text-align: center;
+  padding: 9px 0px;
+  display:none;
+}
 .club_proj_desc h3{
   font-family: 'Panton-bold';
   font-size: 18px;
