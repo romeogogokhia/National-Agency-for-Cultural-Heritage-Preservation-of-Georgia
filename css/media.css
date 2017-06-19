@@ -209,7 +209,6 @@
 	    position: relative;
 	}
 
-
 	/*club.html*/
 	/* section - club_project */
 	.club_project_block .my_container{
@@ -248,6 +247,22 @@
 	}
 	.big_nav li.big_nav_li.third{
 		width: 234px
+	}
+
+	/* password_reset.html */
+	.s_password_reset .col-md-12:first-child .login_wrap {
+    	margin-bottom: 50px !important;
+	}
+	
+	.s_password_reset,
+	.s_register_confirm,
+	.s_user_profile {
+	    padding: 85px 0px !important;
+	}
+
+	/* register_confirm.html */
+	.s_register_confirm .terms_And_Conditions {
+	    padding: 50px 30px !important;
 	}
 }
 @media screen and (max-width: 767px) {

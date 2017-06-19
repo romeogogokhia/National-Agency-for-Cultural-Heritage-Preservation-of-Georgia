@@ -1853,7 +1853,7 @@ h1.club_h1{
 .reg_proj_head h1{
   color: #4a4f57;
   font-family: 'Panton-bold';
-  font-size: 18px;
+  font-size: 18px !important;
 }
 .reg_proj_head h2{
   color: #9c9d9f;
@@ -2441,6 +2441,64 @@ li.big_nav_li.second{
     padding: 0px 0px 20px;
 }
 
+/* password_reset.html */
+.s_password_reset{
+  padding: 85px 0px 192px;
+}
+.s_password_reset .col-md-12:first-child .login_wrap{
+  margin-bottom: 100px;
+}
+.s_password_reset .login{
+  padding: 42px 40px;
+  height: auto;
+}
+.s_password_reset .log_lab{
+  line-height: 20px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+.s_password_reset .login label span{
+  font-family: 'DejaVu_Sans_Bold';
+}
+
+/* register_confirm.html */
+.s_register_confirm{
+  padding: 126px 0px 220px;
+}
+.s_register_confirm .terms_And_Conditions{
+  padding:54px 30px 122px;
+  margin: 0px;
+}
+.success_icon {
+  background: url(../img/icons/success_icon.png) no-repeat;
+  display: block;
+  margin: 0px auto 45px;
+  height: 36px;
+  width: 36px;
+}
+.btn_success {
+  background-color: #3373b4;
+  color: #FFFFFF;
+  font: 16px 'Panton-bold', serif;
+  padding: 15.5px 0px;
+  bottom: 68px;
+  margin: 38px auto 0px;
+  display: block;
+  text-align: center;
+  width: 258px;
+}
+/* user_profile.html */
+.s_user_profile{
+  padding: 78px 0px 223px;
+}
+.s_user_profile .personal_info{
+  padding: 56px 11% 80px;
+  margin: 0px;
+}
+.s_user_profile .nav_repeat li.active a,
+.s_user_profile .nav_repeat li a:hover{
+  background-color: #3373b4;
+}
 
 
 
