@@ -972,7 +972,7 @@ li.drop_down{
 .pagin_wrap .pagination a:hover:not(.active) {
   color: #5d636b;
 }
-.pagination .pag_left_arrow{
+.pag_left_arrow{
   background: url(../img/icons/pagin_left_arrow.png) no-repeat center center;
   height: 12px;
   width: 8px;
@@ -982,7 +982,7 @@ li.drop_down{
   left: -12px;
   bottom: 34px;
 }
-.pagination .pag_right_arrow{
+.pag_right_arrow{
   background: url(../img/icons/pagin_right_arrow.png) no-repeat center center;
   height: 12px;
   width: 8px;
@@ -1046,7 +1046,7 @@ li.drop_down{
   max-width: 555px;
   position: relative;
 }
-.gallery_img_bl span{
+.full_screen_icon{
   background-image: url(../img/icons/video_fullScreen.png);
   background-repeat: no-repeat;
   height: 46px;
@@ -2559,6 +2559,9 @@ li.big_nav_li.second{
 .s_projects ul li+li{
   margin-left: 24px;
 }
+.club_proj_wrap{
+  padding: 75px 0px;
+}
 .club_proj_desc{
   padding: 60px 0px;
 }
@@ -2577,6 +2580,7 @@ li.big_nav_li.second{
   display:none;
 }
 .club_proj_desc h3{
+  color: #4a4f57;
   font-family: 'Panton-bold';
   font-size: 18px;
 }
@@ -2597,4 +2601,102 @@ li.big_nav_li.second{
   margin-bottom: 30px;
 }
 
-
+/* club_projects_inner.html */
+.s_club_proj_in{
+  position: relative;
+  padding: 50px 0px 135px; 
+}
+.s_club_proj_in .pag_left_arrow{
+  position: absolute;
+  left: 16px;
+  top: 0px;
+}
+.top_left_back {
+  margin-bottom: 35px;
+  width: 100%;
+  display: block;
+}
+.top_left_back ul li{
+  display: inline-block; 
+}
+.top_left_back ul li+li{
+  margin-left: 17px;
+  margin-top: -20px;
+}
+.top_left_back ul li+li>a{
+  color: #4a4f57;
+  font: 18px 'Panton-bold', serif;
+}
+.s_club_proj_in .club_project_block{
+  max-height: 460px;
+  max-width: 460px;
+}
+.s_club_proj_in .club_project_block .round_img{
+  background-position: inherit;
+}
+.club_project_block .full_screen_icon{
+  left: 44%;
+  bottom: 20px;
+}
+.s_club_proj_in .numb_in_sircle{
+  display: block;
+}
+.financing{
+  position: relative;
+  float: left;
+}
+.financing .sircleIn{
+  position: relative;
+  display: inline-block;
+}
+.financing .prog-circle{
+  font-size: 44px;
+  margin: 0px !important;
+}
+.financing .prog-circle .slice{
+  width: 44px;
+  height: 44px;
+}
+.financing .prog-circle .fill, 
+.financing .prog-circle .bar{
+  width: 44px !important;
+  height: 44px !important;
+  border: 5px solid #3373b4;
+}
+.financing .prog-circle .percenttext {
+  color: #4a4f57;
+  font: 30px 'Panton-bold', serif;
+  margin-left: 60px;
+}
+.financing .circleVote{
+  left: 66px;
+  top: 125px;
+}
+.financing nav{
+  display: inline-block;
+  margin-left: 84px;
+}
+.financing ul{
+  display: inline-block;
+  margin-left: 8px;
+}
+.span_divider{
+  width: 44px;
+  height: 1px;
+  background-color: #979a9f;
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-bottom: 18px;
+}
+.finance_ul li:nth-child(1){
+  color: #52555a;
+  font: 14px 'DejaVu_Sans_Bold', serif;
+}
+.finance_ul li:nth-child(2){
+  color: #3373b4;
+  font: 24px 'Panton-bold', serif;
+}

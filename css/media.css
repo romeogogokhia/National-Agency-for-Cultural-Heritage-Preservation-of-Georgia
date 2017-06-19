@@ -281,6 +281,9 @@
 	.s_projects .my_container{
 		top: 27%;
 	}
+	.s_club_proj_in .club_proj_wrap {
+	    padding: 36px 0px;
+	}
 }
 @media screen and (max-width: 767px) {
 	li.drop_down .secind_menu{
@@ -567,6 +570,14 @@
 	}
 	.s_projects .club_proj_desc{
 		padding: 0px;
+	}
+
+	/* register_confirm.html */
+	.s_club_proj_in {
+	    padding: 50px 0px 75px !important;
+	}
+	.s_club_proj_in .club_project_block{
+		 margin: auto !important;
 	}
 }
 
