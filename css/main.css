@@ -2042,7 +2042,6 @@ h1.club_h1{
 .login {
   border: 1px solid #7f7f7f;
   max-width:395px;
-  height:355px;
   margin:auto;
   padding: 40px 35px;
 }
@@ -2077,9 +2076,13 @@ h1.club_h1{
   background-color: #3373b4;
   width: 82%;
   margin: 0px 9%;
+  display: inline-block;
+  text-align: center;
 }
-.login_enter:hover {
-  opacity: 0.8;
+.login_enter:hover,
+.login_enter.two:hover{
+  text-decoration: none;
+  color:black;
 }
 span.psw {
   color: #3373b4;
@@ -2490,9 +2493,46 @@ li.big_nav_li.second{
 .s_user_profile{
   padding: 78px 0px 223px;
 }
+.danger_bl{
+  max-width: 100%;
+  min-height: 216px;
+  border:1px solid #f74d58;
+  padding:0px 20px 18px;
+}
+.danger_bl ul{
+  margin: 20px auto 30px;
+}
+.danger_bl ul li{
+  color: #f7424e;
+  font-family: 'DejaVu_Sans_Bold';
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: -4px;
+}
+.micro_warning_icon{
+  background: url(../img/icons/micro_warning_icon.png) no-repeat;
+  display: block;
+  margin: 0px 10px 0px 0px;
+  height: 19px;
+  width: 23px;
+}
+.danger_bl p.par{
+  color: #292d33;
+  font-size: 15px;
+  font-family: 'dejavu-sans';
+  line-height: 18px !important;
+}
+.danger_bl .login_enter{
+  margin: 25px auto 0px;
+  display: block;
+  width: auto;
+} 
 .s_user_profile .personal_info{
   padding: 56px 11% 80px;
   margin: 0px;
+}
+.s_user_profile .nav_repeat{
+  margin-bottom: 20px;
 }
 .s_user_profile .nav_repeat li.active a,
 .s_user_profile .nav_repeat li a:hover{
