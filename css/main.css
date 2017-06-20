@@ -1099,6 +1099,7 @@ li.drop_down{
 }
 .proj_bl_In .par2 span{
   font-size: 14px;
+  margin-left: 2px;
 }
 .proj_bl_In .id_arrow{
   background-image: url(../img/icons/id_arrow.png);
@@ -1817,7 +1818,7 @@ h1.club_h1{
 .choose_proj_bl_cont{
   margin-top: -2px;
   float: left;
-  width: 58%;
+  width: 47%;
 }
 .s_register .choose_proj_bl_cont .radio label{
   margin-top: 62px;
@@ -1825,7 +1826,11 @@ h1.club_h1{
 .reg_proj_head{
   margin-top: 45px;
   line-height: 25px;
-  float: right;
+  float: left;
+  max-width: 235px;
+  max-height: 103px;
+  overflow: hidden;
+  padding-left: 7%;
 }
 .terms_And_Conditions h2,
 .terms_And_Conditions label,
@@ -1833,6 +1838,16 @@ h1.club_h1{
   color: #4a4f57;
   font-family: 'Panton-bold';
   font-size: 18px !important;
+}
+.reg_proj_head h1{
+  max-height: 50px;
+  max-width: 165px;
+  overflow: hidden;
+}
+.reg_proj_head h2{
+  max-height: 25px;
+  max-width: 165px;
+  overflow: hidden;
 }
 .reg_proj_head h2{
   color: #9c9d9f;
@@ -2526,15 +2541,17 @@ li.big_nav_li.second{
   padding: 66px 0px 75px;
 }
 .s_projects ul li{
-  color: #292d33;
-  cursor: pointer;
   display: inline-block;
+}
+.s_projects ul li a{
+  color: #292d33;
   font-family: 'Panton-bold';
   font-size: 18px;
 }
-.s_projects ul li:hover,
-.s_projects ul li.active{
+.s_projects ul li a:hover,
+.s_projects ul li.active a{
   color: #3373b4;
+  text-decoration: none;
 }
 .s_projects ul li+li{
   margin-left: 24px;
@@ -2586,11 +2603,11 @@ li.big_nav_li.second{
   position: relative;
   padding: 50px 0px 135px; 
 }
-.s_club_proj_in .pag_left_arrow{
+/*.s_club_proj_in .pag_left_arrow{
   position: absolute;
   left: 16px;
   top: 0px;
-}
+}*/
 .top_left_back {
   margin-bottom: 35px;
   width: 100%;
@@ -2600,7 +2617,7 @@ li.big_nav_li.second{
   display: inline-block; 
 }
 .top_left_back ul li+li{
-  margin-left: 17px;
+  margin-left: 8px;
   margin-top: -20px;
 }
 .top_left_back ul li+li>a{

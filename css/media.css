@@ -170,12 +170,6 @@
 	    top: 17%;
 	    left: 15%;
 	}
-
-	/*registr1step.html*/
-	.s_register .choose_proj_bl{
-		padding: 15px 0px 18%;
-	}
-
 	/* user_profile.html */
 	.s_projects .club_project_block .sircleIn {
 	    position: absolute;
@@ -228,7 +222,7 @@
 	}
 	/* registr1step.html */
 	.s_register .choose_proj_bl{
-		padding: 15px 0px 0%;
+		padding: 15px 0px;
 	}
 	.choose_proj_bl .reg_proj_desc p.par{
 		padding-top: 20px;
@@ -283,6 +277,9 @@
 	}
 	.s_club_proj_in .club_proj_wrap {
 	    padding: 36px 0px;
+	}
+	.personal_info{
+		padding: 30px 10% !important;
 	}
 }
 @media screen and (max-width: 767px) {
