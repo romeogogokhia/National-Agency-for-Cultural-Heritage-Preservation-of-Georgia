@@ -599,11 +599,11 @@ li.drop_down{
 }
 .asideNav{
   display: none;
+  margin-top: -76px;
 }
 .asideBl ul{
   position: fixed;
   right: 125px;
-  top: 60%;
   background-color: #3a3d43;
   border-radius: 10px;
   padding: 20px 16px;
@@ -630,7 +630,6 @@ li.drop_down{
     padding: 15px 25px;
     position: fixed;
     right: 0px;
-    top: 73.1%;
     transition: background-color .5s ease;
     -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
