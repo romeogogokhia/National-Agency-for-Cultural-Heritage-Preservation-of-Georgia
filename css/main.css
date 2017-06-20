@@ -952,11 +952,12 @@ li.drop_down{
 }
 
 /* pagination */
+
 .pagin_wrap {
   position: relative;
-  max-width: 150px;
 }
-.pagin_wrap .pagination li a {
+.pagin_wrap .pagination li a,
+.pagin_wrap .pagination li span {
   color: #5d636b;
   font:18px 'Panton-bold', serif;
 }
@@ -971,26 +972,6 @@ li.drop_down{
 }
 .pagin_wrap .pagination a:hover:not(.active) {
   color: #5d636b;
-}
-.pag_left_arrow{
-  background: url(../img/icons/pagin_left_arrow.png) no-repeat center center;
-  height: 12px;
-  width: 8px;
-  display: block;
-  /* padding: 11px 0px; */
-  position: absolute;
-  left: -12px;
-  bottom: 34px;
-}
-.pag_right_arrow{
-  background: url(../img/icons/pagin_right_arrow.png) no-repeat center center;
-  height: 12px;
-  width: 8px;
-  display: block;
-  /* padding: 11px 0px; */
-  position: absolute;
-  right: 5px;
-  top: 31px;
 }
 .pagin_wrap .pagination>li>a, 
 .pagin_wrap .pagination>li>span{
