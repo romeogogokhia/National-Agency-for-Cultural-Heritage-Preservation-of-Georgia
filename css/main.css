@@ -1021,11 +1021,6 @@ li.drop_down{
 }
 
 /* projects_inner.html გალერეა > ფოტო გალერეა */
-.gallery_img_bl{
-  max-height: 460px;
-  max-width: 555px;
-  position: relative;
-}
 .full_screen_icon{
   background-image: url(../img/icons/video_fullScreen.png);
   background-repeat: no-repeat;
@@ -2079,6 +2074,11 @@ h1.club_h1{
   text-decoration: none;
   color:black;
 }
+.login_enter.three{
+  float: right;
+  margin-top: 20px;
+  width: auto;
+}
 span.psw {
   color: #3373b4;
   font-size: 12px;
@@ -2097,6 +2097,15 @@ span.psw {
 /* news_inner.html */
 .gallery.news_in{
   padding-bottom: 70px;
+}
+.left_side{
+  float: left;
+}
+.gallery_img_bl{
+  max-height: 460px;
+  max-width: 555px;
+  position: relative;
+  margin: 0px 32px 28px 0px;
 }
 .gallery.news_in .proj_bl_In h1{
   color: #292d33;
@@ -2125,7 +2134,7 @@ span.psw {
   color:#fff;
 }
 .gallery.news_in  .social_net{
-  margin: 30px 0px;
+  margin: 30px 0px 0px;
 }
 .gallery.news_in .social_net  a:hover {
   color: #333;
@@ -2493,6 +2502,7 @@ li.big_nav_li.second{
   min-height: 216px;
   border:1px solid #f74d58;
   padding:0px 20px 18px;
+  margin-bottom: 20px;
 }
 .danger_bl ul{
   margin: 20px auto 30px;

@@ -207,6 +207,7 @@
 	.gallery .gallery_img_bl {
 	    max-height: 100%; 
 	    max-width: 100%; 
+	    margin: 0px 0px 30px 0px;	   
 	    position: relative;
 	}
 
@@ -568,6 +569,12 @@
 	.s_projects .club_proj_desc{
 		padding: 0px;
 	}
+	.s_user_profile .login_enter.three{
+		float: none;
+	    margin: 20px auto;
+	    width: auto;
+	    display: block;
+	}
 
 	/* register_confirm.html */
 	.s_club_proj_in {
@@ -575,6 +582,11 @@
 	}
 	.s_club_proj_in .club_project_block{
 		 margin: auto !important;
+	}
+	
+	/* news_inner.html */
+	.right_side {
+	    padding: 0px 20px;
 	}
 }
 
@@ -635,10 +647,6 @@
 	}
 
 	/*shshm.html*/
-
-	.nav_button{
-		top: 242px;
-	}
 	.over_header{
 		min-height: 200px !important;
 	}
