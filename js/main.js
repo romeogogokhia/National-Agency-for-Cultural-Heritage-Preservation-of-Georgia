@@ -35,7 +35,7 @@
 
         options.resetBtn.on('click', function(e) {
           e.preventDefault();
-          $('[style*="font-size"]').removeAttr('style');
+          $('[style*="font-size"]').not('.prog-circle').removeAttr('style');
           $('[style*="background-color"]').removeAttr('style');
           $('[style*="color"]').removeAttr('style');
           localStorage.increaseCount = 0;
