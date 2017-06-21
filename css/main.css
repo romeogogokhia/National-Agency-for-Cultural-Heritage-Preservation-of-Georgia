@@ -2382,6 +2382,9 @@ span.psw {
   font-size: 16px;
   margin-left: 20px;
 }
+.btn_map:hover{
+  color:#fff;
+}
 /**
  * Simple fade transition,
  */
