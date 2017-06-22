@@ -941,6 +941,7 @@ li.drop_down{
   max-width: 360px;
   font:18px 'Panton-bold', serif;
   margin: 0px auto 47px;
+  height: 300px;
 }
 .gallery_block h4{
   color: #292d33;

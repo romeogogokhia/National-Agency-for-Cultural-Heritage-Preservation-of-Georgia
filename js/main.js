@@ -116,8 +116,6 @@ $('.mySlider2').slick({
     {
       breakpoint: 1200,
       settings: {
-        // centerMode: true,
-        // centerPadding: '25px',
         slidesToShow: 2,
       }
     },

@@ -424,6 +424,9 @@
 	}
 
 	/* gallery.html გალერეა > ფოტო გალერეა */
+	.gallery .gallery_block{
+		height: auto;
+	}
 
 	/*pagination*/
 	.pagin_wrap{
@@ -497,12 +500,9 @@
 		max-height: 100%;
 	}
 	.club_news .news_block.cl {
-	    /* float: left; */
 	    max-width: 100%;
 	    text-align: center;
 	    background-color: transparent;
-	    /* padding: 0px; */
-	    /* margin: 0px; */
 	}
 	.club_news .news_block.cl a{
 		float: none;
