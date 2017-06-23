@@ -359,6 +359,23 @@
 	.big_nav li.big_nav_li.third{
 		width: 234px
 	}
+	.s_contacts{
+		padding: 58px 0px !important;
+	}
+	.s_contacts .contacts {
+	    max-width: 100%;
+	    text-align: center;
+	}
+	.s_contacts .btn_map{
+		width: auto;
+		padding: 0px 25px;
+	}
+	.s_contacts .form_bottom_bl .btn_send {
+		float: none;
+	    width: 224px;
+	    margin: auto;
+	    display: block;
+	}
 
 	/* password_reset.html */
 	.s_password_reset .col-md-12:first-child .login_wrap {
