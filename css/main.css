@@ -52,9 +52,9 @@ header{
   width: 100%;
 }
 .logo{
-  padding: 30px 0px 30px 128px;
   height: 142px;
   float: left;
+  padding: 30px 0px 30px 48px
 }
 .logo a{
   float: left;
@@ -75,16 +75,16 @@ header{
 }
 .float_right{
   float:right;
-  width: 67%;
+  width: 72%;
 }
 .colap{
   padding: 0px;
   margin: 0px;
 }
 .form_block{
-  width: 73%;
+  width: 77.5%;
   height: 100%;
-  padding: 0px 30px 0px 0px;
+  padding: 0px 15px 0px 0px;
   float: left;
 }
 .lang,
@@ -173,6 +173,7 @@ header{
   line-height: 40px;
   color: #292d33;
   font-size: 16px;
+  padding: 15px 10px;
 }
 .navbar-nav li:last-child a{
   padding-right: 0px;
@@ -215,7 +216,7 @@ li.drop_down{
 }
 .red_block{
   height: 142px;
-  width: 27%;
+  width: 22.5%;
   background-color: #e4002b;
   padding-left: 25px;
   line-height: 132px;
@@ -288,6 +289,7 @@ li.drop_down{
     margin-bottom: 0px;
 }
 .mySlider .slider_block{
+  border:none;
   position: relative;
   max-width: 1826px;
   max-height: 698px;

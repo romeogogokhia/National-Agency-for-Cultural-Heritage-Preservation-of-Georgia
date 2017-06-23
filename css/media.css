@@ -1,35 +1,35 @@
-@media screen and (max-width: 1458px) {
-	.logo.pull-left{
-	    padding: 30px 0px 0px 10px;
+@media screen and (max-width: 1600px) {
+	.red_block .btn:last-child{
+		width: auto !important;
 	}
-/*	.row .float_right {
-		width: 67%;
-	}
-*/	.float_right .form_block {
-		padding: 0px 15px 0px 20px;
-		width: 71%;
-	}
-	.float_right .red_block{
-		width: 29%;
-		padding-left: 10px;
+}
+@media screen and (max-width: 1472px) {
+	.row .float_right{
+	  width: 73%;
 	}
 	.red_block .btn:last-child{
-		margin-left: 10px;
+		width: auto !important;
+	}
+	.form_block .navbar-nav>li>a,
+	.navigacia .secind_menu li a{
+    	font-size:15px;
+	}
+	.navbar-header .logo a:last-child {
+	    padding: 9px 0px 0px 12px;
+	    font-size: 14px;
+	    line-height: 20px;
+	    width: 235px;
 	}
 }
 @media screen and (max-width: 1380px) {
-	.float_right .form_block {
-		padding: 0px 15px 0px 20px;
-		width: 70%;
-	}
-	.float_right .red_block{
-		width: 30%;
-		padding-left: 10px;
+	.navbar-header .logo a:last-child {
+	    font-size: 13px;
+    	width: 215px;
+    	padding: 10px 0px 0px 7px;
 	}
 	.form_block .navbar-nav>li>a,
 	.navigacia .secind_menu li a{
     	font-size:13px;
-    	line-height: 49px;
 	}
 	.nav>li>a {
 		padding: 10px 12px;
@@ -41,45 +41,15 @@
 	.float_right .red_block .btn:last-child {
 		margin-left: 10px;
 	}
-}
-@media screen and (max-width: 1205px) {
-	.row .float_right {
-		width: 67%;
+	.row .float_right{
+	  	width: 71%;
 	}
 	.float_right .form_block{
-		width: 77%;
+	  	width: 85%;
 	}
-	.float_right .red_block{
-		width: 23%;
-		padding: 0px 10px;
-	}
-	.red_block .btn:last-child{
-		width: auto !important;
-	}
-
-	/* start --- club.html | კლუბი */
-	/* club_nav */
-	.club_nav .club_logo li:last-child a h1 {
-	   font-size: 24px;
-	   margin:0px 0px 0px 10px;
-	}
-	.club_nav .float_right.colap{
-	   width: 77% !important;
-	}
-	.club_header .navbar-header{
-	   width: 23% !important;
-	}
-
-}
-@media screen and (max-width: 1115px) {
-	.row .float_right {
-		width: 88%;
-	}
-	.logo a:last-child{
-		display: none;
-	}
-	.form_block.pull-right {
-    	width: 72%;
+	.float_right .red_block {
+	    padding: 0px 10px;
+	    width: 15%;
 	}
 	.float_right .red_block .btn{
 		display: block;
@@ -99,6 +69,34 @@
 	.navigacia .secind_menu li a{
 		padding-left:8px;
 		padding-right: 8px;
+	}
+}
+@media screen and (max-width: 1205px) {
+	/* start --- club.html | კლუბი */
+	/* club_nav */
+	.club_nav .club_logo li:last-child a h1 {
+	   font-size: 24px;
+	   margin:0px 0px 0px 10px;
+	}
+	.club_nav .float_right.colap{
+	   width: 77% !important;
+	}
+	.club_header .navbar-header{
+	   width: 23% !important;
+	}
+
+}
+@media screen and (max-width: 1175px) {
+	.navbar-header .logo {
+	    padding: 30px 0px 30px 30px;
+	}
+}
+@media screen and (max-width: 1115px) {
+	.row .float_right {
+		width: 87%;
+	}
+	.logo a:last-child{
+		display: none;
 	}
 
 	/* start --- club.html | კლუბი */
@@ -149,11 +147,132 @@
 		font-size: 14px;
 	}
 }
-/*@media screen and (max-width: 1205px){
-	.container{
+@media screen and (max-width: 908px){
+	li.drop_down .secind_menu{
+		position: relative;
 		width: 100%;
 	}
-}*/
+	li.drop_down .secind_menu li a{
+		font-size:13px;
+    	line-height: 49px;
+	}
+	.logo a:last-child {
+    	display: block;
+	}
+	.row .float_right{
+		float: none;
+		width: 100%;
+		background-color: #fff; 
+	}
+	.text .text_vertical > h1{
+	  	font-size:33px;
+	}
+	.text .text_vertical > h1 > span{
+	  	font-size:45.5px;
+	}
+	.text .text_vertical > .decor_sircle{
+	  	margin:20px 0px;
+	}
+	.nav.navbar-nav {
+	    margin-top: 0px;
+	}
+	.nav.navbar-nav li a{
+		text-align: center;
+	}
+	.form_block .nav>li>a, 
+	.navigacia .secind_menu li a {
+	    padding-right: 8px !important;
+	}
+	.nav.navbar-nav.navbar-right{
+		/*border-bottom:1px solid #333;*/
+		width: 100%;
+	}
+	.colap::before{
+		display: none;
+	}
+	.float_right .form_block{
+		width: 100%;
+		float:none;
+		margin:auto;
+		padding: 0px;
+		overflow: hidden;
+	}
+	.float_right .red_block{
+    	height: 77px;
+    	width: 100%;
+		line-height: 77px;
+		float: none;
+		margin:auto;
+		text-align: center;
+	}
+	.float_right .red_block .btn{
+		height: 50px;
+		width: 50px !important;
+		border:2px solid #fff;
+		display: inline-block;
+		margin:0px;
+	}
+	.float_right .red_block .btn:last-child{
+		height: 48px;
+		width: 160px !important;
+		background-color: transparent;
+		margin-left: 18px;
+	}
+	.form_block .lang{
+		float:none;
+		padding-left: 1%;
+		width: 6%;
+	}
+	.form_block .form-group.pull-right{
+		padding-right: 1%;
+		width: 92%
+	}
+	.nav_button{
+		display: block !important;
+	    position: absolute;
+	    top: 48px;
+	    right: 20px;
+	    height: 50px;
+	    width: 50px;
+	    font-size: 33px;
+	    border: navajowhite;
+	    color: #fff;
+	    background: rebeccapurple;
+	}
+	.row .colap{
+		display: none;
+		position: absolute;
+		z-index: 999;
+	}
+	.right_bg{
+		display: none;
+	}
+	.row .navbar-header {
+	    float: none;
+	}
+	.float_right .navbar-nav>li {
+	    float: none;
+	    margin: auto;
+	}
+
+	/*shshm.html*/
+	.over_header,
+	.over_head_trinagle,
+	.glasses_icon{
+		display: none !important;
+	}
+	.form-group .search_wrap{
+		margin: 0;
+	}
+	.big_nav .big_nav_li_wrap{
+		margin-left: 30px;
+	}
+
+	.slider_wrapper{
+		width: 100% !important;
+	}
+
+}
 @media screen and (min-width: 768px) and (max-width: 1200px){
 	.slider_wrapper2 > .sl_arrow_down{
 		display: none;
@@ -178,16 +297,6 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
-/*	.over_header,
-	.over_head_trinagle,
-	.glasses_icon{
-		display: none !important;
-	}
-	.form-group .search_wrap{
-		margin: 0;
-	}*/
-}
 
 @media screen and (max-width: 991px) {
 	.club_news .mySlider3 .slick-dots {
@@ -284,107 +393,6 @@
 	}
 }
 @media screen and (max-width: 767px) {
-	li.drop_down .secind_menu{
-		position: relative;
-		width: 100%;
-	}
-	li.drop_down .secind_menu li a{
-		font-size:13px;
-    	line-height: 49px;
-	}
-	.logo a:last-child {
-    	display: block;
-	}
-	.row .float_right{
-		float: none;
-		width: 100%;
-		background-color: yellowgreen; 
-	}
-	.text .text_vertical > h1{
-	  	font-size:33px;
-	}
-	.text .text_vertical > h1 > span{
-	  	font-size:45.5px;
-	}
-	.text .text_vertical > .decor_sircle{
-	  	margin:20px 0px;
-	}
-	.nav.navbar-nav {
-	    margin-top: 0px;
-	}
-	.nav.navbar-nav li a{
-		text-align: center;
-	}
-	.form_block .nav>li>a, 
-	.navigacia .secind_menu li a {
-	    padding-right: 8px !important;
-	}
-	.nav.navbar-nav.navbar-right{
-		border-bottom:1px solid #333;
-	}
-	.colap::before{
-		display: none;
-	}
-	.float_right .form_block{
-		width: 100%;
-		float:none;
-		margin:auto;
-		padding: 0px;
-		overflow: hidden;
-	}
-	.float_right .red_block{
-    	height: 77px;
-    	width: 100%;
-		line-height: 77px;
-		float: none;
-		margin:auto;
-		text-align: center;
-	}
-	.float_right .red_block .btn{
-		height: 50px;
-		width: 50px !important;
-		border:2px solid #fff;
-		display: inline-block;
-		margin:0px;
-	}
-	.float_right .red_block .btn:last-child{
-		height: 48px;
-		width: 160px !important;
-		background-color: transparent;
-		margin-left: 18px;
-	}
-	.form_block .lang{
-		float:none;
-		padding-left: 1%;
-		width: 6%;
-	}
-	.form_block .form-group.pull-right{
-		padding-right: 1%;
-		width: 92%
-	}
-	.nav_button{
-		display: block !important;
-	    position: absolute;
-	    top: 48px;
-	    right: 20px;
-	    height: 50px;
-	    width: 50px;
-	    font-size: 33px;
-	    border: navajowhite;
-	    color: #fff;
-	    background: rebeccapurple;
-	}
-	.row .colap{
-		display: none;
-		position: absolute;
-		z-index: 999;
-	}
-	.right_bg{
-		display: none;
-	}
-	.slider_wrapper{
-		width: 100% !important;
-	}
 	.projects_block .nav_projects p{
 		padding: 0px;
 		font-size: 13px;
@@ -546,7 +554,7 @@
 	}
 
 	/*shshm.html*/
-	.over_header,
+/*	.over_header,
 	.over_head_trinagle,
 	.glasses_icon{
 		display: none !important;
@@ -557,7 +565,7 @@
 	.big_nav .big_nav_li_wrap{
 		margin-left: 30px;
 	}
-
+*/
 	/* user_profile.html */
 	.s_projects{
 		padding-bottom: 0px !important;
@@ -601,6 +609,9 @@
 }
 
 @media screen and (max-width: 415px) { 
+	.form-group .search_wrap.mr{
+		margin-right: 10px;
+	}
 	.logo a:last-child {
     	display: none;
 	}
