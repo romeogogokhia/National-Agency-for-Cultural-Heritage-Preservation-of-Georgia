@@ -223,15 +223,3 @@ $('.search_wrap').on('click','button.icon', function(event){
     $('.over_header, .over_head_trinagle').fadeToggle(700)
     
   })
-
-
-// club.html აირჩიე პაკეტი
-$('.text').on('click', '.Choose_package', function(){
-  $('.btn_under').fadeToggle();
-  $('.btn_arrow_down').css({
-    '-webkit-transform' : 'rotate(180deg)',
-      '-moz-transform' : 'rotate(180deg)',
-            'transform' : 'rotate(180deg)'
-  })
-
-})
