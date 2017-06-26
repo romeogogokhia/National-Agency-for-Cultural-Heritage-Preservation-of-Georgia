@@ -288,6 +288,10 @@
 	    top: 17%;
 	    left: 17%;
 	}
+	/* useProfileGifts.html */
+	.s_gifts .pagin_wrap {
+	    margin-top: 0px !important;
+	}
 }
 
 
@@ -605,6 +609,25 @@
 	/* news_inner.html */
 	.right_side {
 	    padding: 0px 20px;
+	}
+
+	/* useProfileGifts.html */
+	.s_gifts .col-md-5 {
+	    padding: 0px;
+	}
+	.s_gifts .gifts_img_bl{
+		margin:50px auto;
+		max-width: 100%;
+		max-height: 100%;
+		display: table;
+		width: 100%;
+	}
+	.gifts_img_bl img{
+		width: 100%;
+		height: auto;
+	}
+	.gift_desc {
+	    text-align: center;
 	}
 }
 

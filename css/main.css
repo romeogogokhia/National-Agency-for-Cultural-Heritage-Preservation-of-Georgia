@@ -2731,3 +2731,48 @@ li.big_nav_li.second{
   font-size: 14px;
   line-height: 18px;
 }
+
+/* useProfileGifts.html */
+.s_gifts{
+  padding: 77px 0px 32px;
+}
+.s_gifts .nav_repeat li.active a,
+.s_gifts .nav_repeat li a:hover{
+  background-color: #3373b4;
+}
+.gifts_img_bl{
+  max-width: 265px;
+  max-height: 215px;
+  margin-bottom: 50px;
+}
+.gift_desc h2{
+  color: #292d33;
+  font-family: 'Panton-Regular', serif;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.gift_desc p{
+  color: #5a5a5b;
+  font-family: 'dejavu-sans', serif;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  max-height: 87px;
+  overflow: hidden;
+}
+.gift_desc a{
+  color: #292d33;
+  font-family: 'Panton-bold', serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+.gift_desc a span:first-child{
+  display: table-caption;
+  padding-right: 15px; 
+}
+.s_gifts .col-md-5{
+  width: auto;
+}
+.s_gifts .pagin_wrap {
+  margin-top: -22px;
+}
