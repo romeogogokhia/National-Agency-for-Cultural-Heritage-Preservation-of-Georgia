@@ -160,9 +160,6 @@ header{
   margin-right: -10px;
 }
  
-.search_wrap input#search{
-  
-}
 .search_wrap:hover .icon{
   color: #93a2ad;
 }
@@ -2681,4 +2678,56 @@ li.big_nav_li.second{
 .finance_ul li:nth-child(2){
   color: #3373b4;
   font: 24px 'Panton-bold', serif;
+}
+
+/* searchResults.html */
+.sr_bl p{
+  color: #51555a;
+  font-family: 'dejavu-sans', serif;
+  font-size: 14px; 
+  padding: 20px 0px 32px
+}
+.sr_bl p span{
+  color: #e4002b;
+}
+.search_wrap input#search2 {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border:1px solid rgba(0, 0, 0, .16);
+  font-size: 10pt;
+  color: #333;
+  padding: 0px 16px 0px 18px;
+}
+.search_wrap .icon2{
+  position: absolute;
+  top: 11px;
+  right: 16px;
+  z-index: 1;
+  color: #a2a4a6;
+  font-size: 22px;
+  border:none;
+  background: none;
+  outline: none;
+  padding: 0px;
+}
+.search_block{
+  padding: 0px 0px 29px 0px;
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 35px;
+}
+.gallery.sr .col-md-12:last-child .search_block{
+  border-bottom: none;
+}
+.search_block h2{
+  color: #51555a;
+  font-family: 'Panton-bold', serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.search_block p{
+  color: #393939;
+  font-family: 'dejavu-sans', serif;
+  font-size: 14px;
+  line-height: 18px;
 }
