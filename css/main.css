@@ -2732,7 +2732,7 @@ li.big_nav_li.second{
   line-height: 18px;
 }
 
-/* useProfileGifts.html */
+/* userProfileGifts.html */
 .s_gifts{
   padding: 77px 0px 32px;
 }
@@ -2747,7 +2747,7 @@ li.big_nav_li.second{
 }
 .gift_desc h2{
   color: #292d33;
-  font-family: 'Panton-Regular', serif;
+  font-family: 'Panton-bold', serif;
   font-size: 18px;
   margin-bottom: 16px;
 }
@@ -2760,7 +2760,7 @@ li.big_nav_li.second{
   max-height: 87px;
   overflow: hidden;
 }
-.gift_desc a{
+.gift_desc a.more{
   color: #292d33;
   font-family: 'Panton-bold', serif;
   font-size: 15px;
@@ -2775,4 +2775,23 @@ li.big_nav_li.second{
 }
 .s_gifts .pagin_wrap {
   margin-top: -22px;
+}
+
+/* userProfileGiftsInner.html */
+
+.s_gifts.inner{
+  padding: 75px 0px 55px;
+}
+.s_gifts.inner .gifts_img_bl{
+  max-width: 750px;
+  max-height: 425px;
+}
+.s_gifts.inner .social_net a{
+  color:#fff;
+}
+.s_gifts.inner .social_net a:hover{
+  color:black;
+}
+.s_gifts.inner .social_net{
+  margin-top: 30px;
 }
