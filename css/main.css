@@ -216,48 +216,32 @@ li.drop_down{
   width: 22.5%;
   background-color: #e4002b;
   padding-left: 25px;
-  line-height: 132px;
+  line-height: 142px;
   float: right;
 }
-.sign_in{
-  background: url('../img/icons/sign-in.png') no-repeat;
-  height: 20px;
-  width: 17px;
-  display: block;
-}
-.red_block .btn{
-  padding:12px;
-  height: 50px;
-  width: 50px;
-  border:2px solid #fff;
-  border-radius: 0px;
-  background-color:#fff;
-  -webkit-transition:background-color ease-out 0.3s;
-    -moz-transition:background-color ease-out 0.3s;
-      -o-transition:background-color ease-out 0.3s;
-        transition:background-color ease-out 0.3s;
-}
-.red_block .btn:hover{
-  background-color: antiquewhite;
-}
-.red_block .btn:last-child{
-  height: 48px;
-  width: 160px;
-  border:2px solid #fff;
-  border-radius: 0px;
-  background-color: transparent;
-  margin-left: 18px;
-  color: #fff;
+.red_block h2{
+  font-family: 'Panton-bold', serif;
   font-size: 18px;
-  -webkit-transition:background-color ease-out 0.3s;
-    -moz-transition:background-color ease-out 0.3s;
-      -o-transition:background-color ease-out 0.3s;
-        transition:background-color ease-out 0.3s;
+  color:#fff;
+  line-height: 22px;
 }
-.red_block .btn:last-child:hover{
-  background-color: #fff;
-  color:#E4002B;
+.red_block a{
+  float: left;
 }
+.red_block a img{
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.red_block a:last-child{
+  padding-left: 10px;
+  max-width: 180px;
+  margin-top: 50px;
+}
+.red_block a:hover{
+  text-decoration: none;
+}
+
 .navbar-toggle{
   background-color: red;
 }
