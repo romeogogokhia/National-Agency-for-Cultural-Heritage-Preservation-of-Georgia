@@ -1166,10 +1166,10 @@ li.drop_down{
   float: right;
 }
 .club_nav .float_right.colap{
-  width: 76%;
+  width: 75%;
 }
 .club_header .navbar-header{
-  width: 24%;
+  width: 25%;
 }
 .club_menu .secind_menu li{
   display: block;
@@ -1199,7 +1199,7 @@ li.drop_down{
   display: block;
   margin: 20px auto;
   padding: 20px 22px; 
-  max-width: 155px; 
+  /*max-width: 155px; */
 }
 
 .club_nav{
@@ -1218,9 +1218,10 @@ li.drop_down{
 }
 .club_logo li a h1{
   color: #305982;
-  font-size: 29px;
-  line-height: 125px;
-  margin:0px 58px 0px 22px;
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 43px !important;
+  margin-left: 10px;
 }
 .club_menu{
   float: right;

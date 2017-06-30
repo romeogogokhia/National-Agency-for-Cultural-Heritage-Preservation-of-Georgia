@@ -71,21 +71,6 @@
 		padding-right: 8px;
 	}
 }
-@media screen and (max-width: 1205px) {
-	/* start --- club.html | კლუბი */
-	/* club_nav */
-	.club_nav .club_logo li:last-child a h1 {
-	   font-size: 24px;
-	   margin:0px 0px 0px 10px;
-	}
-	.club_nav .float_right.colap{
-	   width: 77% !important;
-	}
-	.club_header .navbar-header{
-	   width: 23% !important;
-	}
-
-}
 @media screen and (max-width: 1175px) {
 	.navbar-header .logo {
 	    padding: 30px 0px 30px 30px;
@@ -101,15 +86,11 @@
 
 	/* start --- club.html | კლუბი */
 	/* club_nav */
-	.club_nav .club_logo li:last-child a h1 {
-	    font-size: 24px;
-	    margin-left: 10px;
-	}
 	.club_nav .float_right.colap{
-	  width: 75% !important;
+	  width: 71% !important;
 	}
 	.club_header .navbar-header{
-	  width: 25% !important;
+	  width: 29% !important;
 	}
 	.ordering .club_menu li a{
 		font-size: 14px;
@@ -177,7 +158,6 @@
 	    padding-right: 8px !important;
 	}
 	.nav.navbar-nav.navbar-right{
-		/*border-bottom:1px solid #333;*/
 		width: 100%;
 	}
 	.colap::before{
@@ -248,6 +228,11 @@
 	    margin: auto;
 	}
 
+	/*club.html*/
+	.club_header .navbar-header{
+		width: 100% !important;
+	}
+
 	/*shshm.html*/
 	.over_header,
 	.over_head_trinagle,
@@ -260,7 +245,6 @@
 	.big_nav .big_nav_li_wrap{
 		margin-left: 30px;
 	}
-
 	.slider_wrapper{
 		width: 100% !important;
 	}
@@ -273,6 +257,9 @@
 }
 @media screen and (max-width: 1199px) {
 	/*club.html*/
+	.container {
+	    width: 100% !important;
+	}
 	/* section - club_project */
 	.club_project_block .my_container{
 		top: 16%;
@@ -567,19 +554,6 @@
 		margin: 70px auto !important;
 	}
 
-	/*shshm.html*/
-/*	.over_header,
-	.over_head_trinagle,
-	.glasses_icon{
-		display: none !important;
-	}
-	.form-group .search_wrap{
-		margin: 0;
-	}
-	.big_nav .big_nav_li_wrap{
-		margin-left: 30px;
-	}
-*/
 	/* user_profile.html */
 	.s_projects{
 		padding-bottom: 0px !important;
