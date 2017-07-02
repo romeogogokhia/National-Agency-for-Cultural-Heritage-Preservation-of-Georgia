@@ -59,7 +59,15 @@
 	    display: table;
 	}
 	.changeWrap{
-	    display: none;
+	    display: block;
+	}
+	.red_block h2{
+		display: none;
+	}
+	.red_block .front,
+	.red_block .back{
+		left: 50%;
+		margin-left: -25px;
 	}
 }
 @media screen and (max-width: 1175px) {
@@ -169,19 +177,6 @@
 		margin:auto;
 		text-align: center;
 	}
-/*	.float_right .red_block .btn{
-		height: 50px;
-		width: 50px !important;
-		border:2px solid #fff;
-		display: inline-block;
-		margin:0px;
-	}
-	.float_right .red_block .btn:last-child{
-		height: 48px;
-		width: 160px !important;
-		background-color: transparent;
-		margin-left: 18px;
-	}*/
 	.form_block .lang{
 		float:none;
 		padding-left: 1%;
@@ -240,6 +235,23 @@
 		width: 100% !important;
 	}
 
+	.changeWrap{
+	    display: block;
+	}
+	.red_block h2{
+		display: block;
+	}
+	.red_block .front,
+	.red_block .back{
+		left: 0%;
+    	margin-left: 0px;
+	}
+	.red_block .changeWrap {
+	    margin: auto;
+	    -webkit-transform: translate(0px,  14px);
+		  -ms-transform: translate(0px,  14px);
+		  	transform: translate(0px,  14px);
+	}
 }
 @media screen and (min-width: 768px) and (max-width: 1200px){
 	.slider_wrapper2 > .sl_arrow_down{

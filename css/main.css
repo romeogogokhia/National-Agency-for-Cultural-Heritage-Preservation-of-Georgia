@@ -224,6 +224,7 @@ li.drop_down{
   font-size: 18px;
   color:#fff;
   line-height: 22px;
+  float: left;
 }
 .red_block a{
   float: left;
@@ -231,12 +232,16 @@ li.drop_down{
 .red_block a img{
   width: 50px;
   height: 50px;
-  vertical-align: middle;
+ margin-right: 10px;
+  float: left;
 }
 .changeWrap{
   position:relative;
-  max-width: 180px;
-  transform: translate(60px, 50px);
+  max-width: 225px;
+  height: 50px;
+  -webkit-transform: translate(0px, 42px);
+    -ms-transform: translate(0px, 42px);
+      transform: translate(0px, 42px);
 }
 .back,
 .front{
@@ -245,21 +250,31 @@ li.drop_down{
   backface-visibility:hidden;
   width:inherit;
   height:inherit;
-  transition:transform .5s linear .0s;
+  -webkit-transition:-webkit-transform .5s linear .0s;
+    transition:-webkit-transform .5s linear .0s;
+      -o-transition:transform .5s linear .0s;
+        transition:transform .5s linear .0s;
+          transition:transform .5s linear .0s, -webkit-transform .5s linear .0s;
 }
 .back{
-  transform:perspective( 600px ) rotateX(180deg);   
+  -webkit-transform:perspective( 600px ) rotateX(180deg);  
+    transform:perspective( 600px ) rotateX(180deg);  
 }
-.back .change{
-  margin-top: 12px;
+.back h2{
+  line-height: 48px;
 }
 .front{
   transform:perspective( 600px ) rotateX(0deg); 
 }
+.front a:first-child h2{
+  padding-top: 3px;
+}
 .changeWrap:hover .back{
-  transform:perspective( 600px ) rotateY(0deg);
+  -webkit-transform:perspective( 600px ) rotateX(0deg);  
+    transform:perspective( 600px ) rotateX(0deg); 
 }
 .changeWrap:hover .front{
+  -webkit-transform:perspective( 600px ) rotateX(-180deg);
   transform:perspective( 600px ) rotateX(-180deg);
 }
 
