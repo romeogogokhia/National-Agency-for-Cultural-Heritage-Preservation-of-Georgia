@@ -58,7 +58,7 @@
 	    margin: auto;
 	    display: table;
 	}
-	.float_right .red_block a:last-child {
+	.change{
 	    display: none;
 	}
 }
