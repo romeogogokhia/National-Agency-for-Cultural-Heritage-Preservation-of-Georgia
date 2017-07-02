@@ -1442,6 +1442,7 @@ li.drop_down{
 .club_project_block h3{
   color:#4a4f57;
   font:18px 'Panton-bold', serif;
+  padding-top: 15px;
 }
 .club_project_block h4{
   color:#9c9d9f;
@@ -1454,16 +1455,19 @@ li.drop_down{
 .club_project_block .sircleIn{
     display: block;
     position: absolute;
-    top: 20%;
-    left: 22%;
+    top: 50%;
+    left: 50%;
+    margin-top: -71px;
+    margin-left: -71px;
 }
 
 .my_container{
-  position: absolute;
-  top: 22%;
-  text-align: center;
-  width: 100%;
   display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -65px;
+  margin-left: -66.5px;
 }
 .my_container > .autorize_sircle{
   display: inline-block;
@@ -2588,10 +2592,12 @@ li.big_nav_li.second{
 .s_projects .club_project_block{
   margin-bottom: 30px;
 }
+.round_img_wrap{
+  position: relative;
+}
 
 /* club_projects_inner.html */
 .s_club_proj_in{
-  position: relative;
   padding: 50px 0px 135px; 
 }
 /*.s_club_proj_in .pag_left_arrow{

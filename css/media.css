@@ -58,7 +58,7 @@
 	    margin: auto;
 	    display: table;
 	}
-	.change{
+	.changeWrap{
 	    display: none;
 	}
 }
@@ -251,21 +251,6 @@
 	.container {
 	    width: 100% !important;
 	}
-	/* section - club_project */
-	.club_project_block .my_container{
-		top: 16%;
-	}
-	.club_project .club_project_block .sircleIn {
-	    position: absolute;
-	    top: 17%;
-	    left: 15%;
-	}
-	/* user_profile.html */
-	.s_projects .club_project_block .sircleIn {
-	    position: absolute;
-	    top: 17%;
-	    left: 17%;
-	}
 	/* userProfileGifts.html */
 	.s_gifts .pagin_wrap {
 	    margin-top: 0px !important;
@@ -295,16 +280,6 @@
 	    position: relative;
 	}
 
-	/*club.html*/
-	/* section - club_project */
-	.club_project_block .my_container{
-		top: 6%;
-	}
-	.club_project .club_project_block .sircleIn {
-	    position: absolute;
-	    top: 4%;
-	    left: 6%;
-	}
 	/* registr1step.html */
 	.s_register .choose_proj_bl{
 		padding: 15px 0px;
@@ -368,15 +343,6 @@
 	    padding: 50px 30px !important;
 	}
 
-	/* user_profile.html */
-	.s_projects .club_project_block .sircleIn {
-	    position: absolute;
-	    top: 23%;
-	    left: 23%;
-	}
-	.s_projects .my_container{
-		top: 27%;
-	}
 	.s_club_proj_in .club_proj_wrap {
 	    padding: 36px 0px;
 	}
@@ -531,15 +497,7 @@
 		font-size: 26px;
 	}
 
-	/* section - club_project */
-	.club_project_block .my_container{
-		top: 27%;
-	}
-	.club_project .club_project_block .sircleIn {
-	    position: absolute;
-	    top: 23%;
-	    left: 23%;
-	}
+
 	.s_projects .club_project_block,
 	.club_project_block{
 		margin: 70px auto !important;
