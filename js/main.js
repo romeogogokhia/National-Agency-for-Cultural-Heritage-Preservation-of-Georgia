@@ -178,6 +178,23 @@ $('.mySlider4').slick({
 });
 
 
+$('.mySlider5').slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        infinite: true,
+      }
+    }
+  ]
+});
+
+
 //main css
 var colap = $('.colap');
 var navbutton = $('.nav_button');
