@@ -271,6 +271,12 @@
 
 
 @media screen and (max-width: 991px) {
+	.club_news .news_block.cl h1{
+		font-size: 22px
+	}
+	.club_news .news_block.cl .par{
+		margin-bottom: 25px;
+	}
 	.club_news .mySlider3 .slick-dots {
 	    bottom: -10px;
 	    left: 47px;
@@ -468,6 +474,9 @@
 	}
 
 	/*club_news*/
+	.projects_block{
+		padding-bottom: 35px !important;
+	}
 	.club_news{
 		padding: 45px 0px 0px 0px !important;
 	}
@@ -481,15 +490,24 @@
 	    max-width: 100%;
 	    text-align: center;
 	    background-color: transparent;
+	    float: none;
 	}
 	.club_news .news_block.cl a{
 		float: none;
 		display: block;
 	}
+	.club_news .news_block.cl h1{
+		font-size: 24px
+	}
+	.slider_block2 .sl_img_bl{
+		float: none;
+		max-width: 100%;
+		width: 100%;
+	}
 	.club_news .slider_block2 img{
-		float: none !important;
+/*		float: none !important;
 		width: 100% !important;
-		max-width: 100% !important;
+		max-width: 100% !important;*/
 	}
 	.club_news .mySlider3 .slick-dots {
 	    bottom: -30px;

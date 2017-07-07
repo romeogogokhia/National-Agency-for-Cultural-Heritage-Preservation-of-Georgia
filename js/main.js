@@ -138,7 +138,6 @@ $('.mySlider3').slick({
   cssEase : 'ease',
   infinite: true,
   slidesToShow : 1,
-  
     responsive: [
     {
       breakpoint: 480,

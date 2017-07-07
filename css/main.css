@@ -1400,7 +1400,7 @@ li.drop_down{
   color:#5a5a5b;
   font:16px 'BPG-Arial', serif;
   min-height: 140px;
-  height: auto;
+  height: 140px;
   max-width: 100%;
 }
 .news_block.cl a{
@@ -1414,10 +1414,19 @@ li.drop_down{
   margin-left: 12px;
   margin-bottom: -5px;
 }
-.club_news .slider_block2 img{
-  max-width: 570px;
+.sl_img_bl{
+  max-height:300px;
   width: 60%;
+  max-width: 570px;
   float: right;
+}
+.sl_img_bl a{
+  display: block;
+}
+.club_news .slider_block2 img{
+  /*max-width: 570px;
+  width: 60%;
+  float: right;*/
 }
 .mySlider3 .slick-dots{
   bottom: 0px;
