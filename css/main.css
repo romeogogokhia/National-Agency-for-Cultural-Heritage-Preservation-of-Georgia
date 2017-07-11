@@ -47,6 +47,9 @@ table {
 header{
     font-family: 'Panton-bold', serif;
 }
+video{
+  width: 100%;
+}
 .navigacia{
   min-height: 142px;
   width: 100%;
