@@ -47,8 +47,13 @@ table {
 header{
     font-family: 'Panton-bold', serif;
 }
-video{
+.mySlider video{
   width: 100%;
+  max-height: 487px;
+}
+.mySlider5 video{
+  width: 100%;
+  max-height: 698px;
 }
 .navigacia{
   min-height: 142px;
