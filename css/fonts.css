@@ -53,3 +53,12 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+/*ar-archy-regular*/
+@font-face {
+	font-family: 'ar-archy-regular';
+	src: url('../fonts/ar-archy-regular/ar-archy-regular.eot');
+	src: local('☺'), url('../fonts/ar-archy-regular/ar-archy-regular.woff') format('woff'), url('../fonts/ar-archy-regular/ar-archy-regular.ttf') format('truetype'), url('../fonts/ar-archy-regular/ar-archy-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
