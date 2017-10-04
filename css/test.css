@@ -144,11 +144,6 @@
 .slider_wrapper4 .slick-dots li.slick-active button:before{
     background-color: #3373b4;
 }
-
-
-
-
-
 /*.my-package*/
 .my-package{
     width: 100%;
@@ -222,6 +217,41 @@
     align-items: center;
 }
 
+/*.donate-wrap*/
+.donate-wrap{
+    height: 62px;
+    width: 356px;
+    padding: 0 20px;
+    background-color: #3373b4;
+    position: fixed;
+    right: -110px;
+    top: 50%;
+    margin-top: -31px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    box-shadow: 10px 0 16px rgba(0, 0, 0, .19);
+}
+.donate-wrap a{
+    text-decoration: none;
+}
+.donate-wrap p{
+    font-family: 'Panton-bold';
+    font-size: 18px;
+    color: #fff;
+}
 
 
 @media screen and (max-width: 1600px) {
