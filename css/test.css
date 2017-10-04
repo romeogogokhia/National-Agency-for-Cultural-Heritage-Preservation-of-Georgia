@@ -1,16 +1,7 @@
 .club_project_wrap{
     min-height: 290px;
-}
-.club_project_img{
-    background-repeat: no-repeat;
-    background-position: center center;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    display: block;
-    padding-top: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
+    height: 100%;
+    margin: 0 15px 50px;
 }
 .club_project_vote{
     display: -webkit-box;
@@ -28,6 +19,12 @@
     background-color: #fff;
     margin-bottom: 23px;
 }
+
+.col-sm-pull-9 .club_project_vote {
+    border-bottom: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+}
+
 .club_project_descr{
     max-width: 400px;
     margin: auto;
@@ -87,6 +84,72 @@
     height: 28px;
     display: block;
 }
+.club_project_img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    max-width: 400px;
+    height: 290px;
+    width: 100%;
+    display: block;
+    padding-top: 0;
+    -webkit-background-size: cover;
+    margin: 50px auto;
+}
+.club_project_img span{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.3;
+}
+.img_wrap{
+    height: 290px;
+}
+.img_wrap a{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.slider_wrapper4 .slick-dots li{
+    height: 15px;
+    width: 15px;
+    margin-right: 15px;
+    display: inline-block;
+}
+.slider_wrapper4 .slick-dots li button{
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    padding: 4px;
+    border:1px solid #a3a6a9;
+}
+.slider_wrapper4 .slick-dots li.slick-active button:before{
+    opacity:1;
+    background-color: #e4002b;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+
+}
+.slider_wrapper4 .slick-dots li button:before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.slider_wrapper4 .slick-dots li.slick-active button:before{
+    background-color: #3373b4;
+}
+
+
+
+
+
+/*.my-package*/
 .my-package{
     width: 100%;
     height:166px;
@@ -158,36 +221,48 @@
     -ms-flex-align: center;
     align-items: center;
 }
-@media screen and (min-width: 768px) {
-    .club_project_img{
-        opacity: .7;
+
+
+
+@media screen and (max-width: 1600px) {
+    .slider_wrapper4{
+        max-width: 80%;
     }
-    .img_wrap a{
-        background-color: #000;
-        width: 100%;
-        height: 100%;
-        display: block;
+    .img_wrap,
+    .club_project_img{
+        height: 260px;
     }
 
 }
-@media screen and (max-width: 767px) {
-
-    .club_project_img {
-        background-repeat: no-repeat;
-        max-width: 400px;
-        height: 400px;
-        width: 100%;
-        display: block;
-        padding-top: 0;
-        -webkit-background-size: cover;
-        background-size: cover;
-        margin: 50px auto;
+@media screen and (max-width: 768px) {
+    .slider_wrapper4{
+        max-width: 66%;
     }
-    .club_project_img span{
-        background-color: #000;
-        width: 100%;
-        height: 100%;
-        display: block;
-        opacity: 0.3;
+    .img_wrap,
+    .club_project_img{
+        height: 190px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1366px) {
+    .slider_wrapper4{
+        max-width: 85%;
+    }
+    .img_wrap,
+    .club_project_img{
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 480px){
+   .club_project .slider_wrapper4{
+       max-width: 100%;
+   }
+    .club_project_wrap{
+        margin: 0 0 50px 0;
+    }
+    .img_wrap,
+    .club_project_img{
+        height: 254px;
+        max-width: 100%;
     }
 }

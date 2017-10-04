@@ -178,6 +178,43 @@ $('.mySlider4').slick({
     ]
 });
 
+$('.mySlider6').slick({
+    arrows: true,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    autoplay: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                infinite: true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                arrows: false,
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
 $('.mySlider5').slick({
     dots: true,
     arrows: false,

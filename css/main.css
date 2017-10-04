@@ -1535,19 +1535,23 @@ h1.club_h1{
   margin: auto;
 }
 
-.partners .slick-prev{
+.slider_wrapper4 .slick-prev{
   left: -54px;
+  width: 50px;
+  height:50px;
 }
-.partners .slick-next{
-  right: -40px;
+.slider_wrapper4 .slick-next{
+  right: -54px;
+  width: 50px;
+  height: 50px;
 }
-.partners .slick-prev:before {
+.slider_wrapper4 .slick-prev:before {
   content: '\f0a8';
   font-family: "FontAwesome";
   font-size: 40px;
   color: #000
 }
-.partners .slick-next:before {
+.slider_wrapper4 .slick-next:before {
   content: '\f0a9';
   font-family: "FontAwesome";
   font-size: 40px;
