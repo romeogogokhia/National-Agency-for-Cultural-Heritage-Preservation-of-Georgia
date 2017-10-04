@@ -1420,6 +1420,7 @@ li.drop_down{
 .club_project_block .round_img{
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   /* make it responsive */
   max-width: 100%;
   width:100%;
@@ -1427,7 +1428,6 @@ li.drop_down{
   display:block;
   /* div height to be the same as width*/
   padding-top:100%;
-
   /* make it a cirkle */
   border-radius:50%;
 }

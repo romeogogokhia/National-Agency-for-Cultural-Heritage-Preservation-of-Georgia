@@ -247,10 +247,15 @@
 .donate-wrap a{
     text-decoration: none;
 }
+.donate-wrap a img{
+    margin-left: 10px;
+}
 .donate-wrap p{
     font-family: 'Panton-bold';
     font-size: 18px;
     color: #fff;
+    max-height: 37px;
+    overflow: hidden;
 }
 
 
@@ -271,6 +276,10 @@
     .img_wrap,
     .club_project_img{
         height: 190px;
+    }
+    .donate-wrap{
+        height: 50px;
+        width: 350px;
     }
 }
 @media screen and (min-width: 768px) and (max-width:1366px) {
