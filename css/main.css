@@ -1779,6 +1779,7 @@ h1.club_h1{
 .reg_proj_bl .round_img{
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   /* make it responsive */
   max-width: 100%;
   width:100%;

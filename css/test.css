@@ -251,11 +251,79 @@
     margin-left: 10px;
 }
 .donate-wrap p{
-    font-family: 'Panton-bold';
+    font-family: 'Panton-bold',sans-serif;
     font-size: 18px;
     color: #fff;
     max-height: 37px;
     overflow: hidden;
+}
+
+/*.club_play.html*/
+.register_nav .nav_repeat{
+    margin-bottom: 10px;
+}
+.s_register.two{
+    padding: 70px 0 190px;
+}
+.s_register.two .form_reg_header{
+    margin: 0 0 25px;
+}
+.s_register.two .form_reg_header h1{
+    color: #4a4f57;
+    font: 18px 'Panton-bold', serif;
+    text-align: left;
+}
+.s_register.two .choose_package_bl{
+    max-width: 100%;
+    height: 245px;
+}
+.s_register.two .choose_package_bl_top{
+    margin-bottom: 30px;
+}
+.s_register.two .choose_package_bl_cont{
+    height: 40px;
+}
+.s_register.two .choose_package_bl_cont2 {
+    overflow: unset;
+}
+.s_register.two .choose_package_bl_cont2 p.par{
+    max-width: 90%;
+    height: 60px;
+}
+.s_register.two .ul-gift {
+    margin-top: 7px;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 90%;
+}
+.s_register.two .choose_proj_bl{
+    min-height: 210px;
+    padding: 25px 0 4%;
+}
+.s_register.two .choose_proj_bl_cont{
+    margin-top: 0;
+    float: none;
+    width: 100%;
+    padding-left: 20px;
+}
+.s_register.two .reg_proj_head{
+    margin-top: 0;
+    padding: 0;
+}
+/*.pay-btn*/
+.pay-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.pay-btn .btn{
+    background: #3373b4;
+    border-radius: 0;
+    font-family: 'Panton-bold',sans-serif;
+    font-size: 16px;
+    color: #fff;
+    height: 52px;
+    width: 145px;
 }
 
 
@@ -269,6 +337,14 @@
     }
 
 }
+@media screen and (max-width: 1167px){
+    .s_register.two .choose_package_bl{
+        height:auto;
+    }
+    .s_register.two .ul-gift{
+        display: block;
+    }
+}
 @media screen and (max-width: 768px) {
     .slider_wrapper4{
         max-width: 66%;
@@ -280,6 +356,11 @@
     .donate-wrap{
         height: 50px;
         width: 350px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .my-package{
+        height: 236px;
     }
 }
 @media screen and (min-width: 768px) and (max-width:1366px) {
@@ -303,5 +384,45 @@
     .club_project_img{
         height: 254px;
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 645px){
+    .s_register.two .choose_proj_bl .col-xs-5,
+    .s_register.two .choose_proj_bl .col-xs-7{
+        width:100%;
+        max-width: 100%;
+        float: none;
+    }
+    .s_register.two .reg_proj_head{
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    .s_register.two .reg_proj_head h1,
+    .s_register.two .reg_proj_head h2{
+        max-width: 100%;
+    }
+    .s_register .choose_proj_bl_cont .radio label {
+        margin-top: 70px;
+    }
+    .s_register.two .choose_proj_bl_cont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .s_register.two .choose_proj_bl_cont .radio{
+        padding: 0;
+        margin: 0;
+    }
+    .s_register.two .reg_proj_bl{
+        height: 160px;
+        width: 160px;
+        margin: 0;
+    }
+    .s_register.two .pay-btn{
+        justify-content: center;
     }
 }
