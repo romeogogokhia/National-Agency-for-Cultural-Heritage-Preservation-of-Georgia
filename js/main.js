@@ -155,6 +155,7 @@ $('.mySlider4').slick({
     speed: 300,
     slidesToShow: 5,
     autoplay: true,
+    cssEase : 'ease',
     responsive: [
         {
             breakpoint: 1024,

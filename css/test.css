@@ -1,3 +1,45 @@
+/*club.html*/
+.slider_wrapper4.for_sl6 .slick-prev:before {
+    content: "";
+    background-image: url("../img/icons/keyboard-left-arrow-button.png");
+    height: 32px;
+    width: 20px;
+    display: block;
+}
+
+.slider_wrapper4.for_sl6 .slick-next:before {
+    content: "";
+    background-image: url("../img/icons/keyboard-right-arrow-button.png");
+    height: 32px;
+    width: 20px;
+    display: block;
+}
+.slider_wrapper4.for_sl6 .slick-prev:hover{
+    content: "";
+    background-image: url("../img/icons/keyboard-left-arrow-button-over.png");
+    height: 32px;
+    width: 20px;
+    display: block;
+}
+.slider_wrapper4.for_sl6 .slick-next:hover{
+    content: "";
+    background-image: url("../img/icons/keyboard-right-arrow-button-over.png");
+    height: 32px;
+    width: 20px;
+    display: block;
+}
+.slider_wrapper4.for_sl6 .slick-prev,
+.slider_wrapper4.for_sl6 .slick-next {
+    height: 32px;
+    width: 20px;
+}
+.slider_wrapper4.for_sl6 .slick-prev {
+    left: -25px;
+}
+.slider_wrapper4.for_sl6 .slick-next{
+    right: -25px;
+}
+
 .club_project_wrap{
     min-height: 290px;
     height: 100%;
