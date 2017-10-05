@@ -170,33 +170,55 @@ header{
 .search_wrap:hover .icon{
   color: #93a2ad;
 }
+/* changed -- */
 .nav{
-  margin:0;
+    margin:0;
+    height: 71px;
+}
+.navbar-nav>li{
+    height: 100%;
 }
 .navbar-nav li a{
-  line-height: 40px;
-  color: #292d33;
-  font-size: 16px;
-  padding: 15px 10px;
+    line-height: 41px;
+    color: #292d33;
+    font-size: 16px;
+    padding: 15px 9px;
+    display: block;
+    width: 100%;
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
 }
 .navbar-nav li:last-child a{
-  padding-right: 0;
+  /*padding-right: 0;*/
 }
 .navbar-nav li a:focus,
 .navbar-nav li a:hover{
-  background-color: #fff;
-  color:#292d33;
-  text-decoration: underline;
+    background-color: #3a3d43;
+    text-decoration: none;
+    color: #fff;
 }
+.navbar-nav li:hover,
+.navbar-nav li:hover li,
+.navbar-nav li:focus,
+.navbar-nav li:focus li{
+    background-color: #3a3d43;
+    color:#fff;
+}
+.navbar-nav li.drop_down:hover > a{
+    background-color: #3a3d43;
+    color:#fff;
+}
+/* -- changed */
 li.drop_down{
   position: inherit;
 }
 .secind_menu{
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color: #3a3d43;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 15;
+  padding: 18px 12px;
 }
 .drop_down .secind_menu li:last-child a{
   padding-right: 10px;
@@ -204,20 +226,23 @@ li.drop_down{
 .navbar-nav li:hover .secind_menu{
   display: block;
 }
+/* changed -- */
 .secind_menu li a{
-  line-height: 40px;
-  padding: 0 10px;
-  color: #292d33;
+  line-height: 41px;
+  padding: 5px 10px;
+  color: #fff;
   font-size: 16px;
   display: block;
   text-align: center;
+  border-radius: 5px;
 }
 .secind_menu li a:focus,
 .secind_menu li a:hover{
-  background-color: #fff;
-  color:#292d33;
-  text-decoration: underline;
+    background-color: #2a2e33;
+    text-decoration: none;
+    color: #fff;
 }
+/* -- changed */
 .red_block{
   height: 142px;
   width: 22.5%;
@@ -608,26 +633,32 @@ li.drop_down{
   bottom:0;
   right:0;
 }
+/* changed --*/
 .asideBl{
-  font:14px 'dejavu-sans', serif;
-  height: 200px;
-  position: fixed;
-  right: 64px;
-  top: 60%;
-  z-index: 1;
+    font: 14px 'dejavu-sans', serif;
+    height: 200px;
+    position: fixed;
+    right: 75px;
+    top: 50%;
+    z-index: 1;
+    width: 50px;
+    margin-top: -100px;
 }
 .asideNav{
-  display: none;
-  margin-top: -76px;
+    display: none;
 }
 .asideBl ul{
-  position: fixed;
-  right: 125px;
-  background-color: #3a3d43;
-  border-radius: 10px;
-  padding: 20px 16px;
-  height: 200px;
+    position: fixed;
+    right: 125px;
+    background-color: #3a3d43;
+    border-radius: 10px;
+    padding: 20px 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
 }
+/* -- changed*/
 .asideBl ul li a{
   color:#fff;
   display: block;
@@ -641,22 +672,26 @@ li.drop_down{
   background-color: #2a2e33;
   text-decoration: none;
 }
+/* changed -- */
 .fixedButton{
-  border: none;
-  border-radius: 10px;
-  background-color: #e4002b;
-  color: #fff;
-  padding: 15px 25px;
-  position: fixed;
-  right: 0;
-  transition: background-color .5s ease;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-  width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e4002b;
+    color: #fff;
+    padding: 15px 25px;
+    position: fixed;
+    right: 0;
+    transition: background-color .5s ease;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: 200px;
+    top: 50%;
+    margin-top: -25px;
 }
+/* -- changed */
 .asideBl:hover .fixedButton,
 .asideBl:hover .asideNav{
   background-color: #2a2e33;

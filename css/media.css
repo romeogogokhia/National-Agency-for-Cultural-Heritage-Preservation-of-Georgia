@@ -50,8 +50,8 @@
 	}
 	.form_block .nav>li>a,
 	.navigacia .secind_menu li a{
-		padding-left:8px;
-		padding-right: 8px;
+		padding-left: 7px; /*changed*/
+		padding-right: 7px; /*changed*/
 	}
 	.float_right .red_block a {
 	    float: none;
