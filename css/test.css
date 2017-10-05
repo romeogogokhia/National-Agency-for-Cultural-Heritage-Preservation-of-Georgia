@@ -164,6 +164,7 @@
 .slider_wrapper4 .slick-dots li button{
     height: 15px;
     width: 15px;
+    -webkit-border-radius: 15px;
     border-radius: 15px;
     padding: 4px;
     border:1px solid #a3a6a9;
@@ -173,6 +174,7 @@
     background-color: #e4002b;
     width: 15px;
     height: 15px;
+    -webkit-border-radius: 15px;
     border-radius: 15px;
 
 }
@@ -180,6 +182,7 @@
     content:'';
     width: 100%;
     height: 100%;
+    -webkit-border-radius: 100%;
     border-radius: 100%;
 }
 
@@ -284,6 +287,7 @@
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-shadow: 10px 0 16px rgba(0, 0, 0, .19);
     box-shadow: 10px 0 16px rgba(0, 0, 0, .19);
 }
 .donate-wrap a{
@@ -317,7 +321,7 @@
 }
 .s_register.two .choose_package_bl{
     max-width: 100%;
-    height: 245px;
+    height: auto;
 }
 .s_register.two .choose_package_bl_top{
     margin-bottom: 30px;
@@ -330,11 +334,17 @@
 }
 .s_register.two .choose_package_bl_cont2 p.par{
     max-width: 90%;
-    height: 60px;
+    height: auto;
+    overflow: unset;
 }
 .s_register.two .ul-gift {
     margin-top: 7px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 20px;
     width: 90%;
@@ -355,11 +365,18 @@
 }
 /*.pay-btn*/
 .pay-btn{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 .pay-btn .btn{
     background: #3373b4;
+    -webkit-border-radius: 0;
     border-radius: 0;
     font-family: 'Panton-bold',sans-serif;
     font-size: 16px;
@@ -421,9 +438,9 @@
 }
 
 @media screen and (max-width: 480px){
-   .club_project .slider_wrapper4{
-       max-width: 100%;
-   }
+    .club_project .slider_wrapper4{
+        max-width: 100%;
+    }
     .club_project_wrap{
         margin: 0 0 50px 0;
     }
@@ -474,7 +491,13 @@
     }
     .s_register.two .choose_proj_bl_cont {
         width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
         justify-content: center;
         padding: 0;
     }
@@ -488,6 +511,9 @@
         margin: 0;
     }
     .s_register.two .pay-btn{
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
