@@ -1265,10 +1265,30 @@ li.drop_down{
   display: block;
   font-size: 15px;
   line-height: 125px;
+  padding: 0 7.5px; /* changed */
 }
 .club_menu li+li{
-  padding-left: 15px;
+  /*padding-left: 15px;*/
 }
+/* changed or past -- */
+.club_menu li a:hover:not(.cab_button){
+  background-color: #3a3d43;
+  color: #fff;
+  text-decoration:none
+}
+.club_menu li li a{
+  color: #fff;
+}
+.club_menu li.drop_down:hover > a{
+  background-color: #3a3d43;
+  color:#fff;
+}
+.club_menu li.drop_down li:hover a{
+  background-color: #2a2e33;
+  text-decoration: none;
+  color: #fff;
+}
+/* -- changed or past */
 .cab_button{
   background-color: #fff;
   border:none;
@@ -1280,13 +1300,7 @@ li.drop_down{
   -moz-transition: color .3s ease;
   -o-transition: color .3s ease;
   transition: color .3s ease;
-}
-.cab_button span:nth-child(2){
-  color:#3373B4;
-}
-.cab_button span:hover:nth-child(2){
-  color:#333;
-  text-decoration: underline;
+  text-decoration: none
 }
 .club_user_icon{
   background-image: url(../img/icons/club_user_icon.png);
