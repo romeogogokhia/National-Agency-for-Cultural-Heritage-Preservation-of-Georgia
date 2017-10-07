@@ -384,6 +384,172 @@
     height: 52px;
     width: 145px;
 }
+/*club_donate.html*/
+.personal_info.donate{
+    padding: 60px 73px;
+    box-shadow: inset 1px -1px 0 #7f7f7f, inset -1px 1px 0 #7f7f7f;
+}
+.person-wrap{
+    position: relative;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 46px;
+}
+.person-wrap:hover .person{
+    box-shadow: inset 1px -1px 0 #3373b4, inset -1px 1px 0 #3373b4;
+}
+.person-wrap:hover .person p{
+    color: #3373b4;
+}
+.person-wrap:hover .arr_down{
+    box-shadow: inset 1px -1px 0 #3373b4, inset -1px 1px 0 #3373b4;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 18px;
+    height: 18px;
+    transform: rotate(133deg);
+    z-index: 2;
+}
+.person{
+    box-shadow: inset 1px -1px 0 #80858c, inset -1px 1px 0 #80858c;
+    height: 100%;
+    width: 100%;
+    line-height: 48px;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    padding: 1px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.person p{
+    background-color: #fff;
+    font-family: 'Panton-bold', sans-serif;
+    font-size: 18px;
+    color: #80858c;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    transition: all .5s ease-in-out;
+}
+.person.active{
+    box-shadow: inset 1px -1px 0px #3373b4, inset -1px 1px 0px #3373b4;
+}
+.person.active p{
+    color: #3373b4;
+}
+.person.active .arr_down{
+    box-shadow: inset 1px -1px 0 #3373b4, inset -1px 1px 0 #3373b4;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    width: 18px;
+    height: 18px;
+    transform: rotate(133deg);
+    z-index: 2;
+}
+.personal_info fieldset.text-center input{
+    width: auto;
+    margin: 0;
+    height: auto;
+    padding: 0;
+    display: none;
+}
+#myForm .anonim-fieldset{
+    height: auto;
+    margin-bottom: 46px;
+}
+.anonim-wrap input[type=checkbox]{
+    visibility: visible
+}
+.anonim-wrap {
+    width: 235px;
+    position: relative;
+    margin: auto;
+}
+.anonim-wrap label:not(.anonim) {
+    cursor: pointer;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 0;
+    left: 0;
+    background: #eee;
+    box-shadow: inset 1px -1px 0 #bbc0c7, inset -1px 1px 0 #bbc0c7;
+}
+.anonim-wrap label:after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 2px;
+    left: 1px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+.anonim-wrap label:not(.anonim):hover::after {
+    opacity: 0.5;
+}
+.anonim-wrap input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+.anonim{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.personal_info.donate input[name="sum"]::-webkit-input-placeholder {
+    text-align: right;
+    color: #4a4f57;
+    font-family: Sylfaen, sans-serif;
+    font-size: 21.59px;
+    padding-top: 5px;
+}
+.personal_info.donate input[name="sum"]:-ms-input-placeholder {
+    text-align: right;
+    color: #4a4f57;
+    font-family: Sylfaen, sans-serif;
+    font-size: 21.59px;
+    padding-top: 5px;
+}
+.personal_info.donate input[name="sum"]:-moz-placeholder {
+    text-align: right;
+    color: #4a4f57;
+    font-family: Sylfaen, sans-serif;
+    font-size: 21.59px;
+    padding-top: 5px;
+}
+
+.personal_info.donate input[name="sum"]::-moz-placeholder {
+    text-align: right;
+    color: #4a4f57;
+    font-family: Sylfaen, sans-serif;
+    font-size: 21.59px;
+    padding-top: 5px;
+}
+.personal_info .btn-primary{
+    background-color: #3373b4;
+    border: none;
+    border-radius: 0;
+    height: 50px;
+    width: 170px;
+    font-family: 'Panton-bold', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    margin: 0 0 22px;
+}
 
 
 @media screen and (max-width: 1600px) {

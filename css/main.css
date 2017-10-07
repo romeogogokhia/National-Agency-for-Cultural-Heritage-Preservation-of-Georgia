@@ -170,7 +170,6 @@ header{
 .search_wrap:hover .icon{
   color: #93a2ad;
 }
-/* changed -- */
 .nav{
     margin:0;
     height: 71px;
@@ -208,7 +207,6 @@ header{
     background-color: #3a3d43;
     color:#fff;
 }
-/* -- changed */
 li.drop_down{
   position: inherit;
 }
@@ -226,7 +224,6 @@ li.drop_down{
 .navbar-nav li:hover .secind_menu{
   display: block;
 }
-/* changed -- */
 .secind_menu li a{
   line-height: 41px;
   padding: 5px 10px;
@@ -242,7 +239,6 @@ li.drop_down{
     text-decoration: none;
     color: #fff;
 }
-/* -- changed */
 .red_block{
   height: 142px;
   width: 22.5%;
@@ -633,7 +629,6 @@ li.drop_down{
   bottom:0;
   right:0;
 }
-/* changed --*/
 .asideBl{
     font: 14px 'dejavu-sans', serif;
     height: 200px;
@@ -658,7 +653,6 @@ li.drop_down{
     -ms-transform: translateY(-50%);
     transform: translateY(-50%)
 }
-/* -- changed*/
 .asideBl ul li a{
   color:#fff;
   display: block;
@@ -672,7 +666,6 @@ li.drop_down{
   background-color: #2a2e33;
   text-decoration: none;
 }
-/* changed -- */
 .fixedButton{
     border: none;
     border-radius: 10px;
@@ -691,7 +684,6 @@ li.drop_down{
     top: 50%;
     margin-top: -25px;
 }
-/* -- changed */
 .asideBl:hover .fixedButton,
 .asideBl:hover .asideNav{
   background-color: #2a2e33;
@@ -1265,12 +1257,8 @@ li.drop_down{
   display: block;
   font-size: 15px;
   line-height: 125px;
-  padding: 0 7.5px; /* changed */
+  padding: 0 7.5px;
 }
-.club_menu li+li{
-  /*padding-left: 15px;*/
-}
-/* changed or past -- */
 .club_menu li a:hover:not(.cab_button){
   background-color: #3a3d43;
   color: #fff;
@@ -1288,7 +1276,6 @@ li.drop_down{
   text-decoration: none;
   color: #fff;
 }
-/* -- changed or past */
 .cab_button{
   background-color: #fff;
   border:none;
@@ -1659,7 +1646,7 @@ h1.club_h1{
   margin:25px 0 55px 0;
 }
 .choose_package_bl{
-  max-width: 555px;
+  max-width: 100%; /* changed */
   height: 400px;
   border: 1px solid #a5a5a5;
   margin: 0 auto 30px;
@@ -1780,9 +1767,9 @@ h1.club_h1{
 /*register radio end*/
 
 .choose_package_bl_cont2{
-  font-family: 'BPG-Arial';
+  font-family: 'BPG-Arial', sans-serif;
   padding-bottom: 12px;
-  overflow-y: scroll;
+  /*overflow-y: scroll;  changed */
 }
 .choose_package_bl_cont2 p.par{
   color: #5a5a5b;
@@ -1794,6 +1781,9 @@ h1.club_h1{
 }
 .choose_package_bl_cont2 nav{
   margin-top: 7px;
+}
+.choose_package_bl_cont2 nav ul{
+  padding: 0 20px;
 }
 .choose_package_bl_cont2 nav li{
   color: #5a5a5b;
