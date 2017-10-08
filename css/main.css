@@ -1216,13 +1216,13 @@ li.drop_down{
 .club_menu li:hover .secind_menu{
   display: block;
 }
+/*changed--*/
 .club_menu .cab_button {
   line-height: 10px !important;
   float: none !important;
-  display: block;
-  margin: 20px auto;
+  display: inline-block;
+  margin: auto;
   padding: 20px 22px;
-  /*max-width: 155px; */
 }
 
 .club_nav{
@@ -1247,17 +1247,20 @@ li.drop_down{
   margin-left: 10px;
 }
 .club_menu{
-  float: right;
+  /*float: right;*/
+  display: flex;
+  height: 125px;
+  align-items: center;
 }
 .club_menu li{
   display: inline-block;
 }
 .club_menu li a{
   color: #292d33;
-  display: block;
+  display: inline-block;
   font-size: 15px;
-  line-height: 125px;
   padding: 0 7.5px;
+  line-height: 59px;
 }
 .club_menu li a:hover:not(.cab_button){
   background-color: #3a3d43;
@@ -1276,6 +1279,7 @@ li.drop_down{
   text-decoration: none;
   color: #fff;
 }
+/*--changed*/
 .cab_button{
   background-color: #fff;
   border:none;

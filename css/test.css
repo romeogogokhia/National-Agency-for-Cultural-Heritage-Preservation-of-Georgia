@@ -553,8 +553,6 @@
     right: 15px;
     margin: 0 0 22px;
 }
-
-
 @media screen and (max-width: 1600px) {
     .slider_wrapper4{
         max-width: 80%;
@@ -583,8 +581,9 @@
     }
     .donate-wrap{
         height: 50px;
-        width: 350px;
+        max-width: 315px; /*changed*/
         overflow: hidden;
+        top: 289px;  /*changed*/
     }
     .donate-wrap p{
         font-size: 16px;
@@ -685,4 +684,19 @@
         -ms-flex-pack: center;
         justify-content: center;
     }
+}
+
+@media screen and (max-width: 414px) {/*changed or add*/
+
+    .donate-wrap{
+        width: auto;
+        padding: 5px 10px 5px 5px;
+        bottom: 10px;
+        top: auto;
+        right: 10px;
+    }
+    .donate-wrap a:first-child{
+        display: none;
+    }
+
 }

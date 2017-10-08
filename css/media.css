@@ -187,6 +187,17 @@
 	    color: #fff;
 	    background: rebeccapurple;
 	}
+	.right_logo_min_screen{
+		background-image: url(../img/icons/right_logo.png);
+		width: 50px;
+		height: 50px;
+		display: block;
+		float: right;
+		position: absolute;
+		right: 90px;
+		top: 48px;
+		background-color: #305982;
+	}
 	.row .colap{
 		display: none;
 		position: absolute;
@@ -241,12 +252,10 @@
 		  -ms-transform: translate(0px,  14px);
 		  	transform: translate(0px,  14px);
 	}
-	/* start --- club.html | კლუბი */
 	/* club_nav */
 	.club_nav .float_right.colap{
 		width: 100% !important;
 	}
-	/* past --- club.html > club_header */
 	/*club.html > club_header*/
 	.club_header .col-md-12{
 		padding: 0px;
@@ -269,10 +278,16 @@
 	}
 	.ordering .club_menu li a{
 		line-height: 59px;
-	}
-	.ordering .cab_button{
-		margin: auto;
+		padding: 0;
 		display: block;
+	}
+	.ordering .club_menu li.drop_down:hover > a {
+		background-color: #2a2e33;
+		color: #fff;
+	}
+	.ordering li.cabLi .cab_button{
+		padding: 20px;
+		margin: 20px auto;
 	}
 	.club_nav .float_right.colap{
 		width: 100% !important;
@@ -290,8 +305,10 @@
 	.club_menu.pull-left{
 		border-bottom: 1px solid #333;
 		border-top: 1px solid #333;
-		margin: 15px 0px 0px;
+		margin: 15px 0 0;
 		padding: 15px 0 0;
+		display: inline-block;
+		height: auto;
 	}
 	.cab_button span:last-child {
 		display: inline-block;
@@ -303,7 +320,6 @@
 	.form_block .nav{
 		height:auto;
 	}
-
 }
 @media screen and (min-width: 768px) and (max-width: 1200px){
 	.slider_wrapper2 > .sl_arrow_down{
@@ -584,7 +600,11 @@
 	    text-align: center;
 	}
 }
-
+@media screen and (max-width: 468px) {
+	.logo a:last-child {
+		display: none;
+	}
+}
 /* registr1step.html */
 @media screen and (max-width: 468px) {
 	.choose_proj_bl .choose_proj_bl_cont{
@@ -598,9 +618,6 @@
 @media screen and (max-width: 415px) { 
 	.form-group .search_wrap.mr{
 		margin-right: 10px;
-	}
-	.logo a:last-child {
-    	display: none;
 	}
 	.text .text_vertical > h1{
 		font-size:20px;
