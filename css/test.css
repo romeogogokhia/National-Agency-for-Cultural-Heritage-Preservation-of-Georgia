@@ -45,7 +45,7 @@
     height: 100%;
     margin: 0 15px 50px;
 }
-.s_projects .club_project_wrap{ /*changed*/
+.s_projects .club_project_wrap{ /*changed add new*/
     margin: 0;
 }
 .club_project_vote{
@@ -648,7 +648,7 @@
         font-size: 23px;
         padding-left: 2px;
     }
-    .club_project_descr { /* changed add */
+    .club_project_descr { /* changed new*/
         max-width: 100%;
     }
 }
