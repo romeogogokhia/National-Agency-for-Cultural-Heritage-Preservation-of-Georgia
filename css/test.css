@@ -442,6 +442,9 @@
 .person.active p{
     color: #3373b4;
 }
+.entity.active{
+    display: none; /*change*/
+}
 .person.active .arr_down{
     box-shadow: inset 1px -1px 0 #3373b4, inset -1px 1px 0 #3373b4;
     background-color: #fff;
