@@ -43,7 +43,10 @@
 .club_project_wrap{
     min-height: 290px;
     height: 100%;
-    /*margin: 0 15px 50px; changed*/
+    margin: 0 15px 50px;
+}
+.s_projects .club_project_wrap{ /*changed*/
+    margin: 0;
 }
 .club_project_vote{
     display: -webkit-box;
@@ -645,7 +648,7 @@
         font-size: 23px;
         padding-left: 2px;
     }
-    .s_projects.in .club_project_descr { /* changed add */
+    .club_project_descr { /* changed add */
         max-width: 100%;
     }
 }
