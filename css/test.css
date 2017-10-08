@@ -43,7 +43,7 @@
 .club_project_wrap{
     min-height: 290px;
     height: 100%;
-    margin: 0 15px 50px;
+    /*margin: 0 15px 50px; changed*/
 }
 .club_project_vote{
     display: -webkit-box;
@@ -148,10 +148,7 @@
 .img_wrap{
     height: 290px;
 }
-.img_wrap a{
-    background-color: #000;
-    width: 100%;
-    height: 100%;
+.img_wrap a{/*changed*/
     display: block;
 }
 
@@ -553,6 +550,13 @@
     right: 15px;
     margin: 0 0 22px;
 }
+/*club_projects.html*/
+/*changed add -- */
+.s_projects.in .col-md-3,
+.s_projects.in .col-sm-4{
+    padding: 0;
+}
+/* -- changed add*/
 @media screen and (max-width: 1600px) {
     .slider_wrapper4{
         max-width: 80%;
@@ -579,6 +583,12 @@
     .club_project_img{
         height: 190px;
     }
+    /* changed -- */
+    .s_projects.in .img_wrap,
+    .s_projects.in .club_project_img{
+        height: 265px;
+    }
+    /* -- changed */
     .donate-wrap{
         height: 50px;
         max-width: 315px; /*changed*/
@@ -634,6 +644,9 @@
     .choose_package_bl_cont p > span{
         font-size: 23px;
         padding-left: 2px;
+    }
+    .s_projects.in .club_project_descr { /* changed add */
+        max-width: 100%;
     }
 }
 

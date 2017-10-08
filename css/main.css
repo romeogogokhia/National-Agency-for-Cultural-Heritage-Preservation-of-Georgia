@@ -2573,7 +2573,7 @@ li.big_nav_li.second{
 }
 .s_projects ul li a{
   color: #292d33;
-  font-family: 'Panton-bold';
+  font-family: 'Panton-bold', sans-serif;
   font-size: 18px;
 }
 .s_projects ul li a:hover,
@@ -2588,11 +2588,11 @@ li.big_nav_li.second{
   padding: 75px 0;
 }
 .club_proj_desc{
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 .numb_in_sircle{
   color: #fff;
-  font-family: 'Panton-bold';
+  font-family: 'Panton-bold', sans-serif;
   font-size: 24px;
   float: left;
   margin-right: 20px;
@@ -2606,12 +2606,12 @@ li.big_nav_li.second{
 }
 .club_proj_desc h3{
   color: #4a4f57;
-  font-family: 'Panton-bold';
+  font-family: 'Panton-bold', sans-serif;
   font-size: 18px;
 }
 .club_proj_desc h4,
 .club_proj_desc p.par{
-  font-family: 'dejavu-sans';
+  font-family: 'dejavu-sans', sans-serif;
   font-size: 14px;
 }
 .club_proj_desc h4{
