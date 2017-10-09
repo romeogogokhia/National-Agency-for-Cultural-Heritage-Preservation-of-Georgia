@@ -618,6 +618,41 @@
     justify-content: center;
 }
 /* -- change */
+
+/*.club_notification.html*/
+
+/* change or add -- */
+.s_notification{
+    padding: 70px 0 80px;
+}
+.s_notification .terms_And_Conditions{
+    -webkit-box-shadow: inset 1px -1px 0 #f74854, inset -1px 1px 0 #f74854;
+    box-shadow: inset 1px -1px 0 #f74854, inset -1px 1px 0 #f74854;
+    margin-bottom: 30px;
+    padding: 70px 10px;
+}
+.s_notification .terms_And_Conditions.two{
+    -webkit-box-shadow: inset 1px -1px 0 #3cb878, inset -1px 1px 0 #3cb878;
+    box-shadow: inset 1px -1px 0 #3cb878, inset -1px 1px 0 #3cb878;
+}
+.s_notification .terms_And_Conditions .btn_success{
+    margin: 90px auto 0;
+    padding: 16.5px 0;
+    width: 170px;
+}
+.s_notification .terms_And_Conditions .warning_icon,
+.s_notification .terms_And_Conditions .round_success_icon{
+    margin: 0 auto 45px;
+}
+.round_success_icon{
+    background: url(../img/icons/round_success_icon.png) no-repeat;
+    display: block;
+    margin: 0 auto 22px;
+    height: 35px;
+    width: 35px;
+}
+/* -- change or add */
+
 @media screen and (max-width: 1600px) {
     .slider_wrapper4{
         max-width: 80%;
@@ -626,7 +661,6 @@
     .club_project_img{
         height: 260px;
     }
-
 }
 @media screen and (max-width: 1167px){
     .s_register.two .choose_package_bl{

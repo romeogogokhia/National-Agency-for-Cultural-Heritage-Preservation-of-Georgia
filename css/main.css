@@ -1765,8 +1765,9 @@ h1.club_h1{
   box-shadow: #3373b4 0 0 1px
 }
 .s_register .radio-success input[type="radio"]:checked + label::after {
-  background-color: #5cb85c; }
-/*register radio end*/
+  background-color: #5cb85c;
+}
+
 
 .choose_package_bl_cont2{
   font-family: 'BPG-Arial', sans-serif;
@@ -1820,14 +1821,11 @@ h1.club_h1{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  /* make it responsive */
   max-width: 100%;
   width:100%;
   height:auto;
   display:block;
-  /* div height to be the same as width*/
   padding-top:100%;
-  /* make it a cirkle */
   border-radius:50%;
 }
 .choose_proj_bl_cont{
@@ -1851,7 +1849,7 @@ h1.club_h1{
 .terms_And_Conditions label,
 .reg_proj_head h1{
   color: #4a4f57;
-  font-family: 'Panton-bold';
+  font-family: 'Panton-bold', sans-serif;
   font-size: 18px !important;
 }
 .reg_proj_head h1{
@@ -1866,7 +1864,7 @@ h1.club_h1{
 }
 .reg_proj_head h2{
   color: #9c9d9f;
-  font-family: 'dejavu-sans';
+  font-family: 'dejavu-sans', sans-serif;
   font-size: 14px;
 }
 .reg_proj_desc{
@@ -1878,7 +1876,7 @@ h1.club_h1{
 }
 .reg_proj_desc p.par{
   color: #5a5a5b;
-  font-family: 'BPG-Arial';
+  font-family: 'BPG-Arial', sans-serif;
   font-size: 14px;
 }
 
