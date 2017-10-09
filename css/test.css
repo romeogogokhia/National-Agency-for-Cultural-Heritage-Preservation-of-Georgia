@@ -63,8 +63,8 @@
     align-items: center;
     background-color: #fff;
     margin-bottom: 23px;
-    -webkit-box-shadow: inset 0px -1px 1px #80858c, inset -1px 0px 1px #80858c;
-    box-shadow: inset 0px -1px 1px #80858c, inset -1px 0px 1px #80858c; /*changed*/
+    -webkit-box-shadow: inset 0 -1px 1px #80858c, inset -1px 0 1px #80858c;
+    box-shadow: inset 0 -1px 1px #80858c, inset -1px 0 1px #80858c; /*changed*/
 }
 
 .col-sm-pull-9 .club_project_vote {
@@ -449,8 +449,8 @@
     transition: all .5s ease-in-out;
 }
 .person.active{
-    -webkit-box-shadow: inset 1px -1px 0px #3373b4, inset -1px 1px 0px #3373b4;
-    box-shadow: inset 1px -1px 0px #3373b4, inset -1px 1px 0px #3373b4;
+    -webkit-box-shadow: inset 1px -1px 0 #3373b4, inset -1px 1px 0 #3373b4;
+    box-shadow: inset 1px -1px 0 #3373b4, inset -1px 1px 0 #3373b4;
 }
 .person.active p{
     color: #3373b4;
@@ -578,6 +578,46 @@
 .s_projects.in .col-sm-4{
     padding: 0;
 }
+/* change -- */
+.vote-over{
+    background-color: white;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+}
+.vote-over .eye-hide{
+    background-image: url('../img/icons/authorization_icon_dark.png');
+}
+.sircleIn{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+/* -- change */
 @media screen and (max-width: 1600px) {
     .slider_wrapper4{
         max-width: 80%;
