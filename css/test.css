@@ -648,7 +648,9 @@
     width: 35px;
 }
 /* -- change or add */
-
+.club.newsDate li:first-child{
+  color:#3373b4;
+}
 @media screen and (max-width: 1600px) {
     .slider_wrapper4{
         max-width: 80%;
