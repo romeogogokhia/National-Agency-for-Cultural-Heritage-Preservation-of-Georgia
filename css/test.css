@@ -1,4 +1,9 @@
 /*club.html*/
+.left-side-text{
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+}
 .slider_wrapper4.for_sl6 .slick-prev:before {
     content: "";
     background-image: url("../img/icons/keyboard-left-arrow-button.png");

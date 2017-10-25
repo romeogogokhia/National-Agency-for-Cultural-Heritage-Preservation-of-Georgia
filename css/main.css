@@ -387,15 +387,15 @@ li.drop_down{
   height: 9px;
   width: 9px;
 }
-.text_vertical h2,
-.text_vertical h3{
+.left-side-text h2,
+.left-side-text h3{
   font-family: 'dejavu-sans', serif;
-  font-size: 22.11px;
+  font-size: 14px;
   color:#fffdfd;
 }
-.text_vertical h3{
+.left-side-text h3{
   color:#e4002b;
-  margin-top: 14px;
+  margin-top: 5px;
 }
 /*slick style 1*/
 .mySlider{
@@ -1368,7 +1368,7 @@ li.drop_down{
   color:  #fff;
   text-decoration: none;
 }
-.text_vertical h3{
+.club_big_img_sec .text_vertical h3{
   color:#ffffff;
   font:16px 'BPG-Arial', serif;
 }

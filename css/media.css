@@ -100,8 +100,8 @@
 	.club_big_img_sec .text .text_vertical h1 {
     	font-size: 27px;
 	}
-	.club_big_img_sec .text .text_vertical h2 {
-	    font-size: 18px;
+	.club_big_img_sec .text .text_vertical h2{
+		font-size: 20px;
 	}
 	.text_vertical .Choose_package {
 	    font-size: 14px;
@@ -628,13 +628,6 @@
 	.text .text_vertical > .decor_sircle{
 		margin:15px 0px;
 	}
-	.text .text_vertical h2, 
-	.text .text_vertical h3 {
-    	font-size:16px;
-	}
-	.text .text_vertical h3 {
-		margin-top:7px;
-	}
 	.vote .col-xs-6{
 		padding: 0px;
 	}
@@ -652,8 +645,8 @@
 	.club_big_img_sec .text_vertical h1 {
     	display: none;
 	}
-	.club_big_img_sec .text_vertical h2 {
-	    display: none;
+	.club_big_img_sec .text_vertical h2{
+		font-size: 20px;
 	}
 	.text_vertical .Choose_package {
 	    font-size: 14px;
