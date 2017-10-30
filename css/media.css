@@ -126,15 +126,6 @@
 		width: 100%;
 		background-color: #fff; 
 	}
-	.text .text_vertical > h1{
-	  	font-size:33px;
-	}
-	.text .text_vertical > h1 > span{
-	  	font-size:45.5px;
-	}
-	.text .text_vertical > .decor_sircle{
-	  	margin:20px 0px;
-	}
 	.nav.navbar-nav {
 	    margin-top: 0px;
 	}
@@ -618,15 +609,6 @@
 @media screen and (max-width: 415px) { 
 	.form-group .search_wrap.mr{
 		margin-right: 10px;
-	}
-	.text .text_vertical > h1{
-		font-size:20px;
-	}
-	.text .text_vertical > h1 > span{
-		font-size:25.5px;
-	}
-	.text .text_vertical > .decor_sircle{
-		margin:15px 0px;
 	}
 	.vote .col-xs-6{
 		padding: 0px;

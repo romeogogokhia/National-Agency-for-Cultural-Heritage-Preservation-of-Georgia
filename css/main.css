@@ -371,13 +371,8 @@ li.drop_down{
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.text_vertical > h1{
-  font:39.28px 'Panton-bold', serif;
-}
-.text_vertical > h1 > span{
-  font-size: 53.5px;
-  margin-top: 6px;
-  display: block;
+.left-side-text > h2{
+  font: 15px 'Panton-bold', serif;
 }
 .decor_sircle{
   background-color: #fff;
@@ -387,13 +382,13 @@ li.drop_down{
   height: 9px;
   width: 9px;
 }
-.left-side-text h2,
-.left-side-text h3{
+.left-side-text h3,
+.left-side-text h4{
   font-family: 'dejavu-sans', serif;
   font-size: 14px;
   color:#fffdfd;
 }
-.left-side-text h3{
+.left-side-text h4{
   color:#e4002b;
   margin-top: 5px;
 }
